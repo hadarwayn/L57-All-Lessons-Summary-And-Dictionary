@@ -298,9 +298,9 @@
 * **Visual Enhancement (1D CNN Flow):**
 ```mermaid
 graph LR
-    A[Sequential Data] --> B(1D Kernel slides across time)
-    B --> C[Feature Vector]
-    C --> D[Fully Connected]
+    A["Sequential Data"] --> B("1D Kernel slides across time")
+    B --> C["Feature Vector"]
+    C --> D["Fully Connected"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YRhxdVk_sIs)
@@ -317,9 +317,9 @@ graph LR
 * **Visual Enhancement (Dimensionality Reduction):**
 ```mermaid
 graph LR
-    A[Input: 64x64x256] --> B(1x1 Conv with 64 Filters)
-    B --> C[Output: 64x64x64]
-    C --> D[Reduced Computational Load]
+    A["Input: 64x64x256"] --> B("1x1 Conv with 64 Filters")
+    B --> C["Output: 64x64x64"]
+    C --> D["Reduced Computational Load"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=c1RBQzKsDCk)
@@ -336,8 +336,8 @@ graph LR
 * **Visual Enhancement (VGG Style Optimization):**
 ```mermaid
 graph TD
-    A[One 5x5 Kernel] -->|25 parameters| B(Receptive Field 5x5)
-    C[Two 3x3 Kernels] -->|18 parameters| B
+    A["One 5x5 Kernel"] -->|"25 parameters"| B("Receptive Field 5x5")
+    C["Two 3x3 Kernels"] -->|"18 parameters"| B
     style C stroke:#0f0,stroke-width:4px
 ```
 
@@ -371,9 +371,9 @@ Accuracy = rac{True\ Positives + True\ Negatives}{Total\ Population}
 * **Visual Enhancement (Decision Flow):**
 ```mermaid
 graph LR
-    A[Weighted Sum] --> B{Value > Threshold?}
-    B -->|Yes| C[Fire Neuron 1]
-    B -->|No| D[Fire Neuron 0]
+    A["Weighted Sum"] --> B{"Value > Threshold?"}
+    B -->|"Yes"| C["Fire Neuron 1"]
+    B -->|"No"| D["Fire Neuron 0"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -428,9 +428,9 @@ Adam (Adaptive Moment Estimation) combines the best properties of the AdaGrad an
 * **Visual Enhancement (Action Representation):**
 ```mermaid
 graph LR
-    A[Video Sequence] --> B(Extract Temporal Features)
-    B --> C(Extract Spatial Features)
-    C --> D{AFR Tensor}
+    A["Video Sequence"] --> B("Extract Temporal Features")
+    B --> C("Extract Spatial Features")
+    C --> D{"AFR Tensor"}
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PeMlggyqz0Y)
@@ -447,10 +447,10 @@ graph LR
 * **Visual Enhancement (Agent Memory Lifecycle):**
 ```mermaid
 graph LR
-    A[New Prompt] --> B[(Short-term Cache)]
-    B --> C{Context Window Limit Hit?}
-    C -->|Yes| D[Evict Oldest Logs]
-    C -->|No| E[Process Output]
+    A["New Prompt"] --> B["("Short-term Cache")"]
+    B --> C{"Context Window Limit Hit?"}
+    C -->|"Yes"| D["Evict Oldest Logs"]
+    C -->|"No"| E["Process Output"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=FwOTs4UxQS4)
@@ -467,9 +467,9 @@ graph LR
 * **Visual Enhancement (Agent Swarm Throttling):**
 ```mermaid
 graph TD
-    A[Master Orchestrator] --> B{Gate Keeper}
-    B -->|Active < 3| C[Spawn New Agent]
-    B -->|Active = 3| D[Queue Request]
+    A["Master Orchestrator"] --> B{"Gate Keeper"}
+    B -->|"Active < 3"| C["Spawn New Agent"]
+    B -->|"Active = 3"| D["Queue Request"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -487,9 +487,9 @@ graph TD
 * **Visual Enhancement (Agent Loop):**
 ```mermaid
 graph LR
-    A[Environment] -->|Observe| B(Agent)
-    B -->|Think/Plan| C(Tools/Skills)
-    C -->|Execute| A
+    A["Environment"] -->|"Observe"| B("Agent")
+    B -->|"Think/Plan"| C("Tools/Skills")
+    C -->|"Execute"| A
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -506,10 +506,10 @@ graph LR
 * **Visual Enhancement (Prompt Anatomy):**
 ```mermaid
 graph TD
-    A[Video Prompt] --> B(Camera Angle: Wide)
-    A --> C(Lighting: Cinematic sunset)
-    A --> D(Action: Subject walking left)
-    A --> E(Consistency: Keep geometry rigid)
+    A["Video Prompt"] --> B("Camera Angle: Wide")
+    A --> C("Lighting: Cinematic sunset")
+    A --> D("Action: Subject walking left")
+    A --> E("Consistency: Keep geometry rigid")
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -548,10 +548,10 @@ eq \mu_0 \quad (	ext{Alternative Hypothesis})
 * **Visual Enhancement (Anchor Matching):**
 ```mermaid
 graph LR
-    A[Grid Cell] --> B{Anchor Box 1: Tall}
-    A --> C{Anchor Box 2: Wide}
-    B -->|Matches| D[Pedestrian]
-    C -->|Matches| E[Car]
+    A["Grid Cell"] --> B{"Anchor Box 1: Tall"}
+    A --> C{"Anchor Box 2: Wide"}
+    B -->|"Matches"| D["Pedestrian"]
+    C -->|"Matches"| E["Car"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RTlwl2bv0Tg)
@@ -568,10 +568,10 @@ graph LR
 * **Visual Enhancement (Annotation Pipeline):**
 ```mermaid
 graph LR
-    A[Raw Image] --> B[Human Labeler]
-    B --> C[Draw Bounding Box]
-    C --> D[Add Class 'Dog']
-    D --> E[(Ground Truth Dataset)]
+    A["Raw Image"] --> B["Human Labeler"]
+    B --> C["Draw Bounding Box"]
+    C --> D["Add Class 'Dog'"]
+    D --> E["("Ground Truth Dataset")"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YJnnxitraac)
@@ -589,9 +589,9 @@ graph LR
 * **Visual Enhancement (Outlier Identification):**
 ```mermaid
 graph TD
-    A[Data Stream] --> B{Is Value > 3 STD?}
-    B -->|Yes| C[Trigger Alert / Anomaly]
-    B -->|No| D[Normal Processing]
+    A["Data Stream"] --> B{"Is Value > 3 STD?"}
+    B -->|"Yes"| C["Trigger Alert / Anomaly"]
+    B -->|"No"| D["Normal Processing"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=MIxnMC0Zv0Y)
@@ -608,9 +608,9 @@ graph TD
 * **Visual Enhancement (Rate Limiting Flow):**
 ```mermaid
 graph LR
-    A[AI Agent] -->|Request| B{Gate Keeper}
-    B -->|Tokens Available| C[External API]
-    B -->|Rate Limit Reached| D[Wait / Throttle]
+    A["AI Agent"] -->|"Request"| B{"Gate Keeper"}
+    B -->|"Tokens Available"| C["External API"]
+    B -->|"Rate Limit Reached"| D["Wait / Throttle"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=jGwO_UgTS7I)
@@ -628,8 +628,8 @@ graph LR
 * **Visual Enhancement (Association Rules):**
 ```mermaid
 graph LR
-    A[Item A (Bread)] -->|Confidence 80%| B[Item B (Butter)]
-    A -->|Confidence 40%| C[Item C (Milk)]
+    A["Item A ("Bread")"] -->|"Confidence 80%"| B["Item B ("Butter")"]
+    A -->|"Confidence 40%"| C["Item C ("Milk")"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=guVvtZ7ZClw)
@@ -647,9 +647,9 @@ graph LR
 * **Visual Enhancement (AI Subsets):**
 ```mermaid
 graph TD
-    A[Artificial Intelligence] --> B[Machine Learning]
-    B --> C[Deep Learning]
-    C --> D[Generative AI / LLMs]
+    A["Artificial Intelligence"] --> B["Machine Learning"]
+    B --> C["Deep Learning"]
+    C --> D["Generative AI / LLMs"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -667,9 +667,9 @@ graph TD
 * **Visual Enhancement (Attention Matrix):**
 ```mermaid
 graph TD
-    A[Word: 'Bank'] --> B{Query, Key, Value}
-    B --> C[Attention Scores vs other words]
-    C --> D[Contextualized Vector]
+    A["Word: 'Bank'"] --> B{"Query, Key, Value"}
+    B --> C["Attention Scores vs other words"]
+    C --> D["Contextualized Vector"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fjJOgb-E41w)
@@ -687,10 +687,10 @@ graph TD
 * **Visual Enhancement (Image Transformations):**
 ```mermaid
 graph LR
-    A[Original Image] --> B[Rotate 90]
-    A --> C[Flip Horizontal]
-    A --> D[Color Jitter]
-    B --> E[(Expanded Dataset)]
+    A["Original Image"] --> B["Rotate 90"]
+    A --> C["Flip Horizontal"]
+    A --> D["Color Jitter"]
+    B --> E["("Expanded Dataset")"]
     C --> E
     D --> E
 ```
@@ -710,8 +710,8 @@ graph LR
 * **Visual Enhancement (Architecture):**
 ```mermaid
 graph LR
-    A[Input X] -->|Encoder| B(Latent Space Z)
-    B -->|Decoder| C[Reconstructed X']
+    A["Input X"] -->|"Encoder"| B("Latent Space Z")
+    B -->|"Decoder"| C["Reconstructed X'"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=hZ4a4NgM3u0)
@@ -728,9 +728,9 @@ graph LR
 * **Visual Enhancement (Denoising Flow):**
 ```mermaid
 graph LR
-    A[Clean Image] -->|Add Noise| B[Noisy Image]
-    B --> C(AutoEncoder)
-    C --> D[Clean Reconstructed Image]
+    A["Clean Image"] -->|"Add Noise"| B["Noisy Image"]
+    B --> C("AutoEncoder")
+    C --> D["Clean Reconstructed Image"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=hZ4a4NgM3u0)
@@ -747,11 +747,11 @@ graph LR
 * **Visual Enhancement (GoogLeNet Aux Branches):**
 ```mermaid
 graph TD
-    A[Input] --> B[Hidden Layers 1]
-    B --> C{Auxiliary Classifier 1}
-    B --> D[Hidden Layers 2]
-    D --> E{Auxiliary Classifier 2}
-    D --> F[Final Classifier]
+    A["Input"] --> B["Hidden Layers 1"]
+    B --> C{"Auxiliary Classifier 1"}
+    B --> D["Hidden Layers 2"]
+    D --> E{"Auxiliary Classifier 2"}
+    D --> F["Final Classifier"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -769,8 +769,8 @@ graph TD
 * **Visual Enhancement (Pooling Action):**
 ```mermaid
 graph LR
-    A[2x2 Region] -->|Sum / 4| B[Single Average Value]
-    B --> C[Reduced Spatial Map]
+    A["2x2 Region"] -->|"Sum / 4"| B["Single Average Value"]
+    B --> C["Reduced Spatial Map"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vZR_8ulkS7I)
@@ -806,9 +806,9 @@ AP = \int_0^1 P(R) dR
 * **Visual Enhancement (Video Compression):**
 ```mermaid
 graph LR
-    A[I-Frame Past] --> C(B-Frame)
-    B[P-Frame Future] --> C
-    C -->|Calculates differences| D[Highly Compressed Frame]
+    A["I-Frame Past"] --> C("B-Frame")
+    B["P-Frame Future"] --> C
+    C -->|"Calculates differences"| D["Highly Compressed Frame"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6M5VXKLf4D4)
@@ -826,8 +826,8 @@ graph LR
 * **Visual Enhancement (Error Flow):**
 ```mermaid
 graph RL
-    A[Output Loss] -->|Chain Rule Gradients| B[Hidden Layer Weights]
-    B -->|Update Weights| C[Input Layer Weights]
+    A["Output Loss"] -->|"Chain Rule Gradients"| B["Hidden Layer Weights"]
+    B -->|"Update Weights"| C["Input Layer Weights"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Ilg3gGewQ5U)
@@ -845,10 +845,10 @@ graph RL
 * **Visual Enhancement (Data Splitting):**
 ```mermaid
 graph TD
-    A[Dataset: 10,000 images] --> B[Batch 1: 32 images]
-    A --> C[Batch 2: 32 images]
-    B --> D[Update Weights]
-    C --> E[Update Weights]
+    A["Dataset: 10,000 images"] --> B["Batch 1: 32 images"]
+    A --> C["Batch 2: 32 images"]
+    B --> D["Update Weights"]
+    C --> E["Update Weights"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=U4WB9p6ODjM)
@@ -885,8 +885,8 @@ y_i = \gamma \hat{x}_i + eta
 * **Visual Enhancement (Batch Size Impact):**
 ```mermaid
 graph TD
-    A[Batch Size = 2] -->|High Variance Mean/Std| B[Unstable Training]
-    C[Batch Size = 64] -->|Accurate Mean/Std| D[Stable Normalization]
+    A["Batch Size = 2"] -->|"High Variance Mean/Std"| B["Unstable Training"]
+    C["Batch Size = 64"] -->|"Accurate Mean/Std"| D["Stable Normalization"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dXB-KQYkzNU)
@@ -972,9 +972,9 @@ Bit Rate = Resolution 	imes Frame Rate 	imes Color Depth
 * **Visual Enhancement (Coordinates):**
 ```mermaid
 graph TD
-    A[Object Detection] --> B[X_center, Y_center]
-    A --> C[Width, Height]
-    B --> D[Draw Box on Image]
+    A["Object Detection"] --> B["X_center, Y_center"]
+    A --> C["Width, Height"]
+    B --> D["Draw Box on Image"]
     C --> D
 ```
 
@@ -1010,9 +1010,9 @@ C_x = rac{1}{n} \sum_{i=1}^{n} x_i, \quad C_y = rac{1}{n} \sum_{i=1}^{n} y_i
 * **Visual Enhancement (Reasoning Steps):**
 ```mermaid
 graph TD
-    A[Complex Question] --> B[Step 1: Analyze Premise]
-    B --> C[Step 2: Apply Logic]
-    C --> D[Final Answer]
+    A["Complex Question"] --> B["Step 1: Analyze Premise"]
+    B --> C["Step 2: Apply Logic"]
+    C --> D["Final Answer"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Fp-ue4UCE3s)
@@ -1030,8 +1030,8 @@ graph TD
 * **Visual Enhancement (Classification vs Regression):**
 ```mermaid
 graph LR
-    A[Data] -->|Classification| B(Discrete Categories: Dog/Cat)
-    A -->|Regression| C(Continuous Value: $400)
+    A["Data"] -->|"Classification"| B("Discrete Categories: Dog/Cat")
+    A -->|"Regression"| C("Continuous Value: $400")
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -1048,9 +1048,9 @@ graph LR
 * **Visual Enhancement (Skills vs LLM):**
 ```mermaid
 graph LR
-    A[Agent Task] --> B{Is Task Deterministic?}
-    B -->|Yes| C[Execute Python Skill]
-    B -->|No| D[Query LLM Brain]
+    A["Agent Task"] --> B{"Is Task Deterministic?"}
+    B -->|"Yes"| C["Execute Python Skill"]
+    B -->|"No"| D["Query LLM Brain"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wO8EboopboU)
@@ -1068,10 +1068,10 @@ graph LR
 * **Visual Enhancement (CNN Architecture):**
 ```mermaid
 graph LR
-    A[Image] --> B[Conv Layers]
-    B --> C[Pooling Layers]
-    C --> D[Fully Connected]
-    D --> E[Class Output]
+    A["Image"] --> B["Conv Layers"]
+    B --> C["Pooling Layers"]
+    C --> D["Fully Connected"]
+    D --> E["Class Output"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
@@ -1088,9 +1088,9 @@ graph LR
 * **Visual Enhancement (Project Constraints):**
 ```mermaid
 graph TD
-    A[Project Guidelines.md] --> B[Code Syntax Rules]
-    A --> C[Architecture Patterns]
-    A --> D[Testing Requirements]
+    A["Project Guidelines.md"] --> B["Code Syntax Rules"]
+    A --> C["Architecture Patterns"]
+    A --> D["Testing Requirements"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -1108,9 +1108,9 @@ graph TD
 * **Visual Enhancement (Terminal Usage):**
 ```mermaid
 graph LR
-    A[User Types 'git status'] --> B(CLI Parser)
-    B --> C(OS Execution)
-    C --> D[Text Output]
+    A["User Types 'git status'"] --> B("CLI Parser")
+    B --> C("OS Execution")
+    C --> D["Text Output"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -1163,10 +1163,10 @@ P(class = k) \in [0, 1]
 * **Visual Enhancement (Matrix Layout):**
 ```mermaid
 graph TD
-    A[Actual Positive] --> B[True Positive TP]
-    A --> C[False Negative FN]
-    D[Actual Negative] --> E[False Positive FP]
-    D --> F[True Negative TN]
+    A["Actual Positive"] --> B["True Positive TP"]
+    A --> C["False Negative FN"]
+    D["Actual Negative"] --> E["False Positive FP"]
+    D --> F["True Negative TN"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Kdsp6soqA7o)
@@ -1184,10 +1184,10 @@ graph TD
 * **Visual Enhancement (Token Limit):**
 ```mermaid
 graph LR
-    A[Prompt + Conversation History] --> B[(Context Window 128k)]
-    B --> C{Exceeds Limit?}
-    C -->|Yes| D[Error / Truncate]
-    C -->|No| E[Process Output]
+    A["Prompt + Conversation History"] --> B["("Context Window 128k")"]
+    B --> C{"Exceeds Limit?"}
+    C -->|"Yes"| D["Error / Truncate"]
+    C -->|"No"| E["Process Output"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=-QVoIxEpFkM)
@@ -1307,8 +1307,8 @@ F_X(x) = P(X \leq x) = \int_{-\infty}^{x} f_X(t) dt
 * **Visual Enhancement (Data Sparsity):**
 ```mermaid
 graph TD
-    A[1D Line: 10 points] -->|Dense| B(Easy to Search)
-    C[3D Cube: 10 points] -->|Extremely Sparse| D(Hard to Search)
+    A["1D Line: 10 points"] -->|"Dense"| B("Easy to Search")
+    C["3D Cube: 10 points"] -->|"Extremely Sparse"| D("Hard to Search")
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QZ0DtNFdDko)
@@ -1343,8 +1343,8 @@ graph TD
 * **Visual Enhancement (Framework Ecosystem):**
 ```mermaid
 graph LR
-    A[Darknet Framework] -->|Written in| B[C and CUDA]
-    A -->|Powers| C[YOLO Real-time Detection]
+    A["Darknet Framework"] -->|"Written in"| B["C and CUDA"]
+    A -->|"Powers"| C["YOLO Real-time Detection"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dq8AVWvWn54)
@@ -1362,9 +1362,9 @@ graph LR
 * **Visual Enhancement (Imbalance Issue):**
 ```mermaid
 graph TD
-    A[Dataset] --> B(990 Normal Samples)
-    A --> C(10 Fraud Samples)
-    B --> D{Model Output: Always Normal}
+    A["Dataset"] --> B("990 Normal Samples")
+    A --> C("10 Fraud Samples")
+    B --> D{"Model Output: Always Normal"}
     C --> D
 ```
 
@@ -1382,9 +1382,9 @@ graph TD
 * **Visual Enhancement (Overfitting Graph):**
 ```mermaid
 graph LR
-    A[Training Loss Drops] --> B{Validation Loss Rises?}
-    B -->|Yes| C[Overfitting / Memorization]
-    B -->|No| D[Healthy Generalization]
+    A["Training Loss Drops"] --> B{"Validation Loss Rises?"}
+    B -->|"Yes"| C["Overfitting / Memorization"]
+    B -->|"No"| D["Healthy Generalization"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
@@ -1402,9 +1402,9 @@ graph LR
 * **Visual Enhancement (Standard Split):**
 ```mermaid
 graph LR
-    A[Raw Data] --> B[70% Train]
-    A --> C[15% Validation]
-    A --> D[15% Test]
+    A["Raw Data"] --> B["70% Train"]
+    A --> C["15% Validation"]
+    A --> D["15% Test"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -1421,9 +1421,9 @@ graph LR
 * **Visual Enhancement (Balancing Techniques):**
 ```mermaid
 graph LR
-    A[Imbalanced Data] --> B[Oversampling Minority]
-    A --> C[Undersampling Majority]
-    A --> D[SMOTE Generation]
+    A["Imbalanced Data"] --> B["Oversampling Minority"]
+    A --> C["Undersampling Majority"]
+    A --> D["SMOTE Generation"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JnlM4yLFNuo)
@@ -1452,10 +1452,10 @@ graph LR
 * **Visual Enhancement (ReLU Dead Zone):**
 ```mermaid
 graph LR
-    A[Input < 0] --> B(ReLU Function)
-    B --> C[Output: 0]
-    C --> D[Gradient: 0]
-    D --> E[Weight Never Updates]
+    A["Input < 0"] --> B("ReLU Function")
+    B --> C["Output: 0"]
+    C --> D["Gradient: 0"]
+    D --> E["Weight Never Updates"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6MmGNZsA5nI)
@@ -1473,8 +1473,8 @@ graph LR
 * **Visual Enhancement (Resolution Reduction):**
 ```mermaid
 graph TD
-    A[100x100 Image] --> B(Drop every 2nd pixel)
-    B --> C[50x50 Image]
+    A["100x100 Image"] --> B("Drop every 2nd pixel")
+    B --> C["50x50 Image"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=9Ga9pn9M-MQ)
@@ -1492,9 +1492,9 @@ graph TD
 * **Visual Enhancement (Network Hierarchy):**
 ```mermaid
 graph LR
-    A[Input Layer] --> B[Hidden Layer 1: Edges]
-    B --> C[Hidden Layer 2: Shapes]
-    C --> D[Hidden Layer 3: Faces]
+    A["Input Layer"] --> B["Hidden Layer 1: Edges"]
+    B --> C["Hidden Layer 2: Shapes"]
+    C --> D["Hidden Layer 3: Faces"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -1511,8 +1511,8 @@ graph LR
 * **Visual Enhancement (Robustness Test):**
 ```mermaid
 graph TD
-    A[Deep Network] -->|Delete 1 Neuron| B[Loss remains stable]
-    C[Shallow Network] -->|Delete 1 Neuron| D[Catastrophic Failure]
+    A["Deep Network"] -->|"Delete 1 Neuron"| B["Loss remains stable"]
+    C["Shallow Network"] -->|"Delete 1 Neuron"| D["Catastrophic Failure"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -1529,8 +1529,8 @@ graph TD
 * **Visual Enhancement (Monocular Depth):**
 ```mermaid
 graph LR
-    A[2D Image] --> B(Depth Estimation Model)
-    B --> C[Depth Map: Brighter = Closer]
+    A["2D Image"] --> B("Depth Estimation Model")
+    B --> C["Depth Map: Brighter = Closer"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sz30TDttIBA)
@@ -1565,8 +1565,8 @@ graph LR
 * **Visual Enhancement (Regularization):**
 ```mermaid
 graph LR
-    A[Fully Connected Layer] -->|Training| B(Randomly Disable 20% Neurons)
-    B --> C[Forces Network Redundancy]
+    A["Fully Connected Layer"] -->|"Training"| B("Randomly Disable 20% Neurons")
+    B --> C["Forces Network Redundancy"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ARq74QuavAo)
@@ -1599,10 +1599,10 @@ P(\text{neuron active}) = p \quad (e.g., p=0.8)
 * **Visual Enhancement (Dueling Architecture):**
 ```mermaid
 graph LR
-    A[State Input] --> B[Feature Extraction]
-    B --> C["Value Stream V(s)"]
-    B --> D["Advantage Stream A(s,a)"]
-    C --> E["Aggregate Q(s,a)"]
+    A["State Input"] --> B["Feature Extraction"]
+    B --> C["Value Stream V("s")"]
+    B --> D["Advantage Stream A("s,a")"]
+    C --> E["Aggregate Q("s,a")"]
     D --> E
 ```
 
@@ -1621,9 +1621,9 @@ graph LR
 * **Visual Enhancement (Stopping Criteria):**
 ```mermaid
 graph LR
-    A[Epoch 10] -->|Validation Loss drops| B[Continue]
-    B --> C[Epoch 20]
-    C -->|Validation Loss rises for 3 epochs| D[Stop Training & Save Model]
+    A["Epoch 10"] -->|"Validation Loss drops"| B["Continue"]
+    B --> C["Epoch 20"]
+    C -->|"Validation Loss rises for 3 epochs"| D["Stop Training & Save Model"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=CODw8292uqE)
@@ -1675,10 +1675,10 @@ G_x = \begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix} * A
 * **Visual Enhancement (Compound Scaling):**
 ```mermaid
 graph TD
-    A[Base Model] --> B[Scale Resolution]
-    A --> C[Scale Depth]
-    A --> D[Scale Width]
-    B --> E[EfficientNet-B7]
+    A["Base Model"] --> B["Scale Resolution"]
+    A --> C["Scale Depth"]
+    A --> D["Scale Width"]
+    B --> E["EfficientNet-B7"]
     C --> E
     D --> E
 ```
@@ -1732,8 +1732,8 @@ Where $A$ is a square matrix, $v$ is the eigenvector, and $\lambda$ is the eigen
 * **Visual Enhancement (VAE Loss):**
 ```mermaid
 graph LR
-    A[ELBO Loss] --> B[Reconstruction Loss (MSE/BCE)]
-    A --> C[KL Divergence Penalty]
+    A["ELBO Loss"] --> B["Reconstruction Loss ("MSE/BCE")"]
+    A --> C["KL Divergence Penalty"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=G5xcC5ABVjA)
@@ -1751,8 +1751,8 @@ graph LR
 * **Visual Enhancement (Word Vectorization):**
 ```mermaid
 graph LR
-    A[Word: 'King'] --> B(Embedding Layer)
-    B --> C[Vector: 0.8, -0.2, 0.5...]
+    A["Word: 'King'"] --> B("Embedding Layer")
+    B --> C["Vector: 0.8, -0.2, 0.5..."]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -1769,8 +1769,8 @@ graph LR
 * **Visual Enhancement (Compression Flow):**
 ```mermaid
 graph LR
-    A[Input] -->|Compress| B[(Bottleneck / Latent Vector)]
-    B -->|Decompress| C[Output]
+    A["Input"] -->|"Compress"| B["("Bottleneck / Latent Vector")"]
+    B -->|"Decompress"| C["Output"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=zbdong_h-x4)
@@ -1805,9 +1805,9 @@ H(X) = -\sum_{i} P(x_i) \log P(x_i)
 * **Visual Enhancement (Training Cycle):**
 ```mermaid
 graph LR
-    A[Start Epoch 1] --> B[Pass entire dataset forward]
-    B --> C[Pass backward & update]
-    C --> D[Epoch 1 Complete]
+    A["Start Epoch 1"] --> B["Pass entire dataset forward"]
+    B --> C["Pass backward & update"]
+    C --> D["Epoch 1 Complete"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=SftOqbMrGfE)
@@ -1859,9 +1859,9 @@ F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \t
 * **Visual Enhancement (Data Representation):**
 ```mermaid
 graph TD
-    A[House Data] --> B[Feature 1: Square Footage]
-    A --> C[Feature 2: Number of Bedrooms]
-    A --> D[Feature 3: Zip Code]
+    A["House Data"] --> B["Feature 1: Square Footage"]
+    A --> C["Feature 2: Number of Bedrooms"]
+    A --> D["Feature 3: Zip Code"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -1879,8 +1879,8 @@ graph TD
 * **Visual Enhancement (CNN Extracting Shapes):**
 ```mermaid
 graph LR
-    A[Raw Pixels] --> B(Filters/Kernels)
-    B --> C[Edges, Textures, Shapes]
+    A["Raw Pixels"] --> B("Filters/Kernels")
+    B --> C["Edges, Textures, Shapes"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=yd6XNKqtCZA)
@@ -1898,8 +1898,8 @@ graph LR
 * **Visual Enhancement (Activation Map):**
 ```mermaid
 graph LR
-    A[Image] -->|Apply 1 Filter| B[Feature Map Matrix]
-    B -->|High values| C[Detected Feature Location]
+    A["Image"] -->|"Apply 1 Filter"| B["Feature Map Matrix"]
+    B -->|"High values"| C["Detected Feature Location"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
@@ -1917,9 +1917,9 @@ graph LR
 * **Visual Enhancement (Prompt Structure):**
 ```mermaid
 graph TD
-    A[System Prompt] --> B[Example 1: Input -> Output]
-    B --> C[Example 2: Input -> Output]
-    C --> D[Real Request: Input -> ?]
+    A["System Prompt"] --> B["Example 1: Input -> Output"]
+    B --> C["Example 2: Input -> Output"]
+    C --> D["Real Request: Input -> ?"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sW5xoicq5TY)
@@ -1937,10 +1937,10 @@ graph TD
 * **Visual Enhancement (Video Processing Pipeline):**
 ```mermaid
 graph LR
-    A[input.mp4] --> B(FFMPEG Decoder)
-    B --> C[Extract Frames / Audio]
-    C --> D(FFMPEG Encoder)
-    D --> E[output.gif]
+    A["input.mp4"] --> B("FFMPEG Decoder")
+    B --> C["Extract Frames / Audio"]
+    C --> D("FFMPEG Encoder")
+    D --> E["output.gif"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -1958,8 +1958,8 @@ graph LR
 * **Visual Enhancement (Transfer Learning):**
 ```mermaid
 graph LR
-    A[Pre-trained Model Weights] --> B[Freeze base layers]
-    B --> C[Train only top layers on new dataset]
+    A["Pre-trained Model Weights"] --> B["Freeze base layers"]
+    B --> C["Train only top layers on new dataset"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5T-iXNNiwIs)
@@ -1995,8 +1995,8 @@ A 3x3 matrix becomes a 1x9 vector:
 * **Visual Enhancement (Data Flow):**
 ```mermaid
 graph LR
-    A[Input X] -->|Multiply Weights| B[Hidden Layer]
-    B -->|Apply Activation| C[Output Y_hat]
+    A["Input X"] -->|"Multiply Weights"| B["Hidden Layer"]
+    B -->|"Apply Activation"| C["Output Y_hat"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=99CcviQchd8)
@@ -2030,8 +2030,8 @@ X(f) = \int_{-\infty}^{\infty} x(t) e^{-i 2 \pi f t} dt
 * **Visual Enhancement (Final Classification Step):**
 ```mermaid
 graph LR
-    A[Flattened Vector] --> B[Fully Connected Dense Layer]
-    B --> C[Class Probabilities]
+    A["Flattened Vector"] --> B["Fully Connected Dense Layer"]
+    B --> C["Class Probabilities"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=2TQhnGmXfDI)
@@ -2049,9 +2049,9 @@ graph LR
 * **Visual Enhancement (Dense Connections):**
 ```mermaid
 graph LR
-    A[Neuron 1] --> C[Hidden 1]
-    A --> D[Hidden 2]
-    B[Neuron 2] --> C
+    A["Neuron 1"] --> C["Hidden 1"]
+    A --> D["Hidden 2"]
+    B["Neuron 2"] --> C
     B --> D
 ```
 
@@ -2070,9 +2070,9 @@ graph LR
 * **Visual Enhancement (No Dense Layers):**
 ```mermaid
 graph LR
-    A[Image] --> B[Conv Layers]
-    B --> C[1x1 Conv Layers]
-    C --> D[Spatial Heatmap Output]
+    A["Image"] --> B["Conv Layers"]
+    B --> C["1x1 Conv Layers"]
+    C --> D["Spatial Heatmap Output"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=H5HGZ1wLtrk)
@@ -2107,9 +2107,9 @@ f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\ri
 * **Visual Enhancement (Multiple Clusters):**
 ```mermaid
 graph TD
-    A[Data Points] --> B[Gaussian 1: Cluster A]
-    A --> C[Gaussian 2: Cluster B]
-    A --> D[Gaussian 3: Cluster C]
+    A["Data Points"] --> B["Gaussian 1: Cluster A"]
+    A --> C["Gaussian 2: Cluster B"]
+    A --> D["Gaussian 3: Cluster C"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wT2yLNUfyoM)
@@ -2127,8 +2127,8 @@ graph TD
 * **Visual Enhancement (Discriminative vs Generative):**
 ```mermaid
 graph LR
-    A[Discriminative] -->|Given X, predict Y| B(Is it a dog?)
-    C[Generative] -->|Learn P(X)| D(Draw a new dog)
+    A["Discriminative"] -->|"Given X, predict Y"| B("Is it a dog?")
+    C["Generative"] -->|"Learn P("X")"| D("Draw a new dog")
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -2146,9 +2146,9 @@ graph LR
 * **Visual Enhancement (Python Threading Limitation):**
 ```mermaid
 graph LR
-    A[Thread 1] --> B{GIL Lock}
-    B --> C[Execute Python Bytecode]
-    D[Thread 2] --> B
+    A["Thread 1"] --> B{"GIL Lock"}
+    B --> C["Execute Python Bytecode"]
+    D["Thread 2"] --> B
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=XVcRQ6T9RHo)
@@ -2166,8 +2166,8 @@ graph LR
 * **Visual Enhancement (Version Control):**
 ```mermaid
 graph LR
-    A[Local Working Directory] -->|git commit| B[Local Repo]
-    B -->|git push| C[(Remote GitHub Repo)]
+    A["Local Working Directory"] -->|"git commit"| B["Local Repo"]
+    B -->|"git push"| C["("Remote GitHub Repo")"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=e9lnsKot_SQ)
@@ -2185,7 +2185,7 @@ graph LR
 * **Visual Enhancement (Spatial Reduction):**
 ```mermaid
 graph LR
-    A[Feature Map 7x7x512] -->|Average each 7x7 slice| B[Vector 1x1x512]
+    A["Feature Map 7x7x512"] -->|"Average each 7x7 slice"| B["Vector 1x1x512"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=gNRVTCf6lvY)
@@ -2203,9 +2203,9 @@ graph LR
 * **Visual Enhancement (Cloud Architecture):**
 ```mermaid
 graph LR
-    A[Browser Notebook] --> B{Google Cloud}
-    B --> C[Free Tesla T4 GPU]
-    B --> D[Google Drive Storage]
+    A["Browser Notebook"] --> B{"Google Cloud"}
+    B --> C["Free Tesla T4 GPU"]
+    B --> D["Google Drive Storage"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=nAgg9ZvixdQ)
@@ -2223,10 +2223,10 @@ graph LR
 * **Visual Enhancement (Inception Architecture):**
 ```mermaid
 graph TD
-    A[Input] --> B[Inception Modules]
-    B --> C[Auxiliary Classifiers]
-    B --> D[Global Average Pooling]
-    D --> E[Final Classifier]
+    A["Input"] --> B["Inception Modules"]
+    B --> C["Auxiliary Classifiers"]
+    B --> D["Global Average Pooling"]
+    D --> E["Final Classifier"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=VxhSouuSZDY)
@@ -2243,11 +2243,11 @@ graph TD
 * **Visual Enhancement (Module Layout):**
 ```mermaid
 graph LR
-    A[Input] --> B[1x1 Conv]
-    A --> C[3x3 Conv]
-    A --> D[5x5 Conv]
-    A --> E[Max Pooling]
-    B --> F[Concatenate]
+    A["Input"] --> B["1x1 Conv"]
+    A --> C["3x3 Conv"]
+    A --> D["5x5 Conv"]
+    A --> E["Max Pooling"]
+    B --> F["Concatenate"]
     C --> F
     D --> F
     E --> F
@@ -2285,10 +2285,10 @@ abla J(\theta_t)
 * **Visual Enhancement (Grid Division):**
 ```mermaid
 graph TD
-    A[Image Input] --> B[Divide into S x S Grid]
-    B --> C{Center of Object in Cell?}
-    C -->|Yes| D[Cell predicts Bounding Box]
-    C -->|No| E[Cell ignores Object]
+    A["Image Input"] --> B["Divide into S x S Grid"]
+    B --> C{"Center of Object in Cell?"}
+    C -->|"Yes"| D["Cell predicts Bounding Box"]
+    C -->|"No"| E["Cell ignores Object"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ag3DLKsl2vk)
@@ -2306,9 +2306,9 @@ graph TD
 * **Visual Enhancement (Model Evaluation):**
 ```mermaid
 graph LR
-    A[Model Prediction: 0.8] --> B{Compare to}
-    C[Ground Truth: 1.0] --> B
-    B --> D[Calculate Loss]
+    A["Model Prediction: 0.8"] --> B{"Compare to"}
+    C["Ground Truth: 1.0"] --> B
+    B --> D["Calculate Loss"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ya92bJbl0jc)
@@ -2326,10 +2326,10 @@ graph LR
 * **Visual Enhancement (Video Compression Flow):**
 ```mermaid
 graph LR
-    A[I-Frame] --> B[B-Frame]
-    B --> C[B-Frame]
-    C --> D[P-Frame]
-    D --> E[I-Frame]
+    A["I-Frame"] --> B["B-Frame"]
+    B --> C["B-Frame"]
+    C --> D["P-Frame"]
+    D --> E["I-Frame"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=nFGmb8Z2zLw)
@@ -2347,12 +2347,12 @@ graph LR
 * **Visual Enhancement (Distribution Concept):**
 ```mermaid
 graph TD
-    A[Data Points] --> B[Bin 1: 0-10]
-    A --> C[Bin 2: 10-20]
-    A --> D[Bin 3: 20-30]
-    B --> E[Count: 5]
-    C --> F[Count: 15]
-    D --> G[Count: 2]
+    A["Data Points"] --> B["Bin 1: 0-10"]
+    A --> C["Bin 2: 10-20"]
+    A --> D["Bin 3: 20-30"]
+    B --> E["Count: 5"]
+    C --> F["Count: 15"]
+    D --> G["Count: 2"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qBigTkBLU6g)
@@ -2387,10 +2387,10 @@ graph TD
 * **Visual Enhancement (Tree Structure):**
 ```mermaid
 graph TD
-    A[Root: 100%] --> B[0: 'E' 40%]
-    A --> C[1: Node 60%]
-    C --> D[10: 'A' 35%]
-    C --> E[11: 'T' 25%]
+    A["Root: 100%"] --> B["0: 'E' 40%"]
+    A --> C["1: Node 60%"]
+    C --> D["10: 'A' 35%"]
+    C --> E["11: 'T' 25%"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=iEm1NRyEe5c)
@@ -2408,10 +2408,10 @@ graph TD
 * **Visual Enhancement (Training Hierarchy):**
 ```mermaid
 graph TD
-    A[Human Sets Hyperparameters] --> B(Learning Rate)
-    A --> C(Batch Size)
-    D[Model Learns Parameters] --> E(Weights)
-    D --> F(Biases)
+    A["Human Sets Hyperparameters"] --> B("Learning Rate")
+    A --> C("Batch Size")
+    D["Model Learns Parameters"] --> E("Weights")
+    D --> F("Biases")
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=r2TvNmAxiCU)
@@ -2429,8 +2429,8 @@ graph TD
 * **Visual Enhancement (Data Cube):**
 ```mermaid
 graph LR
-    A[Spatial X, Y] --> B(Add Hundreds of Spectral Bands)
-    B --> C[3D Hyperspectral Cube]
+    A["Spatial X, Y"] --> B("Add Hundreds of Spectral Bands")
+    B --> C["3D Hyperspectral Cube"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=WrksviwI7-A)
@@ -2448,9 +2448,9 @@ graph LR
 * **Visual Enhancement (Compression Anchor):**
 ```mermaid
 graph LR
-    A[Raw Image Data] --> B[JPEG Compression]
-    B --> C[Standalone I-Frame]
-    C --> D[Used to reconstruct B/P Frames]
+    A["Raw Image Data"] --> B["JPEG Compression"]
+    B --> C["Standalone I-Frame"]
+    C --> D["Used to reconstruct B/P Frames"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -2468,9 +2468,9 @@ graph LR
 * **Visual Enhancement (Pipeline):**
 ```mermaid
 graph LR
-    A[Raw Image] --> B[Grayscale]
-    B --> C[Edge Detection]
-    C --> D[Thresholding]
+    A["Raw Image"] --> B["Grayscale"]
+    B --> C["Edge Detection"]
+    C --> D["Thresholding"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -2503,8 +2503,8 @@ graph LR
 * **Visual Enhancement (Dimensionality Change):**
 ```mermaid
 graph LR
-    A[2D Spatial Pixels] --> B(Flatten / GAP)
-    B --> C[1D Abstract Feature Vector]
+    A["2D Spatial Pixels"] --> B("Flatten / GAP")
+    B --> C["1D Abstract Feature Vector"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -2539,9 +2539,9 @@ graph LR
 * **Visual Enhancement (Segmentation Masking):**
 ```mermaid
 graph LR
-    A[Image of 3 Dogs] --> B[Detect Dog 1: Mask A]
-    A --> C[Detect Dog 2: Mask B]
-    A --> D[Detect Dog 3: Mask C]
+    A["Image of 3 Dogs"] --> B["Detect Dog 1: Mask A"]
+    A --> C["Detect Dog 2: Mask B"]
+    A --> D["Detect Dog 3: Mask C"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5QUmlXBb0MY)
@@ -2592,8 +2592,8 @@ IQR = Q_3 - Q_1
 * **Visual Enhancement (Upsampling):**
 ```mermaid
 graph LR
-    A[1x1 Pixel] --> B(Inverse Kernel)
-    B --> C[3x3 Expanded Area]
+    A["1x1 Pixel"] --> B("Inverse Kernel")
+    B --> C["3x3 Expanded Area"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
@@ -2628,9 +2628,9 @@ IoU = \frac{\text{Area of Overlap}}{\text{Area of Union}}
 * **Visual Enhancement (Compression Stages):**
 ```mermaid
 graph LR
-    A[RGB to YCbCr] --> B[Chroma Subsampling]
-    B --> C[Discrete Cosine Transform]
-    C --> D[Quantization]
+    A["RGB to YCbCr"] --> B["Chroma Subsampling"]
+    B --> C["Discrete Cosine Transform"]
+    C --> D["Quantization"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=KPZuB-ecu7A)
@@ -2647,8 +2647,8 @@ graph LR
 * **Visual Enhancement (File Append Safety):**
 ```mermaid
 graph TD
-    A[Standard JSON] -->|Missing Comma| B[Entire File Corrupts]
-    C[JSONL] -->|Append New Line| D[Safe & Independent Log]
+    A["Standard JSON"] -->|"Missing Comma"| B["Entire File Corrupts"]
+    C["JSONL"] -->|"Append New Line"| D["Safe & Independent Log"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=tQwTqvBv9E0)
@@ -2666,9 +2666,9 @@ graph TD
 * **Visual Enhancement (Dataset Split):**
 ```mermaid
 graph LR
-    A[Dataset] --> B[Fold 1: Test, 2-5: Train]
-    A --> C[Fold 2: Test, 1,3-5: Train]
-    A --> D[Average all Fold Results]
+    A["Dataset"] --> B["Fold 1: Test, 2-5: Train"]
+    A --> C["Fold 2: Test, 1,3-5: Train"]
+    A --> D["Average all Fold Results"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=TIgfjmp-4BA)
@@ -2686,8 +2686,8 @@ graph LR
 * **Visual Enhancement (Clustering Process):**
 ```mermaid
 graph LR
-    A[Initialize K Centroids] --> B[Assign Points to Nearest]
-    B --> C[Move Centroids to Mean]
+    A["Initialize K Centroids"] --> B["Assign Points to Nearest"]
+    B --> C["Move Centroids to Mean"]
     C --> B
 ```
 
@@ -2740,9 +2740,9 @@ graph LR
 * **Visual Enhancement (Data Science Ecosystem):**
 ```mermaid
 graph LR
-    A[Kaggle Platform] --> B[Datasets]
-    A --> C[Jupyter Notebooks]
-    A --> D[Competitions]
+    A["Kaggle Platform"] --> B["Datasets"]
+    A --> C["Jupyter Notebooks"]
+    A --> D["Competitions"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=kQmHaI5Jw1c)
@@ -2760,9 +2760,9 @@ graph LR
 * **Visual Enhancement (API Wrapper):**
 ```mermaid
 graph TD
-    A[User Code] --> B[Keras High-Level API]
-    B --> C[TensorFlow Backend]
-    C --> D[GPU Execution]
+    A["User Code"] --> B["Keras High-Level API"]
+    B --> C["TensorFlow Backend"]
+    C --> D["GPU Execution"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=z-ZR_8BZ1wQ)
@@ -2780,8 +2780,8 @@ graph TD
 * **Visual Enhancement (Sliding Window):**
 ```mermaid
 graph LR
-    A[Image Matrix] -->|Slide 3x3 Grid| B(Dot Product with Kernel)
-    B --> C[Feature Map Pixel]
+    A["Image Matrix"] -->|"Slide 3x3 Grid"| B("Dot Product with Kernel")
+    B --> C["Feature Map Pixel"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=yb2tPt0QVPY)
@@ -2798,9 +2798,9 @@ graph LR
 * **Visual Enhancement (Gradient Update):**
 ```mermaid
 graph LR
-    A[Random 3x3 Kernel] --> B(Calculate Error)
-    B --> C(Backpropagate Error)
-    C --> D[Optimized Edge-Detecting Kernel]
+    A["Random 3x3 Kernel"] --> B("Calculate Error")
+    B --> C("Backpropagate Error")
+    C --> D["Optimized Edge-Detecting Kernel"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=xoHGA8XEYVY)
@@ -2818,9 +2818,9 @@ graph LR
 * **Visual Enhancement (Skeleton Mapping):**
 ```mermaid
 graph TD
-    A[Human Image] --> B[Detect Shoulder X,Y]
-    A --> C[Detect Elbow X,Y]
-    A --> D[Detect Wrist X,Y]
+    A["Human Image"] --> B["Detect Shoulder X,Y"]
+    A --> C["Detect Elbow X,Y"]
+    A --> D["Detect Wrist X,Y"]
     B --> C --> D
 ```
 
@@ -2856,8 +2856,8 @@ D_{KL}(P || Q) = \sum_{x} P(x) \log \left( \frac{P(x)}{Q(x)} \right)
 * **Visual Enhancement (Transformer Scale):**
 ```mermaid
 graph LR
-    A[Trillions of Tokens] --> B(Billions of Parameters)
-    B --> C[Next Word Prediction]
+    A["Trillions of Tokens"] --> B("Billions of Parameters")
+    B --> C["Next Word Prediction"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5sLYAQS9sWQ)
@@ -2891,9 +2891,9 @@ z = \mu + \sigma \odot \epsilon \quad \text{where} \quad \epsilon \sim \mathcal{
 * **Visual Enhancement (Compressed Reality):**
 ```mermaid
 graph TD
-    A[High-Dim Image Space] --> B(Encoder)
-    B --> C[Low-Dim Latent Vector Z]
-    C -->|Semantic Math| D[e.g., King - Man + Woman]
+    A["High-Dim Image Space"] --> B("Encoder")
+    B --> C["Low-Dim Latent Vector Z"]
+    C -->|"Semantic Math"| D["e.g., King - Man + Woman"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=mX2y3NWmaCQ)
@@ -2910,9 +2910,9 @@ graph TD
 * **Visual Enhancement (Semantic Clusters):**
 ```mermaid
 graph LR
-    A[Latent Space] --> B[Cat Images Cluster]
-    A --> C[Dog Images Cluster]
-    B -->|Interpolation Line| C
+    A["Latent Space"] --> B["Cat Images Cluster"]
+    A --> C["Dog Images Cluster"]
+    B -->|"Interpolation Line"| C
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=mX2y3NWmaCQ)
@@ -2947,9 +2947,9 @@ f(x) = \begin{cases} x & \text{if } x > 0 \\ 0.01x & \text{otherwise} \end{cases
 * **Visual Enhancement (Step Size Impact):**
 ```mermaid
 graph TD
-    A[High LR] -->|Overshoots| B[Diverges from Minimum]
-    C[Low LR] -->|Too slow| D[Gets stuck in local minima]
-    E[Optimal LR] -->|Smooth| F[Reaches Global Minimum]
+    A["High LR"] -->|"Overshoots"| B["Diverges from Minimum"]
+    C["Low LR"] -->|"Too slow"| D["Gets stuck in local minima"]
+    E["Optimal LR"] -->|"Smooth"| F["Reaches Global Minimum"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=jWT-AX9677k)
@@ -3018,9 +3018,9 @@ J(w) = \frac{w^T S_B w}{w^T S_W w}
 * **Visual Enhancement (Optimization Flow):**
 ```mermaid
 graph TD
-    A[Objective Function] --> B{Constraints}
-    B --> C[Feasible Region]
-    C --> D[Optimal Solution]
+    A["Objective Function"] --> B{"Constraints"}
+    B --> C["Feasible Region"]
+    C --> D["Optimal Solution"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Coe4XTW1-eE)
@@ -3055,8 +3055,8 @@ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 * **Visual Enhancement (Loss Landscape):**
 ```mermaid
 graph TD
-    A[Start High Loss] -->|Gradient Descent| B[Local Minimum]
-    B -.->|Cannot escape| C[Global Minimum]
+    A["Start High Loss"] -->|"Gradient Descent"| B["Local Minimum"]
+    B -.->|"Cannot escape"| C["Global Minimum"]
     style B stroke:#f00,stroke-width:4px
 ```
 
@@ -3108,8 +3108,8 @@ L = \ln\left(\frac{p}{1-p}\right)
 * **Visual Enhancement (Weight Update Matrix):**
 ```mermaid
 graph LR
-    A[Original Weights W] -->|Frozen| C[W + BA]
-    B[Trainable A x B Matrices] --> C
+    A["Original Weights W"] -->|"Frozen"| C["W + BA"]
+    B["Trainable A x B Matrices"] --> C
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=DhRoTONcyZE)
@@ -3126,8 +3126,8 @@ graph LR
 * **Visual Enhancement (Evaluation Logic):**
 ```mermaid
 graph LR
-    A[Loss = 0.9] -->|Bad Score| B[Adjust Weights Heavily]
-    C[Loss = 0.01] -->|Excellent Score| D[Minor Adjustment]
+    A["Loss = 0.9"] -->|"Bad Score"| B["Adjust Weights Heavily"]
+    C["Loss = 0.01"] -->|"Excellent Score"| D["Minor Adjustment"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=nt5DwCuYY5c)
@@ -3161,8 +3161,8 @@ J(\theta) = \frac{1}{m} \sum_{i=1}^m L(\hat{y}_i, y_i)
 * **Visual Enhancement (Navigating to Minimum):**
 ```mermaid
 graph TD
-    A[High Loss Terrain] -->|Optimizer calculates slope| B[Move downhill]
-    B -->|Learning Rate defines step size| C[Optimal Valley]
+    A["High Loss Terrain"] -->|"Optimizer calculates slope"| B["Move downhill"]
+    B -->|"Learning Rate defines step size"| C["Optimal Valley"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -3180,10 +3180,10 @@ graph TD
 * **Visual Enhancement (Cell Gates):**
 ```mermaid
 graph LR
-    A[Cell State] --> B{Forget Gate}
-    B --> C{Input Gate}
-    C --> D{Output Gate}
-    D --> E[Next Hidden State]
+    A["Cell State"] --> B{"Forget Gate"}
+    B --> C{"Input Gate"}
+    C --> D{"Output Gate"}
+    D --> E["Next Hidden State"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=b61DPVFX03I)
@@ -3201,8 +3201,8 @@ graph LR
 * **Visual Enhancement (Learning Paradigm):**
 ```mermaid
 graph LR
-    A[Data + Answers] --> B(Machine Learning Algorithm)
-    B --> C[Rules / Trained Model]
+    A["Data + Answers"] --> B("Machine Learning Algorithm")
+    B --> C["Rules / Trained Model"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -3220,8 +3220,8 @@ graph LR
 * **Visual Enhancement (Video Frame Division):**
 ```mermaid
 graph TD
-    A[1080p Frame] --> B[Divide into 16x16 Pixel Blocks]
-    B --> C[Analyze Block Motion]
+    A["1080p Frame"] --> B["Divide into 16x16 Pixel Blocks"]
+    B --> C["Analyze Block Motion"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -3255,10 +3255,10 @@ d(p, q) = \sum_{i=1}^n |p_i - q_i|
 * **Visual Enhancement (Desktop Automation):**
 ```mermaid
 graph LR
-    A[User Request] --> B(Manus Agent)
-    B --> C[Control Browser]
-    B --> D[Read Local Files]
-    B --> E[Draft Email]
+    A["User Request"] --> B("Manus Agent")
+    B --> C["Control Browser"]
+    B --> D["Read Local Files"]
+    B --> E["Draft Email"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=a7OZwy7kOxM)
@@ -3276,8 +3276,8 @@ graph LR
 * **Visual Enhancement (Data Structure):**
 ```mermaid
 graph TD
-    A[2D Tensor] --> B[Rows: Examples]
-    A --> C[Columns: Features]
+    A["2D Tensor"] --> B["Rows: Examples"]
+    A --> C["Columns: Features"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Wibxjrxf5ko)
@@ -3295,7 +3295,7 @@ graph TD
 * **Visual Enhancement (Downsampling Process):**
 ```mermaid
 graph LR
-    A[2x2 Grid: 1,3,2,9] -->|Extract Maximum| B[Single Value: 9]
+    A["2x2 Grid: 1,3,2,9"] -->|"Extract Maximum"| B["Single Value: 9"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZjM_XQa5s6s)
@@ -3364,8 +3364,8 @@ P(X \leq M) = 0.5
 * **Visual Enhancement (Pipeline Flow):**
 ```mermaid
 graph LR
-    A[Webcam Input] --> B[MediaPipe Face Mesh]
-    B --> C[468 3D Landmarks]
+    A["Webcam Input"] --> B["MediaPipe Face Mesh"]
+    B --> C["468 3D Landmarks"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -3382,9 +3382,9 @@ graph LR
 * **Visual Enhancement (Hand Tracking):**
 ```mermaid
 graph TD
-    A[Wrist: Point 0] --> B[Thumb: 1-4]
-    A --> C[Index: 5-8]
-    A --> D[Pinky: 17-20]
+    A["Wrist: Point 0"] --> B["Thumb: 1-4"]
+    A --> C["Index: 5-8"]
+    A --> D["Pinky: 17-20"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=-RUVM_cXn18)
@@ -3419,8 +3419,8 @@ x' = \frac{x - \min(x)}{\max(x) - \min(x)}
 * **Visual Enhancement (Digit Classification):**
 ```mermaid
 graph LR
-    A[28x28 Pixel Image] --> B[CNN]
-    B --> C[Output: '7']
+    A["28x28 Pixel Image"] --> B["CNN"]
+    B --> C["Output: '7'"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=z2B7HJllTBA)
@@ -3438,9 +3438,9 @@ graph LR
 * **Visual Enhancement (Depthwise Separable Conv):**
 ```mermaid
 graph TD
-    A[Standard Conv: Heavy] --> B[Depthwise Conv: Spatial]
-    B --> C[Pointwise 1x1 Conv: Channel]
-    C --> D[Massive Speedup]
+    A["Standard Conv: Heavy"] --> B["Depthwise Conv: Spatial"]
+    B --> C["Pointwise 1x1 Conv: Channel"]
+    C --> D["Massive Speedup"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=96q1wKG9Xcw)
@@ -3457,8 +3457,8 @@ graph TD
 * **Visual Enhancement (Edge AI Deployment):**
 ```mermaid
 graph LR
-    A[Train on Cloud GPU] --> B[Quantize to Int8]
-    B --> C[Deploy on iOS/Android Neural Engine]
+    A["Train on Cloud GPU"] --> B["Quantize to Int8"]
+    B --> C["Deploy on iOS/Android Neural Engine"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=84GAhf8b9Uk)
@@ -3476,8 +3476,8 @@ graph LR
 * **Visual Enhancement (Standardized Communication):**
 ```mermaid
 graph LR
-    A[AI Agent] -->|MCP Protocol| B[Local SQLite DB]
-    A -->|MCP Protocol| C[Company API]
+    A["AI Agent"] -->|"MCP Protocol"| B["Local SQLite DB"]
+    A -->|"MCP Protocol"| C["Company API"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=N3vHJcHBS-w)
@@ -3511,8 +3511,8 @@ V = (dx, dy) \quad \text{representing block shift between frames}
 * **Visual Enhancement (YOLO Grid Overlap):**
 ```mermaid
 graph TD
-    A[Grid Cell] -->|Anchor 1| B[Detect Person]
-    A -->|Anchor 2| C[Detect Car behind Person]
+    A["Grid Cell"] -->|"Anchor 1"| B["Detect Person"]
+    A -->|"Anchor 2"| C["Detect Car behind Person"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ckQuvrksP4k)
@@ -3530,9 +3530,9 @@ graph TD
 * **Visual Enhancement (Parallel Execution):**
 ```mermaid
 graph TD
-    A[CPU Core 1] --> B[Process A]
-    C[CPU Core 2] --> D[Process B]
-    B & D --> E[True Parallelism]
+    A["CPU Core 1"] --> B["Process A"]
+    C["CPU Core 2"] --> D["Process B"]
+    B & D --> E["True Parallelism"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -3550,9 +3550,9 @@ graph TD
 * **Visual Enhancement (Concurrency):**
 ```mermaid
 graph TD
-    A[CPU Core 1] --> B[Thread A]
-    A --> C[Thread B]
-    B & C --> D[Context Switching]
+    A["CPU Core 1"] --> B["Thread A"]
+    A --> C["Thread B"]
+    B & C --> D["Context Switching"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PgDaJEjlBuI)
@@ -3569,8 +3569,8 @@ graph TD
 * **Visual Enhancement (Bilinear Interpolation):**
 ```mermaid
 graph LR
-    A[4 Known Pixels] --> B(Calculate Weighted Average)
-    B --> C[1 New Sub-pixel]
+    A["4 Known Pixels"] --> B("Calculate Weighted Average")
+    B --> C["1 New Sub-pixel"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Xj129kA3Ci0)
@@ -3604,8 +3604,8 @@ P(y|x_1, \dots, x_n) \propto P(y) \prod_{i=1}^n P(x_i|y)
 * **Visual Enhancement (Breaking Linearity):**
 ```mermaid
 graph LR
-    A[Linear Output] --> B[Activation Function]
-    B --> C[Curve / Non-Linear Decision Boundary]
+    A["Linear Output"] --> B["Activation Function"]
+    B --> C["Curve / Non-Linear Decision Boundary"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -3623,9 +3623,9 @@ graph LR
 * **Visual Enhancement (Removing Duplicates):**
 ```mermaid
 graph LR
-    A[5 Bounding Boxes for 1 Dog] --> B{IoU > 0.5?}
-    B -->|Yes| C[Keep Box with Highest Confidence]
-    C --> D[1 Final Bounding Box]
+    A["5 Bounding Boxes for 1 Dog"] --> B{"IoU > 0.5?"}
+    B -->|"Yes"| C["Keep Box with Highest Confidence"]
+    C --> D["1 Final Bounding Box"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=v6lt0cGSHBI)
@@ -3660,8 +3660,8 @@ graph LR
 * **Visual Enhancement (Scaling Data):**
 ```mermaid
 graph LR
-    A[Values: 100 to 100,000] --> B(Normalize)
-    B --> C[Values: 0.0 to 1.0]
+    A["Values: 100 to 100,000"] --> B("Normalize")
+    B --> C["Values: 0.0 to 1.0"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dXB-KQYkzNU)
@@ -3696,9 +3696,9 @@ graph LR
 * **Visual Enhancement (RAG Workflow):**
 ```mermaid
 graph TD
-    A[User Uploads PDF] --> B[Vector Database]
-    C[User Asks Question] --> B
-    B --> D[LLM Summarizes exact source]
+    A["User Uploads PDF"] --> B["Vector Database"]
+    C["User Asks Question"] --> B
+    B --> D["LLM Summarizes exact source"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EOmgC3-hznM)
@@ -3733,8 +3733,8 @@ H_0: \mu_1 = \mu_2 \quad \text{(No significant difference)}
 * **Visual Enhancement (Python Tensor Ops):**
 ```mermaid
 graph LR
-    A[Python List] -->|Slow Loop| B[CPU]
-    C[NumPy Array] -->|C-Optimized Vectorization| D[Instant Math]
+    A["Python List"] -->|"Slow Loop"| B["CPU"]
+    C["NumPy Array"] -->|"C-Optimized Vectorization"| D["Instant Math"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=xECXZ3tyONo)
@@ -3752,10 +3752,10 @@ graph LR
 * **Visual Enhancement (Detection Output):**
 ```mermaid
 graph LR
-    A[Image] --> B[Model]
-    B --> C[Bounding Box X,Y,W,H]
-    B --> D[Class Label: Car]
-    B --> E[Confidence: 95%]
+    A["Image"] --> B["Model"]
+    B --> C["Bounding Box X,Y,W,H"]
+    B --> D["Class Label: Car"]
+    B --> E["Confidence: 95%"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=26PWiWCz1v8)
@@ -3773,9 +3773,9 @@ graph LR
 * **Visual Enhancement (Vector Format):**
 ```mermaid
 graph TD
-    A[Dog] --> B[1, 0, 0]
-    C[Cat] --> D[0, 1, 0]
-    E[Bird] --> F[0, 0, 1]
+    A["Dog"] --> B["1, 0, 0"]
+    C["Cat"] --> D["0, 1, 0"]
+    E["Bird"] --> F["0, 0, 1"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=G2iVj7WKDFk)
@@ -3793,9 +3793,9 @@ graph TD
 * **Visual Enhancement (Computer Vision Workflow):**
 ```mermaid
 graph LR
-    A[Read Image cv2.imread] --> B[Convert to Grayscale]
-    B --> C[Gaussian Blur]
-    C --> D[Canny Edge Detection]
+    A["Read Image cv2.imread"] --> B["Convert to Grayscale"]
+    B --> C["Gaussian Blur"]
+    C --> D["Canny Edge Detection"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=9V2qPmWTfaY)
@@ -3847,9 +3847,9 @@ graph LR
 * **Visual Enhancement (Boxplot Concept):**
 ```mermaid
 graph LR
-    A[Data Points] --> B[Q1 to Q3 Box]
-    B --> C[Whiskers 1.5x IQR]
-    C --> D[Outliers falling outside whiskers]
+    A["Data Points"] --> B["Q1 to Q3 Box"]
+    B --> C["Whiskers 1.5x IQR"]
+    C --> D["Outliers falling outside whiskers"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=7L23sCOZjns)
@@ -3867,8 +3867,8 @@ graph LR
 * **Visual Enhancement (Overfitting Curve):**
 ```mermaid
 graph TD
-    A[Training Loss: 0.001] --> B[Validation Loss: 2.5]
-    B --> C[Model Memorized Training Data]
+    A["Training Loss: 0.001"] --> B["Validation Loss: 2.5"]
+    B --> C["Model Memorized Training Data"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
@@ -3885,10 +3885,10 @@ graph TD
 * **Visual Enhancement (Regularization Toolkit):**
 ```mermaid
 graph TD
-    A[Overfitting] --> B[Dropout]
-    A --> C[L2 Regularization]
-    A --> D[Data Augmentation]
-    A --> E[Early Stopping]
+    A["Overfitting"] --> B["Dropout"]
+    A --> C["L2 Regularization"]
+    A --> D["Data Augmentation"]
+    A --> E["Early Stopping"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
@@ -3906,8 +3906,8 @@ graph TD
 * **Visual Enhancement (Frame Dependency):**
 ```mermaid
 graph LR
-    A[I-Frame] -->|Forward Prediction| B[P-Frame]
-    B -->|Forward Prediction| C[P-Frame 2]
+    A["I-Frame"] -->|"Forward Prediction"| B["P-Frame"]
+    B -->|"Forward Prediction"| C["P-Frame 2"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -3942,9 +3942,9 @@ graph LR
 * **Visual Enhancement (Zero Padding):**
 ```mermaid
 graph TD
-    A[3x3 Image] --> B[Add 1 Pixel Zero Border]
-    B --> C[5x5 Padded Image]
-    C --> D[Apply 3x3 Filter without losing edges]
+    A["3x3 Image"] --> B["Add 1 Pixel Zero Border"]
+    B --> C["5x5 Padded Image"]
+    C --> D["Apply 3x3 Filter without losing edges"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=-1xVmU8Z6Bs)
@@ -3961,8 +3961,8 @@ graph TD
 * **Visual Enhancement (Dense vs Efficient):**
 ```mermaid
 graph LR
-    A[VGG-16: 138M Params] --> B[Accuracy 71%]
-    C[MobileNet: 4M Params] --> D[Accuracy 70%]
+    A["VGG-16: 138M Params"] --> B["Accuracy 71%"]
+    C["MobileNet: 4M Params"] --> D["Accuracy 70%"]
     style C stroke:#0f0,stroke-width:4px
 ```
 
@@ -3981,9 +3981,9 @@ graph LR
 * **Visual Enhancement (Single Neuron):**
 ```mermaid
 graph LR
-    A[Inputs X] -->|Multiply Weights W| B(Summation)
-    B -->|Add Bias b| C(Activation Function)
-    C --> D[Output Y]
+    A["Inputs X"] -->|"Multiply Weights W"| B("Summation")
+    B -->|"Add Bias b"| C("Activation Function")
+    C --> D["Output Y"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=i1G7PXZMnSc)
@@ -4000,9 +4000,9 @@ graph LR
 * **Visual Enhancement (Video Artifacts):**
 ```mermaid
 graph TD
-    A[Frame 1: 5 Fingers] --> B[Frame 2: 7 Fingers]
-    B --> C[Frame 3: Fingers melt into object]
-    C --> D[Failed Physical Consistency]
+    A["Frame 1: 5 Fingers"] --> B["Frame 2: 7 Fingers"]
+    B --> C["Frame 3: Fingers melt into object"]
+    C --> D["Failed Physical Consistency"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -4088,9 +4088,9 @@ P(k \text{ events}) = \frac{\lambda^k e^{-\lambda}}{k!}
 * **Visual Enhancement (Spatial Compression):**
 ```mermaid
 graph LR
-    A[112x112 Image] --> B(Max Pool 2x2)
-    B --> C[56x56 Image]
-    C --> D[75% Memory Saved]
+    A["112x112 Image"] --> B("Max Pool 2x2")
+    B --> C["56x56 Image"]
+    C --> D["75% Memory Saved"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=3uxOyk-SczU)
@@ -4127,9 +4127,9 @@ PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
 * **Visual Enhancement (Project Foundation):**
 ```mermaid
 graph TD
-    A[PRD Document] --> B[Tasks.json]
-    B --> C[AI Agent Execution]
-    C --> D[Final Software Product]
+    A["PRD Document"] --> B["Tasks.json"]
+    B --> C["AI Agent Execution"]
+    C --> D["Final Software Product"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=W7ShrFjd5B4)
@@ -4163,8 +4163,8 @@ graph TD
 * **Visual Enhancement (Tradeoff See-Saw):**
 ```mermaid
 graph LR
-    A[High Recall: Catch all cancer] -->|Consequence| B[High False Positives: Low Precision]
-    C[High Precision: Only certain cases] -->|Consequence| D[High False Negatives: Low Recall]
+    A["High Recall: Catch all cancer"] -->|"Consequence"| B["High False Positives: Low Precision"]
+    C["High Precision: Only certain cases"] -->|"Consequence"| D["High False Negatives: Low Recall"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qWfzIYCvBqo)
@@ -4182,8 +4182,8 @@ graph LR
 * **Visual Enhancement (Dimensionality Reduction):**
 ```mermaid
 graph LR
-    A[100 Features] --> B(Calculate Principal Components)
-    B --> C[Top 3 Features containing 95% Variance]
+    A["100 Features"] --> B("Calculate Principal Components")
+    B --> C["Top 3 Features containing 95% Variance"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZgyY3JuGQY8)
@@ -4200,9 +4200,9 @@ graph LR
 * **Visual Enhancement (Uncertainty Modeling):**
 ```mermaid
 graph TD
-    A[Current State] -->|80% Chance| B[State A]
-    A -->|20% Chance| C[State B]
-    B --> D[Re-evaluate Route]
+    A["Current State"] -->|"80% Chance"| B["State A"]
+    A -->|"20% Chance"| C["State B"]
+    B --> D["Re-evaluate Route"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ATaMq62fXno)
@@ -4254,9 +4254,9 @@ P(A) = \frac{\text{Number of Favorable Outcomes}}{\text{Total Number of Possible
 * **Visual Enhancement (Prompt Structure):**
 ```mermaid
 graph TD
-    A[Role: You are an expert...] --> B[Context: We are building...]
-    B --> C[Task: Write a python script...]
-    C --> D[Constraints: Do not use external APIs...]
+    A["Role: You are an expert..."] --> B["Context: We are building..."]
+    B --> C["Task: Write a python script..."]
+    C --> D["Constraints: Do not use external APIs..."]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -4274,8 +4274,8 @@ graph TD
 * **Visual Enhancement (Dynamic Graphs):**
 ```mermaid
 graph LR
-    A[Define Tensor operations on the fly] --> B(Dynamic Computation Graph)
-    B --> C[Easy Debugging with Python Print]
+    A["Define Tensor operations on the fly"] --> B("Dynamic Computation Graph")
+    B --> C["Easy Debugging with Python Print"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fJ40w_2h8kk)
@@ -4343,9 +4343,9 @@ R^2 = 1 - \frac{SS_{res}}{SS_{tot}} = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (
 * **Visual Enhancement (Agent Loop):**
 ```mermaid
 graph LR
-    A[Thought: I need to find the file] --> B[Action: Search Directory]
-    B --> C[Observation: File found]
-    C --> D[Thought: Now I will read it...]
+    A["Thought: I need to find the file"] --> B["Action: Search Directory"]
+    B --> C["Observation: File found"]
+    C --> D["Thought: Now I will read it..."]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=KwH6-CEDwEQ)
@@ -4380,9 +4380,9 @@ graph LR
 * **Visual Enhancement (Pixel Influence):**
 ```mermaid
 graph TD
-    A[Layer 3 Output Pixel] --> B[Layer 2: 3x3 Region]
-    B --> C[Layer 1: 5x5 Region]
-    C --> D[Original Image: 7x7 Region]
+    A["Layer 3 Output Pixel"] --> B["Layer 2: 3x3 Region"]
+    B --> C["Layer 1: 5x5 Region"]
+    C --> D["Original Image: 7x7 Region"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ip2HYPC_T9Q)
@@ -4400,8 +4400,8 @@ graph TD
 * **Visual Enhancement (Line of Best Fit):**
 ```mermaid
 graph LR
-    A[Scatter Data Points] --> B(Minimize MSE)
-    B --> C[Continuous Trend Line]
+    A["Scatter Data Points"] --> B("Minimize MSE")
+    B --> C["Continuous Trend Line"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=TJveOYsK6MY)
@@ -4435,9 +4435,9 @@ J(\theta) = \text{Loss} + \lambda \sum_{i} \theta_i^2
 * **Visual Enhancement (Weight Control):**
 ```mermaid
 graph TD
-    A[High Weights: W=100] -->|Penalty Applied| B[Forced to Shrink]
-    B --> C[Low Weights: W=0.5]
-    C --> D[Smoother Decision Boundary]
+    A["High Weights: W=100"] -->|"Penalty Applied"| B["Forced to Shrink"]
+    B --> C["Low Weights: W=0.5"]
+    C --> D["Smoother Decision Boundary"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EehRcPo1M-Q)
@@ -4455,8 +4455,8 @@ graph TD
 * **Visual Enhancement (RL Cycle):**
 ```mermaid
 graph LR
-    A[Agent] -->|Action A| B(Environment)
-    B -->|Reward R & State S'| A
+    A["Agent"] -->|"Action A"| B("Environment")
+    B -->|"Reward R & State S'"| A
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vXtfdGphr3c)
@@ -4508,11 +4508,11 @@ e_i = y_i - \hat{y}_i
 * **Visual Enhancement (Skip Connection):**
 ```mermaid
 graph TD
-    A[Input X] --> B[Weight Layer 1]
-    B --> C[Weight Layer 2]
-    A -->|Skip Connection| D((Add +))
+    A["Input X"] --> B["Weight Layer 1"]
+    B --> C["Weight Layer 2"]
+    A -->|"Skip Connection"| D(("Add +"))
     C --> D
-    D --> E[ReLU Activation]
+    D --> E["ReLU Activation"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=w1UsKanMatM)
@@ -4530,10 +4530,10 @@ graph TD
 * **Visual Enhancement (RAG Architecture):**
 ```mermaid
 graph LR
-    A[User Query] --> B(Search Vector Database)
-    B --> C[Retrieve Top 3 Documents]
-    A & C --> D[LLM Context Window]
-    D --> E[Informed Answer]
+    A["User Query"] --> B("Search Vector Database")
+    B --> C["Retrieve Top 3 Documents"]
+    A & C --> D["LLM Context Window"]
+    D --> E["Informed Answer"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=T-D1OfcDW1M)
@@ -4550,10 +4550,10 @@ graph LR
 * **Visual Enhancement (Episode Flow):**
 ```mermaid
 graph LR
-    A[Start State] --> B(Action 1)
-    B --> C(Action 2)
-    C --> D[Terminal State: Win/Loss]
-    D --> E[Calculate Final Reward]
+    A["Start State"] --> B("Action 1")
+    B --> C("Action 2")
+    C --> D["Terminal State: Win/Loss"]
+    D --> E["Calculate Final Reward"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -4571,10 +4571,10 @@ graph LR
 * **Visual Enhancement (Memory Loop):**
 ```mermaid
 graph LR
-    A[Word 1: 'The'] --> B[Hidden State 1]
-    C[Word 2: 'Dog'] --> D[Hidden State 2]
-    B -->|Context Vector| D
-    D --> E[Output Prediction]
+    A["Word 1: 'The'"] --> B["Hidden State 1"]
+    C["Word 2: 'Dog'"] --> D["Hidden State 2"]
+    B -->|"Context Vector"| D
+    D --> E["Output Prediction"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Gafjk7_w1i8)
@@ -4608,9 +4608,9 @@ R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta 
 * **Visual Enhancement (Execution Flow):**
 ```mermaid
 graph TD
-    A[User Request] --> B{Python Skill Can Solve?}
-    B -->|Yes| C[Execute Python Fast]
-    B -->|No| D[Query LLM Brain]
+    A["User Request"] --> B{"Python Skill Can Solve?"}
+    B -->|"Yes"| C["Execute Python Fast"]
+    B -->|"No"| D["Query LLM Brain"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -4628,8 +4628,8 @@ graph TD
 * **Visual Enhancement (Data Row):**
 ```mermaid
 graph LR
-    A[Dataset] --> B[Sample 1: Age 25, $50k]
-    A --> C[Sample 2: Age 40, $90k]
+    A["Dataset"] --> B["Sample 1: Age 25, $50k"]
+    A --> C["Sample 2: Age 40, $90k"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PeMlggyqz0Y)
@@ -4682,9 +4682,9 @@ c = 42
 * **Visual Enhancement (ML Pipeline):**
 ```mermaid
 graph LR
-    A[Raw Data] --> B[sklearn.preprocessing]
-    B --> C[sklearn.ensemble.RandomForest]
-    C --> D[sklearn.metrics]
+    A["Raw Data"] --> B["sklearn.preprocessing"]
+    B --> C["sklearn.ensemble.RandomForest"]
+    C --> D["sklearn.metrics"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=7z8-QWlbmoo)
@@ -4717,9 +4717,9 @@ graph LR
 * **Visual Enhancement (Concept Clustering):**
 ```mermaid
 graph TD
-    A[Vector Space] --> B['Angry', 'Mad', 'Furious']
-    A --> C['Happy', 'Joyful', 'Glad']
-    B -.->|Large Distance| C
+    A["Vector Space"] --> B["'Angry', 'Mad', 'Furious'"]
+    A --> C["'Happy', 'Joyful', 'Glad'"]
+    B -.->|"Large Distance"| C
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -4737,9 +4737,9 @@ graph TD
 * **Visual Enhancement (Pixel Labeling):**
 ```mermaid
 graph LR
-    A[Image] --> B[CNN]
-    B --> C[Every pixel colored by class]
-    C --> D[e.g., Road is gray, Sky is blue]
+    A["Image"] --> B["CNN"]
+    B --> C["Every pixel colored by class"]
+    C --> D["e.g., Road is gray, Sky is blue"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fqatUyNsG48)
@@ -4757,10 +4757,10 @@ graph LR
 * **Visual Enhancement (Similarity Checking):**
 ```mermaid
 graph TD
-    A[Face Image 1] --> B[Shared Weights CNN]
-    C[Face Image 2] --> B
-    B --> D[Compare Vector Distances]
-    D --> E{Same Person?}
+    A["Face Image 1"] --> B["Shared Weights CNN"]
+    C["Face Image 2"] --> B
+    B --> D["Compare Vector Distances"]
+    D --> E{"Same Person?"}
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6jfw8MuKwpI)
@@ -4795,10 +4795,10 @@ graph TD
 * **Visual Enhancement (Gradient Flow):**
 ```mermaid
 graph TD
-    A[Layer 1 Output] --> B[Layer 2]
-    B --> C[Layer 3]
-    A -->|Bypasses Layer 2| C
-    C --> D[Add Together]
+    A["Layer 1 Output"] --> B["Layer 2"]
+    B --> C["Layer 3"]
+    A -->|"Bypasses Layer 2"| C
+    C --> D["Add Together"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=StHiclO6qy0)
@@ -4832,8 +4832,8 @@ graph TD
 * **Visual Enhancement (Output Conversion):**
 ```mermaid
 graph LR
-    A[Raw Logits: 2.0, 1.0, 0.1] --> B(Softmax)
-    B --> C[Probabilities: 70%, 20%, 10%]
+    A["Raw Logits: 2.0, 1.0, 0.1"] --> B("Softmax")
+    B --> C["Probabilities: 70%, 20%, 10%"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=oJU6-qW6xZU)
@@ -4851,8 +4851,8 @@ graph LR
 * **Visual Enhancement (Frequency Types):**
 ```mermaid
 graph TD
-    A[Image] --> B[High Frequency: Sharp Edges]
-    A --> C[Low Frequency: Smooth Gradients / Sky]
+    A["Image"] --> B["High Frequency: Sharp Edges"]
+    A --> C["Low Frequency: Smooth Gradients / Sky"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -4904,9 +4904,9 @@ graph TD
 * **Visual Enhancement (Kernel Movement):**
 ```mermaid
 graph LR
-    A[Pixel 1] -->|Stride=1| B[Pixel 2]
-    C[Pixel 1] -->|Stride=2| D[Pixel 3]
-    D --> E[Smaller Output Map]
+    A["Pixel 1"] -->|"Stride=1"| B["Pixel 2"]
+    C["Pixel 1"] -->|"Stride=2"| D["Pixel 3"]
+    D --> E["Smaller Output Map"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -4923,9 +4923,9 @@ graph LR
 * **Visual Enhancement (Music Prompt Structure):**
 ```mermaid
 graph TD
-    A[Suno Prompt] --> B[Style: Upbeat Synthwave]
-    A --> C[Lyrics: Verse 1, Chorus]
-    A --> D[Vocalization Constraints]
+    A["Suno Prompt"] --> B["Style: Upbeat Synthwave"]
+    A --> C["Lyrics: Verse 1, Chorus"]
+    A --> D["Vocalization Constraints"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=i87RZgbbBxM)
@@ -4942,8 +4942,8 @@ graph TD
 * **Visual Enhancement (Upscaling):**
 ```mermaid
 graph LR
-    A[Low Res 144p] --> B(GAN / Deep Learning Model)
-    B --> C[High Res 4K Image]
+    A["Low Res 144p"] --> B("GAN / Deep Learning Model")
+    B --> C["High Res 4K Image"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=KULkSwLk62I)
@@ -4961,9 +4961,9 @@ graph LR
 * **Visual Enhancement (Labeled Training):**
 ```mermaid
 graph LR
-    A[Data + Correct Labels] --> B(Model)
-    B --> C[Predictions]
-    C --> D{Compare to Labels}
+    A["Data + Correct Labels"] --> B("Model")
+    B --> C["Predictions"]
+    C --> D{"Compare to Labels"}
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -4998,8 +4998,8 @@ graph LR
 * **Visual Enhancement (Hyperplane Concept):**
 ```mermaid
 graph TD
-    A[Data Points] --> B[Draw Maximum Margin Hyperplane]
-    B --> C[Support Vectors define the margin]
+    A["Data Points"] --> B["Draw Maximum Margin Hyperplane"]
+    B --> C["Support Vectors define the margin"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_YPScrckx28)
@@ -5032,9 +5032,9 @@ f(x) = x \cdot \sigma(x) = \frac{x}{1 + e^{-x}}
 * **Visual Enhancement (Robustness Training):**
 ```mermaid
 graph LR
-    A[Clean Data] --> B(Add Random Static/Noise)
-    B --> C[Train Model]
-    C --> D[Model ignores real-world sensor noise]
+    A["Clean Data"] --> B("Add Random Static/Noise")
+    B --> C["Train Model"]
+    C --> D["Model ignores real-world sensor noise"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=FevBjZhSnIw)
@@ -5052,8 +5052,8 @@ graph LR
 * **Visual Enhancement (Dimensionality Reduction):**
 ```mermaid
 graph LR
-    A[1000-Dimensional Vector] --> B(t-SNE Algorithm)
-    B --> C[2D Scatter Plot for Human Viewing]
+    A["1000-Dimensional Vector"] --> B("t-SNE Algorithm")
+    B --> C["2D Scatter Plot for Human Viewing"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=NEaUSP4YerM)
@@ -5088,10 +5088,10 @@ t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
 * **Visual Enhancement (Tensor Dimensions):**
 ```mermaid
 graph TD
-    A[0D: Scalar] --> B[1D: Vector]
-    B --> C[2D: Matrix]
-    C --> D[3D: Tensor RGB Image]
-    D --> E[ND: Multi-dimensional Data]
+    A["0D: Scalar"] --> B["1D: Vector"]
+    B --> C["2D: Matrix"]
+    C --> D["3D: Tensor RGB Image"]
+    D --> E["ND: Multi-dimensional Data"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=L35fFDpwIM4)
@@ -5108,8 +5108,8 @@ graph TD
 * **Visual Enhancement (Temporal Sequence):**
 ```mermaid
 graph LR
-    A[Day 1-30 Prices] --> B(1D CNN / RNN)
-    B --> C[Predict Day 31 Price]
+    A["Day 1-30 Prices"] --> B("1D CNN / RNN")
+    B --> C["Predict Day 31 Price"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=GE3JOFwTWVM)
@@ -5126,9 +5126,9 @@ graph LR
 * **Visual Enhancement (Data Alignment):**
 ```mermaid
 graph TD
-    A[Camera: 30 FPS] --> B{Synchronize Timestamps}
-    C[IMU Sensor: 100 Hz] --> B
-    B --> D[Unified Multimodal Dataset]
+    A["Camera: 30 FPS"] --> B{"Synchronize Timestamps"}
+    C["IMU Sensor: 100 Hz"] --> B
+    B --> D["Unified Multimodal Dataset"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -5146,9 +5146,9 @@ graph TD
 * **Visual Enhancement (Text Chunking):**
 ```mermaid
 graph LR
-    A[Word: Unbelievable] --> B[Token 1: Un]
-    A --> C[Token 2: believ]
-    A --> D[Token 3: able]
+    A["Word: Unbelievable"] --> B["Token 1: Un"]
+    A --> C["Token 2: believ"]
+    A --> D["Token 3: able"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=OjrGu0L5K7M)
@@ -5166,9 +5166,9 @@ graph LR
 * **Visual Enhancement (Data Separation):**
 ```mermaid
 graph LR
-    A[100% Data] --> B[70% Train: Update Weights]
-    A --> C[15% Val: Tune Hyperparameters]
-    A --> D[15% Test: Final Blind Score]
+    A["100% Data"] --> B["70% Train: Update Weights"]
+    A --> C["15% Val: Tune Hyperparameters"]
+    A --> D["15% Test: Final Blind Score"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dSCFk168vmo)
@@ -5185,8 +5185,8 @@ graph LR
 * **Visual Enhancement (Compute Phases):**
 ```mermaid
 graph TD
-    A[Training] -->|Requires Backprop & massive GPUs| B[Trained Weights]
-    C[Inference] -->|Forward pass only, low compute| D[Predictions]
+    A["Training"] -->|"Requires Backprop & massive GPUs"| B["Trained Weights"]
+    C["Inference"] -->|"Forward pass only, low compute"| D["Predictions"]
     B --> C
 ```
 
@@ -5205,8 +5205,8 @@ graph TD
 * **Visual Enhancement (Knowledge Reuse):**
 ```mermaid
 graph LR
-    A[Model trained on 1M generic images] --> B[Keep feature layers]
-    B --> C[Retrain only output layer for Dog Breeds]
+    A["Model trained on 1M generic images"] --> B["Keep feature layers"]
+    B --> C["Retrain only output layer for Dog Breeds"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vmjP6LjGaag)
@@ -5224,10 +5224,10 @@ graph LR
 * **Visual Enhancement (Architecture Core):**
 ```mermaid
 graph TD
-    A[Input Tokens] --> B[Positional Encoding]
-    B --> C[Self-Attention Mechanism]
-    C --> D[Feed Forward Network]
-    D --> E[Next Word Prediction]
+    A["Input Tokens"] --> B["Positional Encoding"]
+    B --> C["Self-Attention Mechanism"]
+    C --> D["Feed Forward Network"]
+    D --> E["Next Word Prediction"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZXiruGOCn9s)
@@ -5245,8 +5245,8 @@ graph TD
 * **Visual Enhancement (Upsampling):**
 ```mermaid
 graph LR
-    A[Small Feature Map] --> B(Transposed Kernel)
-    B --> C[Larger Output Image Map]
+    A["Small Feature Map"] --> B("Transposed Kernel")
+    B --> C["Larger Output Image Map"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=xoAv6D05j7g)
@@ -5264,11 +5264,11 @@ graph LR
 * **Visual Enhancement (Reasoning Branches):**
 ```mermaid
 graph TD
-    A[Problem] --> B[Idea 1]
-    A --> C[Idea 2]
-    B --> D[Evaluate: Dead End]
-    C --> E[Evaluate: Promising]
-    E --> F[Solution]
+    A["Problem"] --> B["Idea 1"]
+    A --> C["Idea 2"]
+    B --> D["Evaluate: Dead End"]
+    C --> E["Evaluate: Promising"]
+    E --> F["Solution"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=90H6r69h55o)
@@ -5286,9 +5286,9 @@ graph TD
 * **Visual Enhancement (Time-Spatial Map):**
 ```mermaid
 graph LR
-    A[Skeleton Video] --> B[X-Axis: Joints]
-    A --> C[Y-Axis: Time/Frames]
-    B & C --> D[2D Image representing Motion]
+    A["Skeleton Video"] --> B["X-Axis: Joints"]
+    A --> C["Y-Axis: Time/Frames"]
+    B & C --> D["2D Image representing Motion"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=taC5pMCm70U)
@@ -5323,11 +5323,11 @@ Where T = Time frames, J = Joints, 3 = XYZ spatial coordinates.
 * **Visual Enhancement (U-Shape Architecture):**
 ```mermaid
 graph TD
-    A[Input Image] --> B[Downsample / Encode]
-    B --> C[Bottleneck]
-    C --> D[Upsample / Decode]
-    B -->|Skip Connections| D
-    D --> E[Segmentation Mask]
+    A["Input Image"] --> B["Downsample / Encode"]
+    B --> C["Bottleneck"]
+    C --> D["Upsample / Decode"]
+    B -->|"Skip Connections"| D
+    D --> E["Segmentation Mask"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=NhdzGfB1q74)
@@ -5345,9 +5345,9 @@ graph TD
 * **Visual Enhancement (Poor Generalization):**
 ```mermaid
 graph LR
-    A[Data Points: Curve] --> B[Model: Straight Line]
-    B --> C[High Training Error]
-    B --> D[High Test Error]
+    A["Data Points: Curve"] --> B["Model: Straight Line"]
+    B --> C["High Training Error"]
+    B --> D["High Test Error"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
@@ -5364,8 +5364,8 @@ graph LR
 * **Visual Enhancement (Spatial Transfer):**
 ```mermaid
 graph LR
-    A[Encoder Spatial Data] -->|Skip Connection Copy| B[Decoder Layers]
-    B --> C[High-Res Segmentation]
+    A["Encoder Spatial Data"] -->|"Skip Connection Copy"| B["Decoder Layers"]
+    B --> C["High-Res Segmentation"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=StHiclO6qy0)
@@ -5383,9 +5383,9 @@ graph LR
 * **Visual Enhancement (Clustering Process):**
 ```mermaid
 graph TD
-    A[Unlabeled Data] --> B(K-Means / PCA)
-    B --> C[Cluster 1]
-    B --> D[Cluster 2]
+    A["Unlabeled Data"] --> B("K-Means / PCA")
+    B --> C["Cluster 1"]
+    B --> D["Cluster 2"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=lEfrr0Yr684)
@@ -5403,7 +5403,7 @@ graph TD
 * **Visual Enhancement (Resolution Increase):**
 ```mermaid
 graph LR
-    A[10x10 Image] -->|Bilinear Interpolation| B[20x20 Image]
+    A["10x10 Image"] -->|"Bilinear Interpolation"| B["20x20 Image"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JnN_1Nh7w4M)
@@ -5421,11 +5421,11 @@ graph LR
 * **Visual Enhancement (Probabilistic Latent Space):**
 ```mermaid
 graph LR
-    A[Input Image] --> B(Encoder)
-    B --> C[Mean Vector]
-    B --> D[Standard Deviation Vector]
-    C & D --> E(Sample Z)
-    E --> F[Decoder]
+    A["Input Image"] --> B("Encoder")
+    B --> C["Mean Vector"]
+    B --> D["Standard Deviation Vector"]
+    C & D --> E("Sample Z")
+    E --> F["Decoder"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qJeaCHQ1k2w)
@@ -5494,8 +5494,8 @@ graph LR
 * **Visual Enhancement (Nearest Neighbor Search):**
 ```mermaid
 graph TD
-    A[Query Vector] --> B[(Pinecone / Milvus)]
-    B -->|Cosine Similarity| C[Top 3 Closest Vectors]
+    A["Query Vector"] --> B["("Pinecone / Milvus")"]
+    B -->|"Cosine Similarity"| C["Top 3 Closest Vectors"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dN0lsF2cvm4)
@@ -5513,10 +5513,10 @@ graph TD
 * **Visual Enhancement (Uniform Architecture):**
 ```mermaid
 graph TD
-    A[Input] --> B[2x Conv 3x3]
-    B --> C[Max Pool 2x2]
-    C --> D[3x Conv 3x3]
-    D --> E[Max Pool 2x2]
+    A["Input"] --> B["2x Conv 3x3"]
+    B --> C["Max Pool 2x2"]
+    C --> D["3x Conv 3x3"]
+    D --> E["Max Pool 2x2"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EgzIZIQFJuM)
@@ -5534,8 +5534,8 @@ graph TD
 * **Visual Enhancement (Dependency Isolation):**
 ```mermaid
 graph TD
-    A[Global Python System] --> B["Project A: venv (TensorFlow 1.0)"]
-    A --> C["Project B: venv (TensorFlow 2.0)"]
+    A["Global Python System"] --> B["Project A: venv ("TensorFlow 1.0")"]
+    A --> C["Project B: venv ("TensorFlow 2.0")"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Y21OR1OPC9A)
@@ -5552,10 +5552,10 @@ graph TD
 * **Visual Enhancement (Softmax Word Choice):**
 ```mermaid
 graph LR
-    A[LLM Final Layer] --> B[Softmax]
-    B --> C['Apple': 80%]
-    B --> D['Banana': 15%]
-    B --> E['Car': 5%]
+    A["LLM Final Layer"] --> B["Softmax"]
+    B --> C["'Apple': 80%"]
+    B --> D["'Banana': 15%"]
+    B --> E["'Car': 5%"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -5572,8 +5572,8 @@ graph LR
 * **Visual Enhancement (CNN Feature Evolution):**
 ```mermaid
 graph TD
-    A[Early Layers] -->|High Res| B[WHERE: Edges & Locations]
-    C[Late Layers] -->|Low Res| D[WHAT: Eyes, Wheels, Concepts]
+    A["Early Layers"] -->|"High Res"| B["WHERE: Edges & Locations"]
+    C["Late Layers"] -->|"Low Res"| D["WHAT: Eyes, Wheels, Concepts"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
@@ -5590,11 +5590,11 @@ graph TD
 * **Visual Enhancement (Vector Math):**
 ```mermaid
 graph LR
-    A[Vector(King)] --> B[-]
-    C[Vector(Man)] --> B
-    D[+] --> E[Vector(Queen)]
+    A["Vector("King")"] --> B["-"]
+    C["Vector("Man")"] --> B
+    D["+"] --> E["Vector("Queen")"]
     B --> D
-    F[Vector(Woman)] --> D
+    F["Vector("Woman")"] --> D
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wgfSDrqYMJ4)
@@ -5612,9 +5612,9 @@ graph LR
 * **Visual Enhancement (Architecture):**
 ```mermaid
 graph LR
-    A[Windows 11 Host] --> B{Hyper-V}
-    B --> C[Native Linux Kernel (Ubuntu)]
-    C --> D[Linux AI Tools (Docker/FFMPEG)]
+    A["Windows 11 Host"] --> B{"Hyper-V"}
+    B --> C["Native Linux Kernel ("Ubuntu")"]
+    C --> D["Linux AI Tools ("Docker/FFMPEG")"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_fntjriRe48)
@@ -5649,10 +5649,10 @@ graph LR
 * **Visual Enhancement (Non-linear separability):**
 ```mermaid
 graph LR
-    A[Input: 0,0 -> 0] --> B(Cannot be separated by single line)
-    C[Input: 1,1 -> 0] --> B
-    D[Input: 1,0 -> 1] --> B
-    E[Multi-Layer Perceptron needed] --> B
+    A["Input: 0,0 -> 0"] --> B("Cannot be separated by single line")
+    C["Input: 1,1 -> 0"] --> B
+    D["Input: 1,0 -> 1"] --> B
+    E["Multi-Layer Perceptron needed"] --> B
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=kNPGXgzxoHw)
@@ -5670,8 +5670,8 @@ graph LR
 * **Visual Enhancement (Single Pass Detection):**
 ```mermaid
 graph LR
-    A[Image] -->|Single Forward Pass| B[CNN]
-    B --> C[Simultaneous Bounding Boxes + Classes]
+    A["Image"] -->|"Single Forward Pass"| B["CNN"]
+    B --> C["Simultaneous Bounding Boxes + Classes"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=svn9-xV7wjk)
@@ -5707,9 +5707,9 @@ Where $P_c$ is confidence, and $b$ represents box coordinates.
 * **Visual Enhancement (Luma vs Chroma):**
 ```mermaid
 graph TD
-    A[YUV Image] --> B[Y: Luma/Brightness (Full Res)]
-    A --> C[U: Blue Projection (Half Res)]
-    A --> D[V: Red Projection (Half Res)]
+    A["YUV Image"] --> B["Y: Luma/Brightness ("Full Res")"]
+    A --> C["U: Blue Projection ("Half Res")"]
+    A --> D["V: Red Projection ("Half Res")"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RVQJb1pQtw8)
@@ -5761,9 +5761,9 @@ Z = \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}}
 * **Visual Enhancement (Direct Request):**
 ```mermaid
 graph LR
-    A[Prompt: 'Translate this to French'] --> B(LLM)
-    B --> C['Bonjour']
-    D[No examples provided] -.-> A
+    A["Prompt: 'Translate this to French'"] --> B("LLM")
+    B --> C["'Bonjour'"]
+    D["No examples provided"] -.-> A
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sW5xoicq5TY)
