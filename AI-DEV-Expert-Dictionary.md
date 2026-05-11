@@ -1600,9 +1600,9 @@ P(\text{neuron active}) = p \quad (e.g., p=0.8)
 ```mermaid
 graph LR
     A[State Input] --> B[Feature Extraction]
-    B --> C[Value Stream V(s)]
-    B --> D[Advantage Stream A(s,a)]
-    C --> E[Aggregate Q(s,a)]
+    B --> C["Value Stream V(s)"]
+    B --> D["Advantage Stream A(s,a)"]
+    C --> E["Aggregate Q(s,a)"]
     D --> E
 ```
 
@@ -5534,8 +5534,8 @@ graph TD
 * **Visual Enhancement (Dependency Isolation):**
 ```mermaid
 graph TD
-    A[Global Python System] --> B[Project A: venv (TensorFlow 1.0)]
-    A --> C[Project B: venv (TensorFlow 2.0)]
+    A[Global Python System] --> B["Project A: venv (TensorFlow 1.0)"]
+    A --> C["Project B: venv (TensorFlow 2.0)"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Y21OR1OPC9A)
