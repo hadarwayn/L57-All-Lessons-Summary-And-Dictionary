@@ -303,6 +303,8 @@ graph LR
     C --> D[Fully Connected]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YRhxdVk_sIs)
+
 ## 1x1 Convolution (Micro Network)
 **[Category: Deep Learning Architecture]** | **[Hebrew: קונבולוציית 1X1 / רשת מיקרו]**
 * A specialized convolution layer that uses a 1x1 kernel. While it does not look at neighboring spatial pixels, it acts as a 'Micro Network' across the depth (channels) of the feature map. It is primarily used to drastically reduce the number of channels (dimensionality reduction) before applying expensive 3x3 or 5x5 convolutions, saving massive computational power.
@@ -319,6 +321,8 @@ graph LR
     B --> C[Output: 64x64x64]
     C --> D[Reduced Computational Load]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=c1RBQzKsDCk)
 
 ## 3x3 Kernel Optimization
 **[Category: Deep Learning Architecture]** | **[Hebrew: אופטימיזציית קרנל 3X3]**
@@ -337,6 +341,8 @@ graph TD
     style C stroke:#0f0,stroke-width:4px
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=mdKjMPmcWjY)
+
 ## Accuracy Metric
 **[Category: Model Evaluation]** | **[Hebrew: מדד דיוק כולל / Accuracy]**
 * The simplest statistical metric for evaluating classification models, calculated as the total number of correct predictions divided by the total number of all predictions made. While highly intuitive, it is notoriously misleading when used on imbalanced datasets.
@@ -350,6 +356,8 @@ graph TD
 ```math
 Accuracy = rac{True\ Positives + True\ Negatives}{Total\ Population}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=2osIZ-dSPGE)
 
 ## Activation as Decision Switch
 **[Category: Deep Learning]** | **[Hebrew: מתג החלטה של פונקציית הפעלה]**
@@ -367,6 +375,8 @@ graph LR
     B -->|Yes| C[Fire Neuron 1]
     B -->|No| D[Fire Neuron 0]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## Activation Function
 **[Category: Deep Learning]** | **[Hebrew: פונקציית הפעלה]**
@@ -386,6 +396,8 @@ ReLU(x) = \max(0, x)
 \sigma(x) = rac{1}{1 + e^{-x}}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Fu273ovPBmQ)
+
 ## Adam Optimizer
 **[Category: Deep Learning]** | **[Hebrew: אופטימייזר Adam / אדם]**
 * An adaptive learning rate optimization algorithm that combines the benefits of two earlier methods: AdaGrad (adapts learning rate per parameter) and RMSProp (uses moving averages). Adam starts with larger steps for rapid initial progress and automatically reduces step size as it approaches the optimal solution, making it the most popular optimizer in modern deep learning.
@@ -401,6 +413,8 @@ Adam (Adaptive Moment Estimation) combines the best properties of the AdaGrad an
 ```math
 	heta_{t+1} = 	heta_t - rac{\eta}{\sqrt{\hat{v}_t} + \epsilon} \hat{m}_t
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JXQT_vxqwIs)
 
 ## AFR (Action Feature Representation)
 **[Category: Computer Vision]** | **[Hebrew: ייצוג תכונות פעולה / AFR]**
@@ -418,6 +432,8 @@ graph LR
     B --> C(Extract Spatial Features)
     C --> D{AFR Tensor}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PeMlggyqz0Y)
 
 ## Agent Cache Memory
 **[Category: Tools & Environments]** | **[Hebrew: זכרון מטמון של סוכן]**
@@ -437,6 +453,8 @@ graph LR
     C -->|No| E[Process Output]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=FwOTs4UxQS4)
+
 ## Agent Concurrency Limits
 **[Category: System Design]** | **[Hebrew: הגבלת סוכנים במקביל]**
 * A crucial infrastructure parameter when deploying autonomous AI agents locally. Because each agent consumes massive CPU, RAM, and network API limits, engineers must set hard limits (e.g., max 3 active agents, max 3 background processes each) to prevent the agents from completely freezing the host machine through resource starvation.
@@ -453,6 +471,8 @@ graph TD
     B -->|Active < 3| C[Spawn New Agent]
     B -->|Active = 3| D[Queue Request]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## AI Agent
 **[Category: AI Agents & Architecture]** | **[Hebrew: סוכן AI / סוכן חכם]**
@@ -472,6 +492,8 @@ graph LR
     C -->|Execute| A
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## AI Video Scripting
 **[Category: Prompt Engineering]** | **[Hebrew: כתיבת תסריט לווידאו AI]**
 * A highly specialized form of prompt engineering required for AI video generators (like Sora or Runway). Unlike simple image prompts, video prompts require explicitly directing the virtual 'camera'—defining the exact camera movement (pan, zoom), lighting angles (time of day), and the precise chronological action of the subjects.
@@ -489,6 +511,8 @@ graph TD
     A --> D(Action: Subject walking left)
     A --> E(Consistency: Keep geometry rigid)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## Alternative Hypothesis (H1)
 **[Category: Statistics]** | **[Hebrew: השערה חלופית / H1]**
@@ -509,6 +533,8 @@ H_1: \mu
 eq \mu_0 \quad (	ext{Alternative Hypothesis})
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=tdj-hoivzHQ)
+
 ## Anchor Box
 **[Category: Computer Vision]** | **[Hebrew: תיבת עוגן / Anchor Box]**
 * A set of predefined bounding box templates with specific aspect ratios and scales, placed at each position on the feature map grid during object detection. The model predicts adjustments (offsets) to these anchor boxes rather than predicting box coordinates from scratch, making detection faster and more accurate.
@@ -528,6 +554,8 @@ graph LR
     C -->|Matches| E[Car]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RTlwl2bv0Tg)
+
 ## Annotation (Data Tagging)
 **[Category: Data Preprocessing]** | **[Hebrew: אנוטציה / תיוג נתונים]**
 * The highly complex and labor-intensive process of manually identifying and labeling the ground truth in a dataset before training. In computer vision, it involves drawing bounding boxes or masks. A major challenge is deciding *what* to annotate (e.g., in a picture of a cat on a table, do you annotate just the cat, or the table and yard as well?).
@@ -545,6 +573,8 @@ graph LR
     C --> D[Add Class 'Dog']
     D --> E[(Ground Truth Dataset)]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YJnnxitraac)
 
 ## Anomaly Detection
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: זיהוי חריגות / Anomaly Detection]**
@@ -564,6 +594,8 @@ graph TD
     B -->|No| D[Normal Processing]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=MIxnMC0Zv0Y)
+
 ## API Gate Keeper
 **[Category: System Design]** | **[Hebrew: שומר סף ל-API]**
 * A critical software safety mechanism placed between an AI agent and external internet APIs (like Yahoo Finance). Because AI agents run loops incredibly fast, they can easily accidentally spam an API with thousands of requests, resulting in an instant IP ban. The Gate Keeper strictly enforces rate limits (e.g., max 10 requests/min).
@@ -581,6 +613,8 @@ graph LR
     B -->|Rate Limit Reached| D[Wait / Throttle]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=jGwO_UgTS7I)
+
 ## Apriori Algorithm
 **[Category: Machine Learning Algorithms]** | **[Hebrew: אלגוריתם Apriori / חוקי אסוציאציה]**
 * An unsupervised machine learning algorithm used to find frequent itemsets and discover association rules in a dataset. It is highly efficient because it prunes uninteresting combinations early on, based on the principle that if an itemset is infrequent, all its supersets must also be infrequent.
@@ -597,6 +631,8 @@ graph LR
     A[Item A (Bread)] -->|Confidence 80%| B[Item B (Butter)]
     A -->|Confidence 40%| C[Item C (Milk)]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=guVvtZ7ZClw)
 
 ## Artificial Intelligence (AI)
 **[Category: General Concepts]** | **[Hebrew: בינה מלאכותית (AI)]**
@@ -616,6 +652,8 @@ graph TD
     C --> D[Generative AI / LLMs]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Attention Mechanism
 **[Category: Deep Learning]** | **[Hebrew: מנגנון קשב / Attention]**
 * A neural network component that allows the model to dynamically focus on the most relevant parts of the input data when producing an output, rather than treating all input elements equally. It computes relevance scores between a query and a set of key-value pairs, enabling the network to weigh important information more heavily.
@@ -633,6 +671,8 @@ graph TD
     B --> C[Attention Scores vs other words]
     C --> D[Contextualized Vector]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fjJOgb-E41w)
 
 ## Augmentation (Data)
 **[Category: Data Preprocessing]** | **[Hebrew: אוגמנטציה / הרחבת נתונים]**
@@ -655,6 +695,8 @@ graph LR
     D --> E
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JexnjICha4g)
+
 ## Auto Encoder
 **[Category: Deep Learning]** | **[Hebrew: מקודד אוטומטי / Auto Encoder]**
 * An unsupervised neural network architecture designed exactly to compress data and then perfectly reconstruct it. It consists of two halves: an "Encoder" that aggressively shrinks the image down to its core features (Latent Space), and a "Decoder" that learns how to blindly re-expand those core features back into the original image.
@@ -672,6 +714,8 @@ graph LR
     B -->|Decoder| C[Reconstructed X']
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=hZ4a4NgM3u0)
+
 ## AutoEncoder Denoising
 **[Category: Computer Vision]** | **[Hebrew: סינון רעשים באמצעות מקודד אוטומטי]**
 * A powerful unsupervised technique where an Auto Encoder is deliberately trained by feeding it corrupted, noisy images, while the Loss Function compares the output against a clean, noise-free version. The network is forced to learn how to actively identify and delete random static noise during the compression phase.
@@ -688,6 +732,8 @@ graph LR
     B --> C(AutoEncoder)
     C --> D[Clean Reconstructed Image]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=hZ4a4NgM3u0)
 
 ## Auxiliary Classifiers
 **[Category: Deep Learning Architecture]** | **[Hebrew: מסווגים משניים / Auxiliary Classifiers]**
@@ -708,6 +754,8 @@ graph TD
     D --> F[Final Classifier]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Average Pooling
 **[Category: Deep Learning]** | **[Hebrew: סינון ממוצע / Average Pooling]**
 * A downsampling operation applied after a Convolutional layer that reduces spatial dimensions by computing the average of all values within the pooling window, rather than taking only the maximum. It preserves more background context information than Max Pooling, making it useful for noisy images.
@@ -725,6 +773,8 @@ graph LR
     B --> C[Reduced Spatial Map]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vZR_8ulkS7I)
+
 ## Average Precision (AP)
 **[Category: Model Evaluation]** | **[Hebrew: דיוק ממוצע / Average Precision]**
 * A single-number summary metric for object detection models that calculates the area under the Precision-Recall curve. It measures how well the detector performs across all confidence thresholds, combining both precision (accuracy of detections) and recall (completeness of detections) into one score.
@@ -740,6 +790,8 @@ graph LR
 AP = \int_0^1 P(R) dR
 ```
 (Area under the Precision-Recall curve)
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=oqXDdxF_Wuw)
 
 ## B-Frame (Bi-directional Frame)
 **[Category: Video Compression]** | **[Hebrew: פריים פנימי (B-Frame)]**
@@ -759,6 +811,8 @@ graph LR
     C -->|Calculates differences| D[Highly Compressed Frame]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6M5VXKLf4D4)
+
 ## Back Propagation
 **[Category: Deep Learning]** | **[Hebrew: התפשטות לאחור / Back Propagation]**
 * The core mathematical mechanism used to train neural networks. It calculates the error (loss) at the output layer and propagates it backward through the network's layers to update the weights of each neuron using Gradient Descent, gradually minimizing future errors.
@@ -775,6 +829,8 @@ graph RL
     A[Output Loss] -->|Chain Rule Gradients| B[Hidden Layer Weights]
     B -->|Update Weights| C[Input Layer Weights]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Ilg3gGewQ5U)
 
 ## Batch (Training)
 **[Category: Deep Learning]** | **[Hebrew: אצווה / Batch]**
@@ -795,6 +851,8 @@ graph TD
     C --> E[Update Weights]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=U4WB9p6ODjM)
+
 ## Batch Normalization
 **[Category: Deep Learning]** | **[Hebrew: נרמול אצווה / Batch Normalization]**
 * A technique used to make deep neural networks train faster and more stably by normalizing the inputs of each layer across the current "batch" of data. It mathematically centers the data to a mean of zero and standard deviation of one, reducing "internal covariate shift" and acting as a mild regularization to fight overfitting.
@@ -813,6 +871,8 @@ graph TD
 y_i = \gamma \hat{x}_i + eta
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dXB-KQYkzNU)
+
 ## Batch Normalization Batch Size Dependency
 **[Category: Deep Learning]** | **[Hebrew: תלות נרמול אצווה בגודל האצווה]**
 * A known limitation of Batch Normalization layers. Because BN relies on calculating the mean and variance across the current batch of data, setting the batch size too small (e.g., 2 or 4) results in noisy, unreliable statistical estimates. This severely hurts training stability and degrades model performance.
@@ -829,6 +889,8 @@ graph TD
     C[Batch Size = 64] -->|Accurate Mean/Std| D[Stable Normalization]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dXB-KQYkzNU)
+
 ## Bayes' Theorem
 **[Category: Statistics]** | **[Hebrew: משפט בייס / הסתברות מותנית]**
 * A fundamental probability theorem that calculates the probability of a hypothesis given observed evidence, by combining prior knowledge with new data. The formula P(H|E) = P(E|H) × P(H) / P(E) allows updating beliefs as new evidence arrives, forming the mathematical backbone of the Naive Bayes Classifier.
@@ -843,6 +905,8 @@ graph TD
 ```math
 P(A|B) = rac{P(B|A) P(A)}{P(B)}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Id8CfdEsK_4)
 
 ## Bias (Neural Network)
 **[Category: Deep Learning]** | **[Hebrew: הטיה / קבוע b]**
@@ -859,6 +923,8 @@ P(A|B) = rac{P(B|A) P(A)}{P(B)}
 y = \sum (w_i x_i) + b
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=jmmW0F0biz0)
+
 ## Binomial Distribution
 **[Category: Statistics]** | **[Hebrew: התפלגות בינומית]**
 * A probability distribution that summarizes the likelihood that a value will take one of two independent values under a given set of parameters. It treats events as discrete.
@@ -874,6 +940,8 @@ y = \sum (w_i x_i) + b
 P(X = k) = inom{n}{k} p^k (1-p)^{n-k}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6YzrVUVO9M0)
+
 ## Bit Rate
 **[Category: Signal Processing]** | **[Hebrew: קצב העברת נתונים / Bit Rate]**
 * The number of bits that are conveyed or processed per unit of time in a digital multimedia stream. It defines the "bandwidth pipeline" needed to smoothly transmit a video or audio file.
@@ -888,6 +956,8 @@ P(X = k) = inom{n}{k} p^k (1-p)^{n-k}
 ```math
 Bit Rate = Resolution 	imes Frame Rate 	imes Color Depth
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Bounding Box
 **[Category: Computer Vision]** | **[Hebrew: תיבת תוחמת / Bounding Box]**
@@ -908,6 +978,8 @@ graph TD
     C --> D
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YUl9AFwe1MM)
+
 ## Centroid
 **[Category: Machine Learning Algorithms]** | **[Hebrew: מרכז קבוצה / צנטרואיד]**
 * The geometric center point of a cluster, calculated as the mean of all data points assigned to that cluster. In K-Means clustering, centroids are iteratively repositioned: data points are assigned to their nearest centroid, then each centroid is recalculated as the mean of its assigned points, until convergence.
@@ -922,6 +994,8 @@ graph TD
 ```math
 C_x = rac{1}{n} \sum_{i=1}^{n} x_i, \quad C_y = rac{1}{n} \sum_{i=1}^{n} y_i
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=GqOuWURjD9g)
 
 ## Chain of Thought (CoT)
 **[Category: Prompt Engineering]** | **[Hebrew: שרשרת מחשבה / CoT]**
@@ -941,6 +1015,8 @@ graph TD
     C --> D[Final Answer]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Fp-ue4UCE3s)
+
 ## Classification
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: סיווג / קלסיפיקציה]**
 * A supervised machine learning task where the model assigns input data to one of several predefined discrete categories (classes). Unlike regression (which predicts continuous numbers), classification outputs a class label — such as "cat" vs "dog," "spam" vs "not spam," or one of 10 digit classes (0-9).
@@ -958,6 +1034,8 @@ graph LR
     A -->|Regression| C(Continuous Value: $400)
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Claude Skills Framework
 **[Category: Tools & Environments]** | **[Hebrew: תשתית סקילס של קלוד]**
 * An architectural approach (like Anthropic's Skills v2.0) that gives AI agents deterministic Python scripts to execute specific, rigid tasks instead of relying entirely on LLM reasoning. This saves tokens, reduces latency, and ensures perfect accuracy for math or exact file manipulations.
@@ -974,6 +1052,8 @@ graph LR
     B -->|Yes| C[Execute Python Skill]
     B -->|No| D[Query LLM Brain]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wO8EboopboU)
 
 ## CNN (Convolutional Neural Network)
 **[Category: Deep Learning]** | **[Hebrew: רשת נוירונים קונבולוציונית]**
@@ -994,6 +1074,8 @@ graph LR
     D --> E[Class Output]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
+
 ## Code Project Guidelines
 **[Category: Project Management]** | **[Hebrew: הנחיות פרויקט קוד מקצועי]**
 * A comprehensive set of mandatory rules, standards, and best practices for structuring, coding, documenting, and delivering professional AI/ML code projects. These guidelines, consolidated from Dr. Segal's course instructions and industry standards, define the "Sacred Order" of project workflow — planning before coding, modular architecture, security-first practices, and portfolio-quality documentation. Following these 50 points ensures every project is reproducible, maintainable, and presentation-ready.
@@ -1010,6 +1092,8 @@ graph TD
     A --> C[Architecture Patterns]
     A --> D[Testing Requirements]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## Command Line Interface (CLI)
 **[Category: Tools & Environments]** | **[Hebrew: ממשק שורת פקודה (CLI)]**
@@ -1029,6 +1113,8 @@ graph LR
     C --> D[Text Output]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Confidence (Association Rules)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: מהימנות - Confidence]**
 * A crucial metric in Association Rule learning that measures the likelihood or probability that a consequent item (Y) is purchased when an antecedent item (X) is already purchased. It is calculated as the Support of (X and Y) divided by the Support of (X).
@@ -1043,6 +1129,8 @@ graph LR
 ```math
 Confidence(A \Rightarrow B) = rac{Support(A \cup B)}{Support(A)} = P(B|A)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=4IvZHC2i4hM)
 
 ## Confidence Score
 **[Category: Computer Vision]** | **[Hebrew: ציון ביטחון / Confidence Score]**
@@ -1059,6 +1147,8 @@ The probability output derived usually from the Softmax layer:
 ```math
 P(class = k) \in [0, 1]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=bSoYQmp4qwY)
 
 ## Confusion Matrix
 **[Category: Model Evaluation]** | **[Hebrew: מטריצת בלבול]**
@@ -1079,6 +1169,8 @@ graph TD
     D --> F[True Negative TN]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Kdsp6soqA7o)
+
 ## Context Window
 **[Category: Large Language Models (LLM)]** | **[Hebrew: חלון הקשר (CW)]**
 * The maximum amount of text (measured in tokens) an AI model can process and "remember" at any one time during a conversation. When a session exceeds this memory limit, the model starts forgetting the earliest parts of the conversation.
@@ -1098,6 +1190,8 @@ graph LR
     C -->|No| E[Process Output]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=-QVoIxEpFkM)
+
 ## Convolution
 **[Category: Image Processing]** | **[Hebrew: קונבולוציה / כפיפה]**
 * A fundamental mathematical operation where a small filter (kernel) is systematically slid across an input signal or image, computing a scalar product at each position. In image processing, convolution detects specific patterns like edges, corners, or textures by measuring how well the kernel pattern matches the local region of the image.
@@ -1112,6 +1206,8 @@ graph LR
 ```math
 (I * K)(i, j) = \sum_m \sum_n I(i+m, j+n) K(m, n)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
 
 ## Correlation
 **[Category: Statistics]** | **[Hebrew: מתאם / קורלציה]**
@@ -1128,6 +1224,8 @@ graph LR
 r = rac{\sum (x_i - ar{x})(y_i - ar{y})}{\sqrt{\sum (x_i - ar{x})^2 \sum (y_i - ar{y})^2}}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Cosine Similarity
 **[Category: Linear Algebra]** | **[Hebrew: דמיון קוסינוס / Cosine Similarity]**
 * A similarity metric that measures the cosine of the angle between two vectors, producing a value between -1 (opposite) and +1 (identical direction). Unlike Euclidean distance which measures magnitude, cosine similarity measures orientation, making it ideal for comparing documents or embeddings regardless of their length.
@@ -1142,6 +1240,8 @@ r = rac{\sum (x_i - ar{x})(y_i - ar{y})}{\sqrt{\sum (x_i - ar{x})^2 \sum (y_
 ```math
 	ext{similarity} = \cos(	heta) = rac{A \cdot B}{||A|| ||B||}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=zcUGLp5vwaQ)
 
 ## Covariance Matrix
 **[Category: Statistics]** | **[Hebrew: מטריצת שונות-משותפת / Covariance Matrix]**
@@ -1158,6 +1258,8 @@ r = rac{\sum (x_i - ar{x})(y_i - ar{y})}{\sqrt{\sum (x_i - ar{x})^2 \sum (y_
 \Sigma = rac{1}{n-1} \sum_{i=1}^n (X_i - ar{X})(X_i - ar{X})^T
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=152tSYtiQbw)
+
 ## Cross Entropy
 **[Category: Deep Learning]** | **[Hebrew: אנטרופיה צולבת / Cross Entropy]**
 * A loss function used extensively in classification tasks that measures the difference between the predicted probability distribution and the actual ground truth distribution. In the course, it is described as converting categorical classification into a distance-based metric, where the distance between predicted and true distributions is minimized during training. It heavily penalizes confident wrong predictions, making it far more effective than MSE for classification problems.
@@ -1173,6 +1275,8 @@ r = rac{\sum (x_i - ar{x})(y_i - ar{y})}{\sqrt{\sum (x_i - ar{x})^2 \sum (y_
 H(p, q) = -\sum_{x} p(x) \log q(x)
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Pwgpl9mKars)
+
 ## Cumulative Distribution Function (CDF)
 **[Category: Statistics]** | **[Hebrew: פונקציית התפלגות מצטברת / CDF]**
 * A mathematical function used in statistics that describes the probability that a continuous variable will take a value less than or equal to a specific boundary number. It essentially calculates the total accumulated probability up to a given point on a mathematical curve.
@@ -1187,6 +1291,8 @@ H(p, q) = -\sum_{x} p(x) \log q(x)
 ```math
 F_X(x) = P(X \leq x) = \int_{-\infty}^{x} f_X(t) dt
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=3VYupIsbLlY)
 
 ## Curse of Dimensionality
 **[Category: Machine Learning Mathematics]** | **[Hebrew: קללת המימדים]**
@@ -1204,6 +1310,8 @@ graph TD
     A[1D Line: 10 points] -->|Dense| B(Easy to Search)
     C[3D Cube: 10 points] -->|Extremely Sparse| D(Hard to Search)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QZ0DtNFdDko)
 
 ## Darknet
 **[Category: Tools & Environments]** | **[Hebrew: מסגרת Darknet ל-YOLO]**
@@ -1239,6 +1347,8 @@ graph LR
     A -->|Powers| C[YOLO Real-time Detection]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dq8AVWvWn54)
+
 ## Data Imbalance
 **[Category: Data Preprocessing]** | **[Hebrew: חוסר איזון בנתונים / Data Imbalance]**
 * A common dataset problem where one class has significantly more samples than another (e.g., 95% healthy vs. 5% sick patients). This causes models to be biased toward predicting the majority class, achieving high accuracy while completely failing to detect the minority class that is often the most important.
@@ -1258,6 +1368,8 @@ graph TD
     C --> D
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JnlM4yLFNuo)
+
 ## Data Memorization (Overfitting)
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: שינון נתונים / התאמת-יתר]**
 * The detrimental state where an AI model acts like a student who memorizes the answers to a specific practice test without understanding the underlying material. It achieves 100% accuracy on the training data but fails completely on new, unseen data.
@@ -1274,6 +1386,8 @@ graph LR
     B -->|Yes| C[Overfitting / Memorization]
     B -->|No| D[Healthy Generalization]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
 
 ## Dataset
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: מערך נתונים / דאטה-סט]**
@@ -1293,6 +1407,8 @@ graph LR
     A --> D[15% Test]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Dataset Class Balancing
 **[Category: Data Preprocessing]** | **[Hebrew: איזון מחלקות במערך נתונים]**
 * A mandatory preprocessing step before model training where the engineer must ensure all target categories have roughly an equal number of examples. If a dataset is imbalanced (e.g., 90% dogs, 10% cats), the model will cheat by simply guessing 'dog' every time. Solutions include undersampling the majority class or applying higher mathematical weights to the minority class.
@@ -1310,6 +1426,8 @@ graph LR
     A --> D[SMOTE Generation]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JnlM4yLFNuo)
+
 ## DCT (Discrete Cosine Transform)
 **[Category: Signal Processing]** | **[Hebrew: התמרת קוסינוס בדידה / DCT]**
 * A mathematical transformation that converts spatial image data into frequency components using cosine functions. It is the core mathematical operation in JPEG compression — decomposing each 8×8 pixel block into a sum of cosine waves at different frequencies, allowing high-frequency (imperceptible) components to be discarded for compression.
@@ -1319,6 +1437,8 @@ graph LR
 * **Related Items:** JPEG Compression, Fourier Transform (FFT), Macro Block, Huffman Coding
 * **Application in Industry:** The mathematical engine behind JPEG, MPEG video, and MP3 audio compression. Every digital photo, streaming video, and music file on the internet relies on DCT for data reduction.
 * **Example Snippet:**
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Q2aEzeMDHMA)
 
 ## Dead Neurons (ReLU Problem)
 **[Category: Deep Learning]** | **[Hebrew: נוירונים מתים / בעיית ה-ReLU]**
@@ -1338,6 +1458,8 @@ graph LR
     D --> E[Weight Never Updates]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6MmGNZsA5nI)
+
 ## Decimation (Image)
 **[Category: Image Processing]** | **[Hebrew: דסימציה / דילול פיקסלים]**
 * An image processing technique that drastically reduces image resolution by combining groups of neighboring pixels into single representative pixels (Downsampling). This mathematically shrinks the image to save compute power during analysis.
@@ -1354,6 +1476,8 @@ graph TD
     A[100x100 Image] --> B(Drop every 2nd pixel)
     B --> C[50x50 Image]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=9Ga9pn9M-MQ)
 
 ## Deep Learning (DL)
 **[Category: Artificial Intelligence Domains]** | **[Hebrew: למידה עמוקה / DL]**
@@ -1373,6 +1497,8 @@ graph LR
     C --> D[Hidden Layer 3: Faces]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Deep vs Shallow Neuron Deletion
 **[Category: Deep Learning]** | **[Hebrew: מחיקת נוירונים עמוקים מול רדודים]**
 * A strategic insight regarding Dropout: Deleting neurons in the early (shallow) layers removes fine details (like edges/pixels), while dropping neurons in the deep layers forces the network to 'look at the whole forest' and piece together high-level concepts even when major features are temporarily missing.
@@ -1388,6 +1514,8 @@ graph TD
     A[Deep Network] -->|Delete 1 Neuron| B[Loss remains stable]
     C[Shallow Network] -->|Delete 1 Neuron| D[Catastrophic Failure]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Depth Estimation
 **[Category: Computer Vision]** | **[Hebrew: חיזוי עומק / מרחק]**
@@ -1405,6 +1533,8 @@ graph LR
     B --> C[Depth Map: Brighter = Closer]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sz30TDttIBA)
+
 ## Determinant
 **[Category: Linear Algebra]** | **[Hebrew: דטרמיננטה]**
 * A scalar value computed from a square matrix that encodes important geometric and algebraic properties. A determinant of zero means the matrix is singular (non-invertible) and the data is linearly dependent. In PCA, determinants are used to solve the characteristic equation for finding eigenvalues and eigenvectors.
@@ -1419,6 +1549,8 @@ graph LR
 ```math
 \det(A) = \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Dropout
 **[Category: Deep Learning]** | **[Hebrew: השמטה אקראית / Dropout]**
@@ -1437,6 +1569,8 @@ graph LR
     B --> C[Forces Network Redundancy]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ARq74QuavAo)
+
 ## Dropout Randomness
 **[Category: Deep Learning]** | **[Hebrew: אקראיות של Dropout]**
 * The specific mechanism within the Dropout regularization technique where the selection of which neurons to 'turn off' is completely random in every single training batch. This acts like creating temporary 'roadblocks' in a network, forcing the AI to find alternative paths and learn the underlying concepts rather than relying on specific neuron pathways.
@@ -1450,6 +1584,8 @@ graph LR
 ```math
 P(\text{neuron active}) = p \quad (e.g., p=0.8)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ARq74QuavAo)
 
 ## Dueling DQN
 **[Category: Reinforcement Learning]** | **[Hebrew: רשת Dueling DQN]**
@@ -1470,6 +1606,8 @@ graph LR
     D --> E
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=n4xFJGlsCy4)
+
 ## Early Stopping
 **[Category: Deep Learning]** | **[Hebrew: עצירה מוקדמת]**
 * A critical regularization technique that automatically halts a neural network's training phase the exact moment it detects that the model's performance on the validation dataset has stopped improving, preventing it from spiraling into Overfitting.
@@ -1488,6 +1626,8 @@ graph LR
     C -->|Validation Loss rises for 3 epochs| D[Stop Training & Save Model]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=CODw8292uqE)
+
 ## Edge Detection
 **[Category: Image Processing]** | **[Hebrew: זיהוי קצוות / Edge Detection]**
 * An image processing technique that identifies boundaries and sharp transitions in pixel intensity within an image. It uses directional kernels (such as Sobel or Canny filters) to highlight where rapid changes occur, revealing the structural outlines of objects.
@@ -1502,6 +1642,8 @@ graph LR
 ```math
 G_x = \begin{bmatrix} -1 & 0 & 1 \\ -2 & 0 & 2 \\ -1 & 0 & 1 \end{bmatrix} * A
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5r2wIzOpuwQ)
 
 ## EfficientNet
 **[Category: Deep Learning]** | **[Hebrew: רשת EfficientNet יעילה]**
@@ -1541,6 +1683,8 @@ graph TD
     D --> E
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=3svIm5UC94I)
+
 ## Eigenvalue & Eigenvector
 **[Category: Linear Algebra]** | **[Hebrew: ערך עצמי ווקטור עצמי]**
 * An eigenvector of a matrix is a special non-zero vector that, when the matrix transformation is applied to it, only changes in scale (stretched or shrunk) but not in direction. The eigenvalue is the scalar factor by which the eigenvector is scaled. Together, they reveal the principal axes of variance in a dataset.
@@ -1557,6 +1701,8 @@ A v = \lambda v
 ```
 Where $A$ is a square matrix, $v$ is the eigenvector, and $\lambda$ is the eigenvalue.
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PFDu9oVAE-g)
+
 ## ELBO (Evidence Lower Bound)
 **[Category: Deep Learning]** | **[Hebrew: חסם תחתון לראיה / ELBO]**
 * The objective function optimized during training of Variational Auto Encoders (VAE). ELBO combines two terms: a reconstruction loss (how well the decoder recreates the input) and a KL divergence penalty (how closely the latent distribution matches a target Gaussian). Maximizing ELBO simultaneously improves reconstruction quality and regularizes the latent space.
@@ -1571,6 +1717,8 @@ Where $A$ is a square matrix, $v$ is the eigenvector, and $\lambda$ is the eigen
 ```math
 \text{ELBO} = \mathbb{E}_{q_\phi(z|x)}[\log p_\theta(x|z)] - D_{KL}(q_\phi(z|x) || p(z))
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=HxQ94L8n0vU)
 
 ## ELBO Loss Function
 **[Category: Deep Learning]** | **[Hebrew: פונקציית הפסד ELBO]**
@@ -1587,6 +1735,8 @@ graph LR
     A[ELBO Loss] --> B[Reconstruction Loss (MSE/BCE)]
     A --> C[KL Divergence Penalty]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=G5xcC5ABVjA)
 
 ## Embedding
 **[Category: Large Language Models (LLM)]** | **[Hebrew: שיכון / Embedding]**
@@ -1605,6 +1755,8 @@ graph LR
     B --> C[Vector: 0.8, -0.2, 0.5...]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Encoder-Decoder Architecture
 **[Category: Deep Learning Architecture]** | **[Hebrew: ארכיטקטורת קידוד-פענוח]**
 * A symmetrical neural network design composed of two distinct halves. The 'Encoder' acts like a funnel, aggressively compressing the input data (finding the 'What'). The 'Decoder' acts like a megaphone, taking that compressed data and expanding it back out into a full resolution output (finding the 'Where').
@@ -1621,6 +1773,8 @@ graph LR
     B -->|Decompress| C[Output]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=zbdong_h-x4)
+
 ## Entropy
 **[Category: Statistics]** | **[Hebrew: אנטרופיה / מידת אי-ודאות]**
 * A mathematical measure of uncertainty or randomness in a probability distribution. When entropy is 0, there is complete certainty (probability of 1 for one outcome). When entropy is maximal (1 for binary), the distribution is perfectly uniform — maximum uncertainty. It quantifies how many bits are needed to encode the information.
@@ -1635,6 +1789,8 @@ graph LR
 ```math
 H(X) = -\sum_{i} P(x_i) \log P(x_i)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YtebGVx-Fxw)
 
 ## Epoch
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: תקופת אימון מלאה / Epoch]**
@@ -1654,6 +1810,8 @@ graph LR
     C --> D[Epoch 1 Complete]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=SftOqbMrGfE)
+
 ## Euclidean Distance
 **[Category: Linear Algebra]** | **[Hebrew: מרחק אוקלידי]**
 * The straight-line distance between two points in multi-dimensional space, calculated using the Pythagorean theorem generalized to N dimensions. It is the most commonly used distance metric in machine learning for measuring similarity between data points.
@@ -1669,6 +1827,8 @@ graph LR
 d(p, q) = \sqrt{\sum_{i=1}^{n} (p_i - q_i)^2}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6N1ZQkndBAY)
+
 ## F1-Score
 **[Category: Model Evaluation]** | **[Hebrew: מדד הרמוני / F1-Score]**
 * A consolidated performance metric combining 'Precision' and 'Recall' into a single, balanced harmonic mean. It is especially vital when evaluating datasets with highly imbalanced class distributions, providing a far more realistic evaluation than simple Accuracy.
@@ -1683,6 +1843,8 @@ d(p, q) = \sqrt{\sum_{i=1}^{n} (p_i - q_i)^2}
 ```math
 F1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=2osIZ-dSPGE)
 
 ## Feature
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: עמודה / פיצ'ר / תכונה]**
@@ -1702,6 +1864,8 @@ graph TD
     A --> D[Feature 3: Zip Code]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Feature Extraction
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: חילוץ תכונות / Feature Extraction]**
 * The process of transforming raw data into a reduced set of meaningful numerical features that can be effectively used by machine learning models. In deep learning, convolutional layers automatically extract hierarchical features — from simple edges in early layers to complex shapes and objects in deeper layers.
@@ -1718,6 +1882,8 @@ graph LR
     A[Raw Pixels] --> B(Filters/Kernels)
     B --> C[Edges, Textures, Shapes]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=yd6XNKqtCZA)
 
 ## Feature Map
 **[Category: Deep Learning]** | **[Hebrew: מפת תכונות / Feature Map]**
@@ -1736,6 +1902,8 @@ graph LR
     B -->|High values| C[Detected Feature Location]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
+
 ## Few Shot Prompting
 **[Category: Prompt Engineering]** | **[Hebrew: פרומפטינג עם מספר דוגמאות / Few Shot]**
 * A prompt engineering strategy where an LLM is given 2 to 5 concrete examples (demonstrations) of the desired task directly within the prompt itself. This massively helps the model map out the strict structural formatting expected for its response.
@@ -1753,6 +1921,8 @@ graph TD
     B --> C[Example 2: Input -> Output]
     C --> D[Real Request: Input -> ?]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sW5xoicq5TY)
 
 ## FFMPEG
 **[Category: Tools & Environments]** | **[Hebrew: כלי FFMPEG לעיבוד וידאו]**
@@ -1773,6 +1943,8 @@ graph LR
     D --> E[output.gif]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Fine-Tuning
 **[Category: Deep Learning]** | **[Hebrew: כוונון עדין / Fine-Tuning]**
 * The process of taking a pre-trained neural network model and continuing its training on a new, smaller, domain-specific dataset. Typically, the early convolutional layers are 'frozen' (their weights are locked) while only the later classification layers are retrained, adapting the model to a specialized task with minimal data.
@@ -1790,6 +1962,8 @@ graph LR
     B --> C[Train only top layers on new dataset]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5T-iXNNiwIs)
+
 ## Flatten
 **[Category: Deep Learning]** | **[Hebrew: השטחה / Flatten]**
 * A vital structural data manipulation step used right before feeding multi-dimensional data (like 2D images or 3D tensors) into a standard 1D Artificial Neural Network. It unrolls the grid of pixels into a single, long sequence of numbers (a vector).
@@ -1805,6 +1979,8 @@ A 3x3 matrix becomes a 1x9 vector:
 ```math
 \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix} \rightarrow [1, 2, 3, 4]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=gjFzWbRuYX8)
 
 ## Forward Propagation
 **[Category: Deep Learning]** | **[Hebrew: התפשטות קדימה / Forward Pass]**
@@ -1823,6 +1999,8 @@ graph LR
     B -->|Apply Activation| C[Output Y_hat]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=99CcviQchd8)
+
 ## Fourier Transform (FFT)
 **[Category: Image Processing]** | **[Hebrew: התמרת פורייה]**
 * A transformative mathematical formula that breaks apart a complex signal, like an image, from its spatial domain (pixels) into its frequency domain (sine waves). It allows machines to view and edit images based on their underlying repeating structural frequencies rather than color dots.
@@ -1837,6 +2015,8 @@ graph LR
 ```math
 X(f) = \int_{-\infty}^{\infty} x(t) e^{-i 2 \pi f t} dt
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=spUNpyF58BY)
 
 ## Fully Connected Feature Vector
 **[Category: Deep Learning]** | **[Hebrew: וקטור תכונות של שכבה מחוברת במלואה]**
@@ -1853,6 +2033,8 @@ graph LR
     A[Flattened Vector] --> B[Fully Connected Dense Layer]
     B --> C[Class Probabilities]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=2TQhnGmXfDI)
 
 ## Fully Connected Layer (MLP)
 **[Category: Deep Learning]** | **[Hebrew: שכבה מלאה / Multi-Layer Perceptron]**
@@ -1873,6 +2055,8 @@ graph LR
     B --> D
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=7YaqzpitBXw)
+
 ## Fully Convolutional Network (FCN)
 **[Category: Deep Learning]** | **[Hebrew: רשת קונבולוציונית מלאה / FCN]**
 * A neural network architecture composed entirely of convolutional layers without any fully connected (dense) layers. By replacing dense layers with convolutional ones, the network can accept inputs of any size and produce spatially structured outputs, making it ideal for pixel-level tasks like semantic segmentation.
@@ -1891,6 +2075,8 @@ graph LR
     C --> D[Spatial Heatmap Output]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=H5HGZ1wLtrk)
+
 ## Gaussian Distribution
 **[Category: Statistics]** | **[Hebrew: התפלגות גאוסיאנית / התפלגות נורמלית]**
 * A continuous probability distribution that forms a symmetrical, bell-shaped curve around its mean. In this distribution, most of the observations cluster around the central peak, and the probabilities for values further away taper off equally in both directions.
@@ -1905,6 +2091,8 @@ graph LR
 ```math
 f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_pz1T_BmB0k)
 
 ## Gaussian Mixture Model (GMM)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: מודל תערובת גאוסיאנית / GMM]**
@@ -1924,6 +2112,8 @@ graph TD
     A --> D[Gaussian 3: Cluster C]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wT2yLNUfyoM)
+
 ## Generative Modeling
 **[Category: Deep Learning]** | **[Hebrew: מודל ג'נרטיבי]**
 * A branch of AI focused completely on creating entirely new, unseen data that mimics the original training dataset. Instead of classifying if an image is a cat or a dog (Discriminative), generative models study the deep mathematical "distribution" of cat photos to artificially draw a fake cat from scratch.
@@ -1940,6 +2130,8 @@ graph LR
     A[Discriminative] -->|Given X, predict Y| B(Is it a dog?)
     C[Generative] -->|Learn P(X)| D(Draw a new dog)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## GIL (Global Interpreter Lock)
 **[Category: Tools & Environments]** | **[Hebrew: נעילת מפרש גלובלית / GIL]**
@@ -1959,6 +2151,8 @@ graph LR
     D[Thread 2] --> B
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=XVcRQ6T9RHo)
+
 ## Git / GitHub
 **[Category: Tools & Version Control]** | **[Hebrew: ארכיון קוד בענן / ניהול גרסאות (גיט)]**
 * Git is a popular local version control system that tracks changes in computer files, while GitHub is a cloud platform for securely hosting and managing those Git repositories. Together, they allow development teams to collaborate efficiently, backup code remotely, and easily maintain a complete history of their project versions.
@@ -1976,6 +2170,8 @@ graph LR
     B -->|git push| C[(Remote GitHub Repo)]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=e9lnsKot_SQ)
+
 ## Global Average Pooling (GAP)
 **[Category: Deep Learning]** | **[Hebrew: סינון ממוצע גלובלי / GAP]**
 * An advanced pooling operation that computes the average of all values across each entire feature map channel, collapsing the spatial dimensions (height × width) into a single number per channel. It replaces the traditional Flatten + Dense approach, drastically reducing the total number of parameters and overfitting risk.
@@ -1991,6 +2187,8 @@ graph LR
 graph LR
     A[Feature Map 7x7x512] -->|Average each 7x7 slice| B[Vector 1x1x512]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=gNRVTCf6lvY)
 
 ## Google Colab
 **[Category: Tools & Environments]** | **[Hebrew: סביבת עבודה בענן / Google Colab]**
@@ -2010,6 +2208,8 @@ graph LR
     B --> D[Google Drive Storage]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=nAgg9ZvixdQ)
+
 ## GoogLeNet / Inception
 **[Category: Deep Learning]** | **[Hebrew: רשת GoogLeNet / Inception]**
 * A deep CNN architecture developed by Google that introduced the "Inception module" — parallel convolutional paths with different kernel sizes (1×1, 3×3, 5×5) that process the same input simultaneously and concatenate their outputs. This allows the network to capture features at multiple scales in a single layer, achieving high accuracy with fewer parameters than VGGNet.
@@ -2028,6 +2228,8 @@ graph TD
     B --> D[Global Average Pooling]
     D --> E[Final Classifier]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=VxhSouuSZDY)
 
 ## GoogLeNet Inception Module
 **[Category: Computer Vision Architectures]** | **[Hebrew: מודול Inception בגוגלנט]**
@@ -2051,6 +2253,8 @@ graph LR
     E --> F
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=VxhSouuSZDY)
+
 ## Gradient Descent
 **[Category: Machine Learning Mathematics]** | **[Hebrew: ירידה בגרדיאנט (אופטימיזציה)]**
 * The core optimization algorithm used intensely in Machine Learning and Deep Learning to minimize the model's loss function. It mathematically calculates the steepest downward slope of the error curve and takes incremental steps downward towards the absolute minimum error. In the course, Dr. Segal describes it as a 'blind hiker' searching for the lowest point in a valley — the gradient tells which direction is steepest, and the algorithm walks in the opposite direction. When working with vectors, the gradient is computed by taking partial derivatives along each dimension separately.
@@ -2063,8 +2267,11 @@ graph LR
 
 * **Mathematical Formula:**
 ```math
-\theta_{t+1} = \theta_t - \eta \nabla J(\theta_t)
+\theta_{t+1} = \theta_t - \eta 
+abla J(\theta_t)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=IHZwWFHWa-w)
 
 ## Grid Cells (YOLO)
 **[Category: Computer Vision Architectures]** | **[Hebrew: תאי סבכה / Grid Cells]**
@@ -2084,6 +2291,8 @@ graph TD
     C -->|No| E[Cell ignores Object]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ag3DLKsl2vk)
+
 ## Ground Truth
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: האמת המוחלטת / תיוג המוצא]**
 * The definitive, absolute reality or correct answer that a machine learning model aims to ultimately predict. In the course, Dr. Segal emphasizes: 'There is always a Specialist (Professional) that decides what is the ground truth (האמת המוחלטת).' The machine gives predictions, but only the domain expert knows the truth. It acts as an accurate "answer key," usually defined by human domain experts, enabling the model to learn efficiently and measure its own accuracy during training tests.
@@ -2101,6 +2310,8 @@ graph LR
     C[Ground Truth: 1.0] --> B
     B --> D[Calculate Loss]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ya92bJbl0jc)
 
 ## Group of Pictures (GOP)
 **[Category: Video Compression]** | **[Hebrew: קבוצת פריימים / GOP]**
@@ -2120,6 +2331,8 @@ graph LR
     C --> D[P-Frame]
     D --> E[I-Frame]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=nFGmb8Z2zLw)
 
 ## Histogram
 **[Category: Statistics]** | **[Hebrew: היסטוגרמה (פיזור נתונים ב-"סלים")]**
@@ -2142,6 +2355,8 @@ graph TD
     D --> G[Count: 2]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qBigTkBLU6g)
+
 ## Hough Transform
 **[Category: Image Processing]** | **[Hebrew: התמרת הוף / Hough Transform]**
 * A classical image processing algorithm that detects geometric shapes (primarily straight lines and circles) in images. It transforms edge points from image space into parameter space, where intersecting curves indicate the presence of a geometric shape, making it robust to noise and partial occlusion.
@@ -2156,6 +2371,8 @@ graph TD
 ```math
 \rho = x \cos \theta + y \sin \theta
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=XRBc_xkZREg)
 
 ## Huffman Coding
 **[Category: Signal Processing]** | **[Hebrew: קידוד הופמן / Huffman Coding]**
@@ -2176,6 +2393,8 @@ graph TD
     C --> E[11: 'T' 25%]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=iEm1NRyEe5c)
+
 ## Hyperparameter
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: היפר-פרמטר / פרמטר מוגדר מראש]**
 * A configuration variable that is set before the learning process begins and is not learned from the data. Unlike model parameters (weights and biases) that are optimized during training, hyperparameters control the training process itself — such as learning rate, batch size, number of layers, and number of epochs.
@@ -2195,6 +2414,8 @@ graph TD
     D --> F(Biases)
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=r2TvNmAxiCU)
+
 ## Hyperspectral Image
 **[Category: Image Processing]** | **[Hebrew: תמונה היפר-ספקטרלית / רב-שכבתית]**
 * A digital image containing many more layers (channels) than standard RGB. While a regular photo has 3 channels (Red, Green, Blue), a hyperspectral image can have dozens or hundreds of channels capturing data across different wavelengths — including infrared, ultraviolet, radar, and thermal bands invisible to the human eye.
@@ -2211,6 +2432,8 @@ graph LR
     A[Spatial X, Y] --> B(Add Hundreds of Spectral Bands)
     B --> C[3D Hyperspectral Cube]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=WrksviwI7-A)
 
 ## I-Frame
 **[Category: Video Compression]** | **[Hebrew: פריים מפתח / I-Frame]**
@@ -2230,6 +2453,8 @@ graph LR
     C --> D[Used to reconstruct B/P Frames]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Image Processing
 **[Category: Image Processing]** | **[Hebrew: עיבוד תמונה]**
 * The broad field of applying mathematical operations to digital images in order to enhance, analyze, compress, or extract information from them. In the course, the fundamental goal is described as extracting objects from flat 2D images. Key concepts include spatial frequency (how rapidly brightness changes across an image), and the distinction between spatial domain (pixel values) and frequency domain (sine wave components). It encompasses operations from simple transformations (rotation, scaling) to complex analyses (frequency decomposition, segmentation) and forms the foundation for computer vision and deep learning on visual data.
@@ -2248,6 +2473,8 @@ graph LR
     C --> D[Thresholding]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Image Reconstruction Loss
 **[Category: Deep Learning]** | **[Hebrew: פונקציית הפסד לשחזור תמונה]**
 * A specific application of a Loss Function used in unsupervised Auto Encoders. Instead of comparing a prediction to a human-made label, the network strictly compares the final Decoder output pixel-by-pixel against the original input image. The goal is to make the Delta (difference) exactly zero.
@@ -2261,6 +2488,8 @@ graph LR
 ```math
 \mathcal{L}_{recon} = \frac{1}{N} \sum_{i=1}^N (x_i - \hat{x}_i)^2
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=9HLDgGae40Y)
 
 ## Image to Feature Transition
 **[Category: Computer Vision]** | **[Hebrew: המרה מתמונה לפיצ'רים]**
@@ -2278,6 +2507,8 @@ graph LR
     B --> C[1D Abstract Feature Vector]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Inner Product (Dot Product)
 **[Category: Linear Algebra]** | **[Hebrew: מכפלה פנימית / מכפלה סקלרית]**
 * An algebraic operation that takes two equal-length vectors and returns a single numerical scalar. Geometrically, it reflects the "projection" or similarity in direction between two data points.
@@ -2292,6 +2523,8 @@ graph LR
 ```math
 \vec{A} \cdot \vec{B} = \sum_{i=1}^n A_i B_i = ||A|| ||B|| \cos(\theta)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=2PrSUK1VrKA)
 
 ## Instance Segmentation
 **[Category: Computer Vision]** | **[Hebrew: פילוח מופעים / Instance Segmentation]**
@@ -2311,6 +2544,8 @@ graph LR
     A --> D[Detect Dog 3: Mask C]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5QUmlXBb0MY)
+
 ## Interpolation
 **[Category: Image Processing]** | **[Hebrew: אינטרפולציה / ביניים]**
 * A mathematical technique used to estimate unknown values between known data points. In image processing, interpolation is used to increase image resolution (up-sampling) by computing new pixel values based on surrounding existing pixels, enabling smooth enlargement without blocky artifacts.
@@ -2326,6 +2561,8 @@ graph LR
 y = y_1 + \frac{(x - x_1)(y_2 - y_1)}{x_2 - x_1}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Xj129kA3Ci0)
+
 ## Interquartile Range (IQR)
 **[Category: Statistics]** | **[Hebrew: הטווח שבין הרבעונים / IQR]**
 * A measure of statistical dispersion that represents the middle 50% of the data. It is calculated by subtracting the first quartile (Q1, 25th percentile) from the third quartile (Q3, 75th percentile). It is exceptionally useful for detecting outliers since it ignores extreme endpoint values.
@@ -2340,6 +2577,8 @@ y = y_1 + \frac{(x - x_1)(y_2 - y_1)}{x_2 - x_1}
 ```math
 IQR = Q_3 - Q_1
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=9jYqZS142mg)
 
 ## Inverse Convolution
 **[Category: Deep Learning Architecture]** | **[Hebrew: קונבולוציה הפוכה]**
@@ -2357,6 +2596,8 @@ graph LR
     B --> C[3x3 Expanded Area]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QzY57FaENXg)
+
 ## IoU (Intersection over Union)
 **[Category: Computer Vision]** | **[Hebrew: חיתוך חלקי האיחוד / IoU]**
 * The standard mathematical metric used to evaluate how accurate an object detection algorithm (like YOLO) is. It calculates the area where the predicted bounding box visually overlaps with the actual Ground Truth bounding box, divided by the total area both boxes cover combined. 
@@ -2371,6 +2612,8 @@ graph LR
 ```math
 IoU = \frac{\text{Area of Overlap}}{\text{Area of Union}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RgQbweTwrkU)
 
 ## JPEG Compression
 **[Category: Image Processing]** | **[Hebrew: תאימות דחיסת תמונה / דחיסת JPEG]**
@@ -2390,6 +2633,8 @@ graph LR
     C --> D[Quantization]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=KPZuB-ecu7A)
+
 ## JSON vs JSONL Logging
 **[Category: Data Formats]** | **[Hebrew: רישום ב-JSON מול JSONL]**
 * An architectural choice when logging continuous AI agent history. A standard JSON file wraps all data in one massive array—if a single comma is missing, the entire file corrupts and the agent loses its history. JSONL (JSON Lines) writes every single log entry as an independent JSON object on a new line, making it infinitely appendable and highly crash-resistant.
@@ -2405,6 +2650,8 @@ graph TD
     A[Standard JSON] -->|Missing Comma| B[Entire File Corrupts]
     C[JSONL] -->|Append New Line| D[Safe & Independent Log]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=tQwTqvBv9E0)
 
 ## K-Fold Cross Validation
 **[Category: Model Evaluation]** | **[Hebrew: אימות צולב K-Fold]**
@@ -2424,6 +2671,8 @@ graph LR
     A --> D[Average all Fold Results]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=TIgfjmp-4BA)
+
 ## K-Means Clustering
 **[Category: Machine Learning Algorithms]** | **[Hebrew: קיבוץ K-Means]**
 * An unsupervised learning algorithm that groups unlabeled data into a specified number (K) of distinct, non-overlapping clusters. The algorithm iterates: (1) assign each point to the nearest centroid, (2) recalculate each centroid as the mean of its assigned points, (3) repeat until convergence. The goal is to minimize within-cluster variance while maximizing between-cluster variance. It works iteratively to assign each data point to the cluster with the nearest mean (centroid).
@@ -2442,6 +2691,8 @@ graph LR
     C --> B
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=4b5d3muPQmA)
+
 ## K-Nearest Neighbors (KNN)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: אלגוריתם KNN / שכן קרוב]**
 * A simple, supervised machine learning algorithm used for classification and regression tasks. It predicts the category of a new data point by finding the 'K' closest data points (neighbors) in the training set and using a majority vote to assign the label.
@@ -2456,6 +2707,8 @@ graph LR
 ```math
 \hat{y} = \text{mode}(\{y_i : i \in \text{top } K \text{ nearest}\})
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=HVXime0nQeI)
 
 ## Kaggle
 **[Category: Tools & Environments]** | **[Hebrew: קאגל / פלטפורמת תחרויות ML]**
@@ -2492,6 +2745,8 @@ graph LR
     A --> D[Competitions]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=kQmHaI5Jw1c)
+
 ## Keras
 **[Category: Tools & Environments]** | **[Hebrew: ספריית Keras לרשתות נוירונים]**
 * A high-level, user-friendly Python deep learning library that provides simple, intuitive APIs for building and training neural networks. It runs on top of TensorFlow and abstracts away the low-level mathematical complexity, allowing developers to define complex architectures in just a few lines of code.
@@ -2510,6 +2765,8 @@ graph TD
     C --> D[GPU Execution]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=z-ZR_8BZ1wQ)
+
 ## Kernel (Filter)
 **[Category: Deep Learning]** | **[Hebrew: קרנל / מסנן / פילטר]**
 * A small matrix of learnable weights (typically 3×3 or 5×5) that slides across an input image during convolution, computing a scalar product at each position to produce a feature map. Each kernel is specialized to detect a specific pattern — horizontal edges, vertical edges, corners, textures — and the CNN learns the optimal kernel values during training.
@@ -2527,6 +2784,8 @@ graph LR
     B --> C[Feature Map Pixel]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=yb2tPt0QVPY)
+
 ## Kernel Weight Learning
 **[Category: Deep Learning]** | **[Hebrew: למידת משקלי הגרעין]**
 * In Convolutional Neural Networks, the network does not learn the image pixels themselves; instead, it solely learns the mathematical weights inside the tiny 3x3 kernels. Through backpropagation, these kernels automatically evolve to become specialized edge detectors, color detectors, and eventually complex object detectors.
@@ -2543,6 +2802,8 @@ graph LR
     B --> C(Backpropagate Error)
     C --> D[Optimized Edge-Detecting Kernel]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=xoHGA8XEYVY)
 
 ## Keypoint (Pose Estimation)
 **[Category: Computer Vision]** | **[Hebrew: נקודת מפתח / Keypoint]**
@@ -2563,6 +2824,8 @@ graph TD
     B --> C --> D
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_sobpAW16c0)
+
 ## KL Divergence
 **[Category: Deep Learning]** | **[Hebrew: מדד קולבק-לייבלר / KL Divergence]**
 * A statistical measure that calculates how much one probability distribution differs from a second, reference probability distribution. In AI, it is heavily used as a Loss Function within Generative Models (like Variational Autoencoders) to force the AI's generated data to mathematically match the distribution of the required training data.
@@ -2577,6 +2840,8 @@ graph TD
 ```math
 D_{KL}(P || Q) = \sum_{x} P(x) \log \left( \frac{P(x)}{Q(x)} \right)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=SxGYPqCgJWM)
 
 ## Large Language Model (LLM)
 **[Category: Artificial Intelligence Domains]** | **[Hebrew: מודל שפה גדול / LLM]**
@@ -2595,6 +2860,8 @@ graph LR
     B --> C[Next Word Prediction]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=5sLYAQS9sWQ)
+
 ## Latent Distribution Generation
 **[Category: Deep Learning Architecture]** | **[Hebrew: יצירת התפלגות במרחב סמוי]**
 * The core mechanism of a VAE that enables it to generate 'fake' data from scratch. Instead of mapping an image to a single fixed point in the latent space (like a standard Auto Encoder), it maps it to an entire Probability Distribution (a bell curve). By sampling random points from within this curve and decoding them, the model generates brand new variations that never existed.
@@ -2608,6 +2875,8 @@ graph LR
 ```math
 z = \mu + \sigma \odot \epsilon \quad \text{where} \quad \epsilon \sim \mathcal{N}(0, I)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=mX2y3NWmaCQ)
 
 ## Latent Space
 **[Category: Deep Learning]** | **[Hebrew: מרחב סמוי / Latent Space]**
@@ -2627,6 +2896,8 @@ graph TD
     C -->|Semantic Math| D[e.g., King - Man + Woman]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=mX2y3NWmaCQ)
+
 ## Latent Space Representation
 **[Category: Deep Learning Architecture]** | **[Hebrew: ייצוג במרחב הסמוי / שכבת הקוד]**
 * The highly compressed, abstract mathematical vector that sits exactly in the middle of an Auto Encoder (between the Encoder and the Decoder). It contains the absolute 'concentrate' (like juice concentrate) of the image's core features, stripped of all background noise. In this mathematical space, similar concepts (like all pictures of cats) cluster closely together.
@@ -2644,6 +2915,8 @@ graph LR
     B -->|Interpolation Line| C
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=mX2y3NWmaCQ)
+
 ## Leaky ReLU
 **[Category: Deep Learning]** | **[Hebrew: ReLU דולף / Leaky ReLU]**
 * A variant of the ReLU activation function that allows a small, non-zero gradient for negative input values instead of outputting strict zero. The formula is f(x) = x if x > 0, else αx (where α is a small constant like 0.01). This prevents the "dying ReLU" problem where neurons permanently output zero and stop learning.
@@ -2658,6 +2931,8 @@ graph LR
 ```math
 f(x) = \begin{cases} x & \text{if } x > 0 \\ 0.01x & \text{otherwise} \end{cases}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6MmGNZsA5nI)
 
 ## Learning Rate
 **[Category: Deep Learning]** | **[Hebrew: קצב למידה / Learning Rate]**
@@ -2677,6 +2952,8 @@ graph TD
     E[Optimal LR] -->|Smooth| F[Reaches Global Minimum]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=jWT-AX9677k)
+
 ## Lift (Association Rules)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: עניין / Lift]**
 * A metric used in Association Rule learning to determine the strength of an association over what would be expected by random chance. A Lift greater than 1 means the two items appear together more often than expected, indicating a useful rule. A Lift below 1 indicates a negative correlation.
@@ -2691,6 +2968,8 @@ graph TD
 ```math
 Lift(A \Rightarrow B) = \frac{P(A \cap B)}{P(A) \times P(B)}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=FGGlscdeMOQ)
 
 ## Likelihood Function (MLE)
 **[Category: Statistics]** | **[Hebrew: פונקציית נראות / שיטת הנראות המרבית]**
@@ -2707,6 +2986,8 @@ Lift(A \Rightarrow B) = \frac{P(A \cap B)}{P(A) \times P(B)}
 L(\theta | x) = \prod_{i=1}^n f(x_i | \theta)
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wbh730SeqeA)
+
 ## Linear Discriminant Analysis (LDA)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: ניתוח סיווג לינארי / LDA]**
 * A dimensionality reduction technique used mainly in supervised machine learning. Its goal is to project a dataset onto a lower-dimensional space while maximizing the separability between known categories, minimizing the overlap between them.
@@ -2721,6 +3002,8 @@ L(\theta | x) = \prod_{i=1}^n f(x_i | \theta)
 ```math
 J(w) = \frac{w^T S_B w}{w^T S_W w}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=azXCzI57Yfc)
 
 ## Linear Programming
 **[Category: Machine Learning Mathematics]** | **[Hebrew: תכנון לינארי / אופטימיזציה]**
@@ -2740,6 +3023,8 @@ graph TD
     C --> D[Optimal Solution]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Coe4XTW1-eE)
+
 ## Linear Regression
 **[Category: Machine Learning Algorithms]** | **[Hebrew: רגרסיה ליניארית]**
 * A supervised machine learning algorithm that models the relationship between a dependent variable (Y) and one or more independent variables (X) by fitting a straight line (Y = aX + b) that minimizes the sum of squared errors (SSE) between predicted and actual values. The core of ML: 'I know X and Y (the data). The ML needs to learn the optimal a and b.' The Ordinary Least Squares (OLS) method finds optimal parameters via calculus derivatives rather than trial-and-error. It is the foundational algorithm for understanding all regression-based machine learning.
@@ -2754,6 +3039,8 @@ graph TD
 ```math
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \dots + \beta_n x_n + \epsilon
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=3dhcmeOTZ_Q)
 
 ## Local Minimum
 **[Category: Machine Learning Mathematics]** | **[Hebrew: מינימום מקומי בעקומת למידה]**
@@ -2773,6 +3060,8 @@ graph TD
     style B stroke:#f00,stroke-width:4px
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qg4PchTECck)
+
 ## Logistic Regression
 **[Category: Machine Learning Algorithms]** | **[Hebrew: רגרסיה לוגיסטית]**
 * A supervised machine learning algorithm for binary classification that uses the Sigmoid function to map a linear combination of input features to a probability value between 0 and 1. Despite its name containing 'regression,' it is fundamentally a classification algorithm that predicts the probability of belonging to a specific class.
@@ -2788,6 +3077,8 @@ graph TD
 P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=yIYKR4sgzI8)
+
 ## Logit
 **[Category: Machine Learning Mathematics]** | **[Hebrew: לוגיט / פונקציית יחס הסיכויים]**
 * The logarithm of the odds ratio, transforming a probability value (0 to 1) into an unbounded real number (-∞ to +∞). The logit function is the mathematical inverse of the sigmoid function. In logistic regression, the logit creates a linear relationship between input features and the log-odds of the outcome, making the problem solvable with linear methods.
@@ -2802,6 +3093,8 @@ P(y=1|x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x)}}
 ```math
 L = \ln\left(\frac{p}{1-p}\right)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EKm0spFxFG4)
 
 ## LoRA (Low-Rank Adaptation)
 **[Category: Model Optimization]** | **[Hebrew: מודל מותאם אישית / LoRA]**
@@ -2819,6 +3112,8 @@ graph LR
     B[Trainable A x B Matrices] --> C
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=DhRoTONcyZE)
+
 ## Loss as Test Score
 **[Category: Model Evaluation]** | **[Hebrew: פונקציית הפסד כציון מבחן]**
 * A conceptual framework comparing the Loss Function to a student's test score. At the end of every training cycle, the loss function evaluates how wrong the AI's prediction was compared to the ground truth. This numerical 'penalty score' acts as the sole compass guiding the network on how to adjust its weights to improve.
@@ -2835,6 +3130,8 @@ graph LR
     C[Loss = 0.01] -->|Excellent Score| D[Minor Adjustment]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=nt5DwCuYY5c)
+
 ## Loss Function
 **[Category: Deep Learning]** | **[Hebrew: פונקציית הפסד / פונקציית שגיאה]**
 * A mathematical function that quantifies how far the model's predictions are from the actual ground truth values. The entire goal of training a neural network is to minimize this function. Different tasks require different loss functions: MSE for regression, Cross Entropy for classification.
@@ -2849,6 +3146,8 @@ graph LR
 ```math
 J(\theta) = \frac{1}{m} \sum_{i=1}^m L(\hat{y}_i, y_i)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=QBbC3Cjsnjg)
 
 ## Loss Landscape Guidance
 **[Category: Deep Learning]** | **[Hebrew: הכוונת תוצאות בעזרת פונקציית הפסד]**
@@ -2865,6 +3164,8 @@ graph TD
     A[High Loss Terrain] -->|Optimizer calculates slope| B[Move downhill]
     B -->|Learning Rate defines step size| C[Optimal Valley]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## LSTM (Long Short-Term Memory)
 **[Category: Deep Learning]** | **[Hebrew: זיכרון ארוך-קצר טווח / LSTM]**
@@ -2885,6 +3186,8 @@ graph LR
     D --> E[Next Hidden State]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=b61DPVFX03I)
+
 ## Machine Learning (ML)
 **[Category: Artificial Intelligence Domains]** | **[Hebrew: למידת מכונה / ML]**
 * A subset of Artificial Intelligence where algorithms automatically learn patterns and make decisions from data without being explicitly programmed for each scenario. The core mathematical goal is to find optimal parameters (weights) that minimize prediction error by iteratively training on labeled or unlabeled datasets.
@@ -2901,6 +3204,8 @@ graph LR
     A[Data + Answers] --> B(Machine Learning Algorithm)
     B --> C[Rules / Trained Model]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## Macro Block
 **[Category: Video Compression]** | **[Hebrew: בלוק מאקרו / Macro Block]**
@@ -2919,6 +3224,8 @@ graph TD
     B --> C[Analyze Block Motion]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Manhattan Distance
 **[Category: Linear Algebra]** | **[Hebrew: מרחק מנהטן / L1 Distance]**
 * A distance metric that measures the sum of absolute differences between coordinates of two points — equivalent to the distance a taxi would drive on a grid-like street layout (hence the name). Unlike Euclidean distance (straight-line), Manhattan distance follows axes, making it more appropriate for grid-based or sparse data.
@@ -2933,6 +3240,8 @@ graph TD
 ```math
 d(p, q) = \sum_{i=1}^n |p_i - q_i|
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=s7ssfa5DhtI)
 
 ## Manus AI Agent
 **[Category: Tools & Environments]** | **[Hebrew: סוכן AI Manus]**
@@ -2952,6 +3261,8 @@ graph LR
     B --> E[Draft Email]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=a7OZwy7kOxM)
+
 ## Matrix
 **[Category: Linear Algebra]** | **[Hebrew: מטריצה]**
 * An array of arrays (or a two-dimensional grid of numbers) used heavily in linear algebra to represent datasets, weights, or transformations. It allows the mathematical handling of multiple vectors simultaneously, which is essential for batch-processing data in Machine Learning.
@@ -2969,6 +3280,8 @@ graph TD
     A --> C[Columns: Features]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Wibxjrxf5ko)
+
 ## Max Pooling
 **[Category: Deep Learning]** | **[Hebrew: סינון מקסימום / Max Pooling]**
 * A downsampling operation typically applied after a Convolutional layer to severely reduce the spatial dimensions (width and height) of a feature map, providing 'translation invariance' — the ability to recognize patterns regardless of their position in the image. It works by sliding a small window over the image and carrying strictly the highest pixel value forward, naturally discarding irrelevant background data.
@@ -2985,6 +3298,8 @@ graph LR
     A[2x2 Grid: 1,3,2,9] -->|Extract Maximum| B[Single Value: 9]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZjM_XQa5s6s)
+
 ## Mean IoU (mIoU)
 **[Category: Model Evaluation]** | **[Hebrew: מדד חיתוך על איחוד ממוצע / mIoU]**
 * The definitive metric for evaluating Semantic Segmentation and Object Detection models. While IoU calculates the overlap for a single object, Mean IoU averages this score across *all* classes in the dataset. It provides a harsh, accurate assessment of how well the model precisely locates objects compared to human ground truth.
@@ -2998,6 +3313,8 @@ graph LR
 ```math
 mIoU = \frac{1}{N} \sum_{i=1}^N \frac{TP_i}{TP_i + FP_i + FN_i}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RgQbweTwrkU)
 
 ## Mean Square Error (MSE)
 **[Category: Machine Learning Mathematics]** | **[Hebrew: שגיאה ריבועית ממוצעת / MSE]**
@@ -3014,6 +3331,8 @@ mIoU = \frac{1}{N} \sum_{i=1}^N \frac{TP_i}{TP_i + FP_i + FN_i}
 MSE = \frac{1}{n} \sum_{i=1}^n (Y_i - \hat{Y}_i)^2
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6MzKADkfxUI)
+
 ## Median
 **[Category: Statistics]** | **[Hebrew: חציון]**
 * The middle value in a sorted dataset, dividing the data into two equal halves. Unlike the mean (average), the median is robust against extreme outliers, making it a more reliable measure of central tendency for skewed distributions. In an infinitely large normally distributed dataset, the median equals the mean.
@@ -3029,6 +3348,8 @@ The value separating the higher half from the lower half of a data sample.
 ```math
 P(X \leq M) = 0.5
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## MediaPipe
 **[Category: Tools & Environments]** | **[Hebrew: ספריית MediaPipe לזיהוי גוף]**
@@ -3047,6 +3368,8 @@ graph LR
     B --> C[468 3D Landmarks]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## MediaPipe Keypoints
 **[Category: Computer Vision]** | **[Hebrew: נקודות קצה ב-MediaPipe]**
 * The core output of Google's MediaPipe Pose estimation model. For every human detected in a frame, it outputs 33 specific 3D landmarks (keypoints) representing joints like the elbow, shoulder, or wrist. Each keypoint is represented by an X, Y coordinate, and a 'C' value (Confidence level) indicating how certain the model is about that point's location.
@@ -3064,6 +3387,8 @@ graph TD
     A --> D[Pinky: 17-20]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=-RUVM_cXn18)
+
 ## Min-Max Normalization
 **[Category: Data Preprocessing]** | **[Hebrew: נרמול / Min-Max Scaling]**
 * A data pre-processing technique that rescales numeric features so they fall into a specific fixed boundary range, typically between 0 and 1. This prevents variables with extremely large numbers from dominating variables with smaller numbers during machine learning training.
@@ -3078,6 +3403,8 @@ graph TD
 ```math
 x' = \frac{x - \min(x)}{\max(x) - \min(x)}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sxEqtjLC0aM)
 
 ## MNIST Dataset
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: מאגר נתוני MNIST]**
@@ -3095,6 +3422,8 @@ graph LR
     A[28x28 Pixel Image] --> B[CNN]
     B --> C[Output: '7']
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=z2B7HJllTBA)
 
 ## MobileNet
 **[Category: Deep Learning]** | **[Hebrew: רשת MobileNet למכשירים ניידים]**
@@ -3114,6 +3443,8 @@ graph TD
     C --> D[Massive Speedup]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=96q1wKG9Xcw)
+
 ## MobileNet Phone Optimization
 **[Category: Computer Vision Architectures]** | **[Hebrew: אופטימיזציית MobileNet לטלפונים]**
 * A specific deep learning architecture developed by Google explicitly designed for mobile devices and embedded vision applications. It drastically reduces the number of operations and memory required by using Depthwise Separable Convolutions, allowing complex AI to run locally on low-power cellphones.
@@ -3129,6 +3460,8 @@ graph LR
     A[Train on Cloud GPU] --> B[Quantize to Int8]
     B --> C[Deploy on iOS/Android Neural Engine]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=84GAhf8b9Uk)
 
 ## Model Context Protocol (MCP)
 **[Category: AI Agents & Architecture]** | **[Hebrew: פרוטוקול MCP לאינטגרציה חכמה]**
@@ -3147,6 +3480,8 @@ graph LR
     A -->|MCP Protocol| C[Company API]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=N3vHJcHBS-w)
+
 ## Motion Vector
 **[Category: Video Compression]** | **[Hebrew: וקטור תנועה]**
 * A 2D mathematical vector used in video compression that efficiently tracks how a specific block of pixels (Macroblock) moves from one frame to the next frame across physical space. Instead of transmitting the video block's pixels again, the video stream simply transmits this vector arrow pointing to where the old pixels moved.
@@ -3161,6 +3496,8 @@ graph LR
 ```math
 V = (dx, dy) \quad \text{representing block shift between frames}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Multi-Object Grid Detection
 **[Category: Computer Vision]** | **[Hebrew: זיהוי מרובה אובייקטים בתא סבכה]**
@@ -3177,6 +3514,8 @@ graph TD
     A[Grid Cell] -->|Anchor 1| B[Detect Person]
     A -->|Anchor 2| C[Detect Car behind Person]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ckQuvrksP4k)
 
 ## Multi-Processing
 **[Category: AI Agents & Architecture]** | **[Hebrew: ריבוי תהליכים נפרדים / Multi-Processing]**
@@ -3196,6 +3535,8 @@ graph TD
     B & D --> E[True Parallelism]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Multi-Threading
 **[Category: AI Agents & Architecture]** | **[Hebrew: ריבוי נימים / Multi-Threading]**
 * An OS capability where multiple "threads" actively execute independently but entirely within the same program process, sharing the same memory pool. Because memory is shared, it is fast but introduces risks like Race Conditions if one thread crashes the whole process.
@@ -3214,6 +3555,8 @@ graph TD
     B & C --> D[Context Switching]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PgDaJEjlBuI)
+
 ## Multidimensional Interpolation
 **[Category: Image Processing]** | **[Hebrew: אינטרפולציה רב-ממדית / שיערוך]**
 * The mathematical core of the Decoder/Upsampling phase. Because the network must create new pixels that did not exist in the compressed latent space, it mathematically 'guesses' the new pixel values based on the weighted average of its surrounding known neighbors. It operates on the principle that 'what was, will be' (local continuity).
@@ -3230,6 +3573,8 @@ graph LR
     B --> C[1 New Sub-pixel]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Xj129kA3Ci0)
+
 ## Naive Bayes Classifier
 **[Category: Machine Learning Algorithms]** | **[Hebrew: מסווג בייס]**
 * A family of simple, probabilistic supervised machine learning models founded on Bayes' Theorem. It relies on the strong, naive assumption that all predictive features are completely independent of each other (which is rarely true in reality, yet it works surprisingly well).
@@ -3244,6 +3589,8 @@ graph LR
 ```math
 P(y|x_1, \dots, x_n) \propto P(y) \prod_{i=1}^n P(x_i|y)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=O2L2Uv9pdDA)
 
 ## Non-Linearity (Deep Learning)
 **[Category: Deep Learning]** | **[Hebrew: אי-ליניאריות]**
@@ -3260,6 +3607,8 @@ graph LR
     A[Linear Output] --> B[Activation Function]
     B --> C[Curve / Non-Linear Decision Boundary]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Non-Max Suppression
 **[Category: Computer Vision]** | **[Hebrew: דיכוי לא מרבי / Non-Max Suppression]**
@@ -3279,6 +3628,8 @@ graph LR
     C --> D[1 Final Bounding Box]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=v6lt0cGSHBI)
+
 ## Norm (Vector)
 **[Category: Linear Algebra]** | **[Hebrew: נורמה / גודל הווקטור]**
 * The mathematical magnitude (length or size) of a vector, calculated as the square root of the sum of the squares of its components. The L2 norm (Euclidean norm) is the most common, representing the straight-line distance from the origin to the point defined by the vector.
@@ -3293,6 +3644,8 @@ graph LR
 ```math
 ||\mathbf{x}||_p = \left( \sum_{i=1}^n |x_i|^p \right)^{\frac{1}{p}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=FiSy6zWDfiA)
 
 ## Normalization
 **[Category: Data Preprocessing]** | **[Hebrew: נירמול / Normalization]**
@@ -3310,6 +3663,8 @@ graph LR
     A[Values: 100 to 100,000] --> B(Normalize)
     B --> C[Values: 0.0 to 1.0]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dXB-KQYkzNU)
 
 ## NotebookLM
 **[Category: Tools & Environments]** | **[Hebrew: מחברת NotebookLM]**
@@ -3346,6 +3701,8 @@ graph TD
     B --> D[LLM Summarizes exact source]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EOmgC3-hznM)
+
 ## Null Hypothesis (H0)
 **[Category: Statistics]** | **[Hebrew: השערת אפס / H0]**
 * A default statistical assumption stating that there is no significant effect or difference between groups being compared. Statistical tests attempt to reject this null hypothesis in favor of an alternative hypothesis (H1) using a significance level (P-value). If the P-value is below 0.05, the null hypothesis is rejected.
@@ -3360,6 +3717,8 @@ graph TD
 ```math
 H_0: \mu_1 = \mu_2 \quad \text{(No significant difference)}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=tdj-hoivzHQ)
 
 ## NumPy
 **[Category: Tools & Environments]** | **[Hebrew: ספריית NumPy לחישוב מתמטי]**
@@ -3377,6 +3736,8 @@ graph LR
     A[Python List] -->|Slow Loop| B[CPU]
     C[NumPy Array] -->|C-Optimized Vectorization| D[Instant Math]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=xECXZ3tyONo)
 
 ## Object Detection
 **[Category: Computer Vision]** | **[Hebrew: זיהוי אובייקטים / Object Detection]**
@@ -3397,6 +3758,8 @@ graph LR
     B --> E[Confidence: 95%]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=26PWiWCz1v8)
+
 ## One-Hot Encoding
 **[Category: Data Preprocessing]** | **[Hebrew: קידוד קטגוריאלי / One-Hot Error]**
 * A vital data wrangling step that securely translates text-based categories (like "Red", "Blue") into separate binary columns (1s and 0s). This mathematically prevents machine learning models from blindly assuming an alphabetical superiority where "Red" (2) is greater than "Blue" (1).
@@ -3415,6 +3778,8 @@ graph TD
     E[Bird] --> F[0, 0, 1]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=G2iVj7WKDFk)
+
 ## OpenCV
 **[Category: Tools & Environments]** | **[Hebrew: ספריית OpenCV לעיבוד תמונה]**
 * An open-source computer vision and image processing library providing thousands of optimized algorithms for real-time image and video analysis. It supports operations from basic (reading, resizing, color conversion) to advanced (edge detection, object tracking, feature matching) across Python, C++, and Java.
@@ -3432,6 +3797,8 @@ graph LR
     B --> C[Gaussian Blur]
     C --> D[Canny Edge Detection]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=9V2qPmWTfaY)
 
 ## Orthogonal Vectors
 **[Category: Linear Algebra]** | **[Hebrew: וקטורים אורתוגונליים (מאונכים)]**
@@ -3465,6 +3832,8 @@ graph LR
 \vec{u} \cdot \vec{v} = 0
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=iqq832T8SrA)
+
 ## Outlier
 **[Category: Data Preprocessing]** | **[Hebrew: נקודה חריגה / Outlier]**
 * A data point that lies significantly far from the majority of other observations in a dataset. Outliers can distort statistical measures (especially the mean and variance) and harm machine learning model performance if not properly handled — either by removal, capping, or using robust statistical methods like the median and IQR.
@@ -3483,6 +3852,8 @@ graph LR
     C --> D[Outliers falling outside whiskers]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=7L23sCOZjns)
+
 ## Overfitting
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: התאמת יתר / Overfitting]**
 * A catastrophic failure state occurring when an AI model studies its training data far too precisely, accidentally memorizing all the background noise and specific outliers. In the course, this is described as 'the most important concept in AI.' It is detected when training error keeps decreasing but test/validation error starts increasing — a divergence between the two curves. As a result, it performs perfectly in training but fails instantly when given new, unseen data in reality.
@@ -3499,6 +3870,8 @@ graph TD
     A[Training Loss: 0.001] --> B[Validation Loss: 2.5]
     B --> C[Model Memorized Training Data]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
 
 ## Overfitting Prevention Strategies
 **[Category: Deep Learning]** | **[Hebrew: אסטרטגיות למניעת התאמת-יתר]**
@@ -3518,6 +3891,8 @@ graph TD
     A --> E[Early Stopping]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
+
 ## P-Frame (Predictive Frame)
 **[Category: Video Compression]** | **[Hebrew: פריים חזוי / P-Frame]**
 * A video frame that stores only the differences (residuals) from the previous reference frame, using motion vectors to indicate where blocks of pixels have moved. P-Frames are much smaller than I-Frames because they transmit only changes rather than complete images, achieving significant compression in video streams.
@@ -3535,6 +3910,8 @@ graph LR
     B -->|Forward Prediction| C[P-Frame 2]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## P-value
 **[Category: Statistics]** | **[Hebrew: ערך P / רמת מובהקות סטטיסטית]**
 * A statistical measure that quantifies the probability of obtaining results at least as extreme as the observed results, assuming the null hypothesis is true. A P-value below the threshold of 0.05 (5%) indicates statistically significant results, leading to rejection of the null hypothesis.
@@ -3549,6 +3926,8 @@ graph LR
 ```math
 \text{If } p \leq \alpha \text{ (e.g., 0.05), reject } H_0
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vemZtEM63GY)
 
 ## Padding
 **[Category: Deep Learning]** | **[Hebrew: ריפוד / Padding]**
@@ -3568,6 +3947,8 @@ graph TD
     C --> D[Apply 3x3 Filter without losing edges]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=-1xVmU8Z6Bs)
+
 ## Parameter Efficiency
 **[Category: Model Optimization]** | **[Hebrew: יעילות פרמטרים]**
 * The practice of designing neural network architectures to achieve high accuracy while minimizing the total number of learnable weights (parameters). For example, replacing one 5x5 kernel (25 parameters) with two 3x3 kernels (18 parameters) saves resources while maintaining the same effective field of view.
@@ -3584,6 +3965,8 @@ graph LR
     C[MobileNet: 4M Params] --> D[Accuracy 70%]
     style C stroke:#0f0,stroke-width:4px
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=lfiw2Rh2v8k)
 
 ## Perceptron
 **[Category: Deep Learning]** | **[Hebrew: תא עצב מלאכותי / תא מסווג]**
@@ -3603,6 +3986,8 @@ graph LR
     C --> D[Output Y]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=i1G7PXZMnSc)
+
 ## Physical Consistency in AI Video
 **[Category: Generative AI]** | **[Hebrew: עקביות פיזיקלית בווידאו סינתטי]**
 * The most difficult hurdle in current AI video generation. It is the ability of a generative model to understand and respect real-world physics across multiple frames (e.g., if a person combs their hair, the fingers should move through the hair logically, not melt into the skull). 
@@ -3620,6 +4005,8 @@ graph TD
     C --> D[Failed Physical Consistency]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## PMF (Probability Mass Function)
 **[Category: Statistics]** | **[Hebrew: פונקציית מסת הסתברות / PMF]**
 * A function that gives the probability of a discrete random variable taking on each specific value. Unlike a PDF (which handles continuous data), a PMF assigns actual probability values to countable outcomes. The sum of all PMF values must equal 1.
@@ -3634,6 +4021,8 @@ graph TD
 ```math
 \sum_{x} P(X = x) = 1
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=hDjcxi9p0ak)
 
 ## Poisson Distribution
 **[Category: Statistics]** | **[Hebrew: התפלגות פואסון]**
@@ -3685,6 +4074,8 @@ graph TD
 P(k \text{ events}) = \frac{\lambda^k e^{-\lambda}}{k!}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=V3Qxj2C7rP0)
+
 ## Pooling as Dimension Reduction
 **[Category: Deep Learning]** | **[Hebrew: פולינג כהפחתת מימדים]**
 * The conceptual understanding of Pooling layers as an 'Executive Summary' operation. It intentionally compresses the spatial dimensions (width and height) of an image to reduce computational load, while aggressively highlighting the most prominent features (edges, textures) relevant to the research question.
@@ -3702,6 +4093,8 @@ graph LR
     C --> D[75% Memory Saved]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=3uxOyk-SczU)
+
 ## Positional Encoding (Sinusoidal)
 **[Category: Deep Learning Architecture]** | **[Hebrew: קידוד מיקום מבוסס סינוס]**
 * A brilliant mathematical trick used in Transformers. Because Transformers process entire sentences simultaneously (unlike RNNs which read left-to-right), they have no concept of word order. Positional Encoding injects unique Sine and Cosine wave values directly into the word's embedding vector, acting as an invisible 'timestamp' so the network knows exactly where the word sits in the sentence.
@@ -3718,6 +4111,8 @@ PE_{(pos, 2i)} = \sin\left(\frac{pos}{10000^{2i/d_{model}}}\right)
 ```math
 PE_{(pos, 2i+1)} = \cos\left(\frac{pos}{10000^{2i/d_{model}}}\right)
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=T3OT8kqoqjc)
 
 ## PRD (Product Requirements Document)
 **[Category: Project Management]** | **[Hebrew: מסמך דרישות פיתוח / PRD]**
@@ -3737,6 +4132,8 @@ graph TD
     C --> D[Final Software Product]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=W7ShrFjd5B4)
+
 ## Precision
 **[Category: Model Evaluation]** | **[Hebrew: נכונות ההבנה / Precision]**
 * A critical evaluation metric that specifically asks: "Out of all the times the AI claimed something was True, how many times was it *actually* True?". It is mathematically calculated as True Positives divided by (True Positives + False Positives).
@@ -3751,6 +4148,8 @@ graph TD
 ```math
 \text{Precision} = \frac{TP}{TP + FP}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qWfzIYCvBqo)
 
 ## Precision-Recall Tradeoff
 **[Category: Model Evaluation]** | **[Hebrew: שיווי משקל דיוק-רגישות / PR Curve]**
@@ -3767,6 +4166,8 @@ graph LR
     A[High Recall: Catch all cancer] -->|Consequence| B[High False Positives: Low Precision]
     C[High Precision: Only certain cases] -->|Consequence| D[High False Negatives: Low Recall]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qWfzIYCvBqo)
 
 ## Principal Component Analysis (PCA)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: הורדת ממדים / PCA]**
@@ -3785,6 +4186,8 @@ graph LR
     B --> C[Top 3 Features containing 95% Variance]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZgyY3JuGQY8)
+
 ## Probabilistic Programming
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: תכנות הסתברותי / דינאמי]**
 * A paradigm where algorithms do not follow a fixed, deterministic path, but instead constantly calculate the probabilities of various outcomes at every step. This is essential when navigating high-dimensional data or unpredictable environments where hard-coding every possible scenario is impossible.
@@ -3802,6 +4205,8 @@ graph TD
     B --> D[Re-evaluate Route]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ATaMq62fXno)
+
 ## Probability
 **[Category: Statistics]** | **[Hebrew: הסתברות]**
 * A mathematical measure between 0 and 1 that quantifies the likelihood of an event occurring. A probability of 0 means impossibility, 1 means certainty, and the sum of all probabilities in a sample space must equal 1. It forms the mathematical foundation for all statistical inference and machine learning prediction.
@@ -3817,6 +4222,8 @@ graph TD
 P(A) = \frac{\text{Number of Favorable Outcomes}}{\text{Total Number of Possible Outcomes}}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qg7V43qhOUE)
+
 ## Probability Density Function (PDF)
 **[Category: Statistics]** | **[Hebrew: פונקציית צפיפות הסתברות / PDF]**
 * A mathematical function that describes the relative likelihood of a continuous random variable taking on a specific value. Unlike discrete probability (where P(x) gives a direct probability), a PDF's value at any single point is not a probability — instead, the area under the curve between two points gives the probability of the variable falling in that range.
@@ -3831,6 +4238,8 @@ P(A) = \frac{\text{Number of Favorable Outcomes}}{\text{Total Number of Possible
 ```math
 \int_{-\infty}^{\infty} f(x) dx = 1
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=jUFbY5u-DMs)
 
 ## Prompt Engineering
 **[Category: Prompt Engineering]** | **[Hebrew: הנדסת פרומפטים / תכנון שאילתות]**
@@ -3850,6 +4259,8 @@ graph TD
     C --> D[Constraints: Do not use external APIs...]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## PyTorch
 **[Category: Tools & Environments]** | **[Hebrew: ספריית PyTorch ללמידה עמוקה]**
 * A powerful, flexible open-source deep learning framework developed by Meta (Facebook) that provides dynamic computational graphs, making it ideal for research and rapid prototyping. Unlike Keras's sequential approach, PyTorch uses imperative "define-by-run" programming that allows arbitrary Python code within the model definition.
@@ -3867,6 +4278,8 @@ graph LR
     B --> C[Easy Debugging with Python Print]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fJ40w_2h8kk)
+
 ## Q-Learning
 **[Category: Reinforcement Learning]** | **[Hebrew: אלגוריתם Q-Learning]**
 * A model-free reinforcement learning algorithm that learns the value of an action in a particular state. Unlike Bellman equations which require a known map of the environment, Q-Learning allows an agent to learn the optimal path purely through trial, error, and updating a 'Q-Table' comparing expected rewards versus actual rewards.
@@ -3880,6 +4293,8 @@ graph LR
 ```math
 Q(s, a) \leftarrow Q(s, a) + \alpha \left[ R + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=aCEvtRtNO-M)
 
 ## Quantiles
 **[Category: Statistics]** | **[Hebrew: רבעונים / Quantiles]**
@@ -3896,6 +4311,8 @@ Q(s, a) \leftarrow Q(s, a) + \alpha \left[ R + \gamma \max_{a'} Q(s', a') - Q(s,
 Q_k = \text{value at position } \frac{k}{q}(n+1)
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JvIzB3hULCo)
+
 ## R-Squared (R²)
 **[Category: Model Evaluation]** | **[Hebrew: מקדם הקביעה / R²]**
 * A statistical measure that represents the proportion of variance in the dependent variable (Y) that is explained by the independent variable(s) (X) in a regression model. It ranges from 0 (model explains nothing) to 1 (perfect fit). An R² of 0.60 means 60% of the variance is explained by the model.
@@ -3910,6 +4327,8 @@ Q_k = \text{value at position } \frac{k}{q}(n+1)
 ```math
 R^2 = 1 - \frac{SS_{res}}{SS_{tot}} = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=bMccdk8EdGo)
 
 ## ReAct (Reasoning + Acting)
 **[Category: Prompt Engineering]** | **[Hebrew: חשיבה ופעולה / ReAct]**
@@ -3929,6 +4348,8 @@ graph LR
     C --> D[Thought: Now I will read it...]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=KwH6-CEDwEQ)
+
 ## Recall
 **[Category: Model Evaluation]** | **[Hebrew: שלמות הגילוי / Recall]**
 * A critical evaluation metric that specifically asks: "Out of all the actual True examples in reality, how many did the AI successfully manage to locate and flag?". It is mathematically calculated as True Positives divided by (True Positives + False Negatives).
@@ -3943,6 +4364,8 @@ graph LR
 ```math
 \text{Recall} = \frac{TP}{TP + FN}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qWfzIYCvBqo)
 
 ## Receptive Field
 **[Category: Deep Learning]** | **[Hebrew: שדה קליטה / Receptive Field]**
@@ -3962,6 +4385,8 @@ graph TD
     C --> D[Original Image: 7x7 Region]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ip2HYPC_T9Q)
+
 ## Regression
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: רגרסיה / חיזוי ערכים רציפים]**
 * A category of supervised machine learning tasks where the model predicts a continuous numerical value (as opposed to classification which predicts discrete categories). The goal is to find the mathematical function that best maps input features to a continuous output variable by minimizing prediction error.
@@ -3979,6 +4404,8 @@ graph LR
     B --> C[Continuous Trend Line]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=TJveOYsK6MY)
+
 ## Regularization
 **[Category: Deep Learning]** | **[Hebrew: רגולריזציה / מניעת התאמת-יתר]**
 * A collection of techniques used to prevent neural networks from overfitting by adding constraints or penalties during training. Common methods include Dropout (randomly disabling neurons), L1/L2 weight penalties (discouraging large weights), Batch Normalization, Early Stopping, and Data Augmentation.
@@ -3993,6 +4420,8 @@ graph LR
 ```math
 J(\theta) = \text{Loss} + \lambda \sum_{i} \theta_i^2
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EehRcPo1M-Q)
 
 ## Regularization as Restraint
 **[Category: Deep Learning]** | **[Hebrew: רגולריזציה כמנגנון ריסון]**
@@ -4011,6 +4440,8 @@ graph TD
     C --> D[Smoother Decision Boundary]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EehRcPo1M-Q)
+
 ## Reinforcement Learning (RL)
 **[Category: Artificial Intelligence Domains]** | **[Hebrew: למידת חיזוק / Reinforcement Learning]**
 * A machine learning paradigm where an agent learns optimal behavior by interacting with an environment, receiving rewards for good actions and penalties for bad ones. Unlike supervised learning (which needs labeled data) or unsupervised learning (which finds patterns), RL learns through trial and error — similar to training a dog with treats.
@@ -4028,6 +4459,8 @@ graph LR
     B -->|Reward R & State S'| A
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vXtfdGphr3c)
+
 ## ReLU (Rectified Linear Unit)
 **[Category: Deep Learning]** | **[Hebrew: פונקציית ReLU / יחידה ליניארית מיושרת]**
 * The most widely used activation function in modern deep learning. It outputs the input directly if positive, and zero otherwise: f(x) = max(0, x). Its simplicity and computational efficiency solve the "vanishing gradient" problem that plagued earlier activation functions like Sigmoid in deep networks.
@@ -4043,6 +4476,8 @@ graph LR
 f(x) = \max(0, x)
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6MmGNZsA5nI)
+
 ## Residuals
 **[Category: Machine Learning Mathematics]** | **[Hebrew: שאריות / Residuals]**
 * The differences between the actual observed values and the values predicted by a regression model. Each residual measures the vertical distance from a data point to the regression line. The sum of squared residuals (SSE) is minimized during training, and analyzing residual patterns reveals whether the model is appropriate for the data.
@@ -4057,6 +4492,8 @@ f(x) = \max(0, x)
 ```math
 e_i = y_i - \hat{y}_i
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=w1UsKanMatM)
 
 ## ResNet (Residual Network)
 **[Category: Deep Learning]** | **[Hebrew: רשת שיורית / ResNet]**
@@ -4078,6 +4515,8 @@ graph TD
     D --> E[ReLU Activation]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=w1UsKanMatM)
+
 ## Retrieval-Augmented Generation (RAG)
 **[Category: Large Language Models (LLM)]** | **[Hebrew: RAG / השלמת מידע נשלף]**
 * An AI framework that drastically improves the quality and accuracy of an LLM by first forcing it to retrieve factual data from a trusted external knowledge base (via a Vector Database) before generating an answer. It acts as an external memory bank preventing AI hallucinations.
@@ -4097,6 +4536,8 @@ graph LR
     D --> E[Informed Answer]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=T-D1OfcDW1M)
+
 ## RL Episode
 **[Category: Reinforcement Learning]** | **[Hebrew: אפיזודה בלמידת חיזוק]**
 * A complete, distinct cycle of actions taken by an AI agent from a starting state until a terminal end state (like winning, losing, or hitting a time limit). In stock trading AI, one episode might be starting with $10,000, trading for a simulated year, and evaluating the final portfolio value.
@@ -4114,6 +4555,8 @@ graph LR
     C --> D[Terminal State: Win/Loss]
     D --> E[Calculate Final Reward]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## RNN (Recurrent Neural Network)
 **[Category: Deep Learning]** | **[Hebrew: רשת נוירונים חוזרת / RNN]**
@@ -4134,6 +4577,8 @@ graph LR
     D --> E[Output Prediction]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Gafjk7_w1i8)
+
 ## Rotation Matrix
 **[Category: Linear Algebra]** | **[Hebrew: מטריצת סיבוב]**
 * A special orthogonal matrix used to rotate vectors and points around an origin in 2D or 3D space. It is constructed using cosine and sine functions of the rotation angle (in radians) and preserves the length of vectors during rotation. It is a fundamental transformation in computer graphics and image processing.
@@ -4148,6 +4593,8 @@ graph LR
 ```math
 R(\theta) = \begin{bmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{bmatrix}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=E0Hmnixke2g)
 
 ## Rule-based LLM Fallback
 **[Category: System Design]** | **[Hebrew: גיבוי מבוסס חוקים ל-LLM]**
@@ -4166,6 +4613,8 @@ graph TD
     B -->|No| D[Query LLM Brain]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Sample (Data Point)
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: דגימה / רשומה]**
 * A single observation or record in a dataset, represented as one row in a data table. Each sample contains values for all features (columns) and optionally a target label. The quality and quantity of samples directly determines the model's ability to learn patterns and generalize to new data.
@@ -4182,6 +4631,8 @@ graph LR
     A[Dataset] --> B[Sample 1: Age 25, $50k]
     A --> C[Sample 2: Age 40, $90k]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=PeMlggyqz0Y)
 
 ## Scalar
 **[Category: Linear Algebra]** | **[Hebrew: סקלאר]**
@@ -4216,6 +4667,8 @@ A scalar is a Rank-0 Tensor (just a single magnitude/number):
 c = 42
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Scikit-learn
 **[Category: Tools & Environments]** | **[Hebrew: ספריית Scikit-learn ללמידת מכונה]**
 * The most widely used Python library for classical machine learning, providing simple and efficient tools for data preprocessing, classification, regression, clustering, dimensionality reduction, and model evaluation. It is built on NumPy and provides a consistent API where all algorithms follow the fit/predict pattern.
@@ -4234,6 +4687,8 @@ graph LR
     C --> D[sklearn.metrics]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=7z8-QWlbmoo)
+
 ## Self-Attention Mechanism
 **[Category: Deep Learning Architecture]** | **[Hebrew: מנגנון תשומת לב עצמית]**
 * The revolutionary core of the Transformer architecture. When reading a word (like 'bank'), the Self-Attention mechanism mathematically scans every other word in the entire sentence to figure out context. If it sees 'river', it adjusts the embedding of 'bank' to mean land; if it sees 'money', it adjusts it to mean a financial institution.
@@ -4247,6 +4702,8 @@ graph LR
 ```math
 \text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fjJOgb-E41w)
 
 ## Semantic Representation
 **[Category: Natural Language Processing]** | **[Hebrew: ייצוג סמנטי בטקסט]**
@@ -4265,6 +4722,8 @@ graph TD
     B -.->|Large Distance| C
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Semantic Segmentation
 **[Category: Image Processing]** | **[Hebrew: פילוח סמנטי / Semantic Segmentation]**
 * An advanced computer vision task where a neural network doesn't simply place a box around an entire object, but rigorously categorizes every individual, single pixel in the entire image into a specific class (e.g., this exact pixel is "Road", this one is "Person", this one is "Sky").
@@ -4282,6 +4741,8 @@ graph LR
     B --> C[Every pixel colored by class]
     C --> D[e.g., Road is gray, Sky is blue]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=fqatUyNsG48)
 
 ## Siamese Network
 **[Category: Deep Learning]** | **[Hebrew: רשת סיאמית / Siamese Network]**
@@ -4302,6 +4763,8 @@ graph TD
     D --> E{Same Person?}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=6jfw8MuKwpI)
+
 ## Sigmoid Function
 **[Category: Deep Learning]** | **[Hebrew: פונקציית סיגמויד]**
 * An S-shaped mathematical activation function that maps any real-valued number to a value between 0 and 1, following the formula σ(x) = 1/(1+e^(-x)). It is primarily used in binary classification (Logistic Regression) as the output layer activation, converting raw scores into interpretable probabilities.
@@ -4316,6 +4779,8 @@ graph TD
 ```math
 \sigma(x) = \frac{1}{1 + e^{-x}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=TPqr8t919YM)
 
 ## Skip Connections
 **[Category: Deep Learning]** | **[Hebrew: חיבורים עוקפים / Skip Connections]**
@@ -4336,6 +4801,8 @@ graph TD
     C --> D[Add Together]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=StHiclO6qy0)
+
 ## Softmax
 **[Category: Deep Learning]** | **[Hebrew: פונקציית סופטמקס / Softmax]**
 * A complex mathematical activation function typically placed at the absolute final output layer of a neural network designed for multi-class classification. It mathematically squashes all raw output scores so they perfectly total up to 1.0 (100%), generating a clean, human-readable probability vector.
@@ -4350,6 +4817,8 @@ graph TD
 ```math
 \text{Softmax}(z_i) = \frac{e^{z_i}}{\sum_{j=1}^K e^{z_j}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=LLux1SW--oM)
 
 ## Softmax Probability Distribution
 **[Category: Deep Learning]** | **[Hebrew: התפלגות הסתברויות Softmax]**
@@ -4367,6 +4836,8 @@ graph LR
     B --> C[Probabilities: 70%, 20%, 10%]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=oJU6-qW6xZU)
+
 ## Spatial Frequency
 **[Category: Image Processing]** | **[Hebrew: תדר מרחבי]**
 * In visual computing, this metric defines how rapidly colors or brightness levels change over a physical distance on an image grid. High spatial frequencies correspond to sharp, jagged edges, while low spatial frequencies correspond to smooth, gradual gradients like a clouded sky.
@@ -4383,6 +4854,8 @@ graph TD
     A[Image] --> B[High Frequency: Sharp Edges]
     A --> C[Low Frequency: Smooth Gradients / Sky]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
 
 ## Standard Deviation (STD)
 **[Category: Statistics]** | **[Hebrew: סטיית תקן]**
@@ -4416,6 +4889,8 @@ graph TD
 \sigma = \sqrt{\frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=MRqtXL2WX2M)
+
 ## Stride
 **[Category: Deep Learning]** | **[Hebrew: צעד / Stride]**
 * The number of pixels the convolution kernel moves (steps) after each computation. A stride of 1 moves the kernel one pixel at a time (preserving spatial resolution), while a stride of 2 skips every other position (halving the output dimensions). Larger strides act as a form of downsampling, reducing computation.
@@ -4434,6 +4909,8 @@ graph LR
     D --> E[Smaller Output Map]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## Suno Music Prompting
 **[Category: Generative AI]** | **[Hebrew: פרומפטים ליצירת מוזיקה ב-Suno]**
 * The art of guiding AI music generators. Best practices include explicitly commanding the AI to avoid simple, repetitive rhyming structures, providing it with pre-analyzed JSON structural styles of existing songs, and deliberately adding vocalization markers (like niqqud in Hebrew) to ensure the AI pronounces the lyrics correctly.
@@ -4451,6 +4928,8 @@ graph TD
     A --> D[Vocalization Constraints]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=i87RZgbbBxM)
+
 ## Super Resolution
 **[Category: Computer Vision]** | **[Hebrew: סופר-רזולוציה]**
 * A deep learning technique where an Auto Encoder is trained to upscale a low-resolution image into a high-resolution one. By learning the optimal weights to interpolate missing pixels based on thousands of examples, the AI generates incredibly crisp, realistic details that simple mathematical interpolation (like Bilinear) completely fails to produce.
@@ -4466,6 +4945,8 @@ graph LR
     A[Low Res 144p] --> B(GAN / Deep Learning Model)
     B --> C[High Res 4K Image]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=KULkSwLk62I)
 
 ## Supervised Learning
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: למידה מונחית / מפוקחת]**
@@ -4485,6 +4966,8 @@ graph LR
     C --> D{Compare to Labels}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
+
 ## Support (Association Rules)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: תמיכה / Support]**
 * In Association Rule Learning, it is the fundamental metric denoting how frequently a specific collection of items occurs within an entire given dataset. It acts as a probability threshold describing the overall popularity of an itemset.
@@ -4499,6 +4982,8 @@ graph LR
 ```math
 \text{Support}(A) = \frac{\text{Transactions containing } A}{\text{Total Transactions}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=E0Hmnixke2g)
 
 ## Support Vector Machine (SVM)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: מכונת ווקטורים תומכים / מסווג שוליים]**
@@ -4517,6 +5002,8 @@ graph TD
     B --> C[Support Vectors define the margin]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_YPScrckx28)
+
 ## Swish Activation Function
 **[Category: Deep Learning]** | **[Hebrew: פונקציית הפעלה Swish]**
 * An activation function proposed by Google that tends to work better than ReLU on deeper networks. It provides a smooth, non-monotonic curve that gives a stronger emphasis on the edges of the data distribution, though it is computationally more expensive and thus less universally popular than ReLU.
@@ -4530,6 +5017,8 @@ graph TD
 ```math
 f(x) = x \cdot \sigma(x) = \frac{x}{1 + e^{-x}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Fu273ovPBmQ)
 
 ## Synthetic Noise Injection
 **[Category: Data Preprocessing]** | **[Hebrew: הזרקת רעש סינתטי]**
@@ -4548,6 +5037,8 @@ graph LR
     C --> D[Model ignores real-world sensor noise]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=FevBjZhSnIw)
+
 ## t-SNE (t-Distributed Stochastic Neighbor Embedding)
 **[Category: Machine Learning Algorithms]** | **[Hebrew: אלגוריתם t-SNE להמחשת מימדים]**
 * A non-linear dimensionality reduction algorithm specifically designed for visualizing high-dimensional data in 2D or 3D plots. Unlike PCA (which is linear), t-SNE preserves local neighborhood structure, making clusters of similar data points visually apparent even when they exist in 100+ dimensional space.
@@ -4565,6 +5056,8 @@ graph LR
     B --> C[2D Scatter Plot for Human Viewing]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=NEaUSP4YerM)
+
 ## T-Test
 **[Category: Statistics]** | **[Hebrew: מבחן T / T-Test]**
 * A statistical hypothesis test used to compare the means of two groups when the population standard deviation is unknown and the sample size is relatively small. Unlike the Z-Test (which requires known population variance), the T-Test estimates variance from the sample itself, making it more practical for real-world scenarios with limited data.
@@ -4579,6 +5072,8 @@ graph LR
 ```math
 t = \frac{\bar{x} - \mu_0}{s / \sqrt{n}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=VekJxtk4BYM)
 
 ## Tensor
 **[Category: Deep Learning]** | **[Hebrew: טנזור / מערך רב-ממדי]**
@@ -4599,6 +5094,8 @@ graph TD
     D --> E[ND: Multi-dimensional Data]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=L35fFDpwIM4)
+
 ## Time-Series Pattern Recognition
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: זיהוי תבניות בסדרות זמן]**
 * The process of training a 1D CNN to identify reoccurring temporal structures in sequential data. Unlike image processing where patterns are visual shapes, time-series patterns are mathematical trends (e.g., 'If metric A drops while metric B rises over 5 days, a crash usually follows').
@@ -4614,6 +5111,8 @@ graph LR
     A[Day 1-30 Prices] --> B(1D CNN / RNN)
     B --> C[Predict Day 31 Price]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=GE3JOFwTWVM)
 
 ## Timeframe Synchronization
 **[Category: Signal Processing]** | **[Hebrew: סנכרון חותמות זמן בוידאו]**
@@ -4631,6 +5130,8 @@ graph TD
     C[IMU Sensor: 100 Hz] --> B
     B --> D[Unified Multimodal Dataset]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Token
 **[Category: Large Language Models (LLM)]** | **[Hebrew: אסימון / Token]**
@@ -4650,6 +5151,8 @@ graph LR
     A --> D[Token 3: able]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=OjrGu0L5K7M)
+
 ## Training / Validation / Test Split
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: חלוקת נתונים לאימון, אימות ומבחן]**
 * The practice of dividing a dataset into three separate, non-overlapping subsets: Training data (~70-80%) for learning model parameters, Validation data (~10-15%) for tuning hyperparameters and monitoring overfitting during training, and Test data (~10-15%) for final, unbiased evaluation of the finished model. The test set must never be seen during training.
@@ -4668,6 +5171,8 @@ graph LR
     A --> D[15% Test: Final Blind Score]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dSCFk168vmo)
+
 ## Training vs Inference
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: אימון מול הסקה]**
 * The critical distinction in AI lifecycles. **Training** is the heavy, resource-intensive phase where the model learns by processing massive datasets and continuously updating its internal weights via Backpropagation. **Inference** is the deployment phase where the trained (and now 'frozen') model makes predictions on live, unseen data. Inference requires low latency and no weights are altered.
@@ -4685,6 +5190,8 @@ graph TD
     B --> C
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=lsPucobtdDk)
+
 ## Transfer Learning
 **[Category: Deep Learning]** | **[Hebrew: למידת העברה / Transfer Learning]**
 * A revolutionary machine learning method where a generalized AI model developed for a massive, complex task (like recognizing 1,000 different objects) is taken exactly as-is and repurposed as the direct starting point for a second specific task. The pre-trained convolutional layers already know how to detect universal visual features (edges, textures, shapes), so only the final classification layers need retraining for the new domain (like separating hotdogs from hamburgers).
@@ -4701,6 +5208,8 @@ graph LR
     A[Model trained on 1M generic images] --> B[Keep feature layers]
     B --> C[Retrain only output layer for Dog Breeds]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=vmjP6LjGaag)
 
 ## Transformer
 **[Category: Deep Learning]** | **[Hebrew: רשת טרנספורמר]**
@@ -4721,6 +5230,8 @@ graph TD
     D --> E[Next Word Prediction]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ZXiruGOCn9s)
+
 ## Transposed Convolution
 **[Category: Deep Learning]** | **[Hebrew: קונבולוציה מתמרת / Transposed Convolution]**
 * A learnable upsampling operation that increases the spatial dimensions of a feature map — effectively the reverse of standard convolution. Instead of reducing resolution, it expands it by inserting zeros between input values and applying a learned kernel, enabling the network to reconstruct high-resolution outputs from compressed representations.
@@ -4737,6 +5248,8 @@ graph LR
     A[Small Feature Map] --> B(Transposed Kernel)
     B --> C[Larger Output Image Map]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=xoAv6D05j7g)
 
 ## Tree of Thoughts (ToT)
 **[Category: Prompt Engineering]** | **[Hebrew: עץ מחשבות / Tree of Thoughts]**
@@ -4758,6 +5271,8 @@ graph TD
     E --> F[Solution]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=90H6r69h55o)
+
 ## TSSCI (Skeletal Motion Image)
 **[Category: Advanced Deep Learning]** | **[Hebrew: תמונת תנועת שלד מבוססת זמן / TSSCI]**
 * Time-Series Skeletal Coordinate Image (TSSCI) is an innovative approach invented by Dr. Yoram Segal (the course lecturer) during his doctorate research, where human skeletal motion over time is heavily compressed into a single 2D RGB image. By charting skeletal "Keypoints" (X, Y, Confidence) into color channels across thousands of video frames, a video of a person exercising is transformed into a single image that standard CNNs can easily classify.
@@ -4776,6 +5291,8 @@ graph LR
     B & C --> D[2D Image representing Motion]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=taC5pMCm70U)
+
 ## TSSCI Image Tensor
 **[Category: Advanced Architectures]** | **[Hebrew: טנסור תמונת TSSCI]**
 * The data structure representing a TSSCI image, invented by Dr. Segal. It converts time-series human movement into a single static RGB image tensor. The dimensions are typically [Number of Frames, Number of Keypoints, 3 Channels]. This allows standard 2D CNNs (like EfficientNet) to classify complex video movements without needing heavy 3D convolution or LSTM networks.
@@ -4790,6 +5307,8 @@ graph LR
 \text{Tensor} \in \mathbb{R}^{T \times J \times 3}
 ```
 Where T = Time frames, J = Joints, 3 = XYZ spatial coordinates.
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=L35fFDpwIM4)
 
 ## U-NET
 **[Category: Deep Learning]** | **[Hebrew: רשת U-NET לסגמנטציה]**
@@ -4811,6 +5330,8 @@ graph TD
     D --> E[Segmentation Mask]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=NhdzGfB1q74)
+
 ## Underfitting
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: התאמת חסר / Underfitting]**
 * A failure state where a machine learning model is too simple to capture the underlying patterns in the training data, resulting in poor performance on both training and test data. It is the opposite of overfitting — while overfitting memorizes noise, underfitting fails to learn even the real signal.
@@ -4829,6 +5350,8 @@ graph LR
     B --> D[High Test Error]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=o3DztvnfAJg)
+
 ## UNET Skip Connections
 **[Category: Deep Learning Architecture]** | **[Hebrew: חיבורי דילוג ב-UNET]**
 * The defining feature that separates UNET from a standard Auto Encoder. During the compression phase, high-resolution spatial details (the 'Where') are lost. UNET solves this by physically copying the feature maps from the early Encoder layers and instantly pasting them into the late Decoder layers, providing the network with the lost 'blueprint' required to perfectly reconstruct the image.
@@ -4844,6 +5367,8 @@ graph LR
     A[Encoder Spatial Data] -->|Skip Connection Copy| B[Decoder Layers]
     B --> C[High-Res Segmentation]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=StHiclO6qy0)
 
 ## Unsupervised Learning
 **[Category: Machine Learning Fundamentals]** | **[Hebrew: למידה בלתי מפוקחת]**
@@ -4863,6 +5388,8 @@ graph TD
     B --> D[Cluster 2]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=lEfrr0Yr684)
+
 ## Up-sampling
 **[Category: Image Processing]** | **[Hebrew: דגימת-על / Up-sampling]**
 * The process of increasing the spatial resolution of an image or feature map by generating new pixel values between existing ones. Methods include nearest-neighbor (duplicating pixels), bilinear/bicubic interpolation (computing weighted averages), and learned transposed convolutions. It is the reverse operation of decimation/downsampling.
@@ -4878,6 +5405,8 @@ graph TD
 graph LR
     A[10x10 Image] -->|Bilinear Interpolation| B[20x20 Image]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=JnN_1Nh7w4M)
 
 ## VAE (Variational Auto Encoder)
 **[Category: Deep Learning]** | **[Hebrew: מקודד אוטומטי משתנה / VAE]**
@@ -4898,6 +5427,8 @@ graph LR
     C & D --> E(Sample Z)
     E --> F[Decoder]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qJeaCHQ1k2w)
 
 ## Variance
 **[Category: Statistics]** | **[Hebrew: שונות]**
@@ -4931,6 +5462,8 @@ graph LR
 \sigma^2 = \frac{1}{N} \sum_{i=1}^N (x_i - \mu)^2
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EuBBz3bI-aA)
+
 ## Vector
 **[Category: Linear Algebra]** | **[Hebrew: וקטור]**
 * A fundamental mathematical entity that has both a magnitude (length or size) and a specific direction, commonly represented visually as an arrow or as an ordered list of numbers. In computer science and AI, vectors are effectively the standard way to represent multidimensional data points mathematically.
@@ -4945,6 +5478,8 @@ graph LR
 ```math
 \vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_YPScrckx28)
 
 ## Vector Database (Vector DB)
 **[Category: Large Language Models (LLM)]** | **[Hebrew: מסד נתונים וקטורי / DB וקטורי]**
@@ -4962,6 +5497,8 @@ graph TD
     A[Query Vector] --> B[(Pinecone / Milvus)]
     B -->|Cosine Similarity| C[Top 3 Closest Vectors]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=dN0lsF2cvm4)
 
 ## VGGNet
 **[Category: Deep Learning]** | **[Hebrew: רשת VGG לסיווג תמונות]**
@@ -4982,6 +5519,8 @@ graph TD
     D --> E[Max Pool 2x2]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=EgzIZIQFJuM)
+
 ## Virtual Environment
 **[Category: Tools & Environments]** | **[Hebrew: סביבה וירטואלית / Virtual Environment]**
 * An isolated Python runtime environment that maintains its own set of installed packages and dependencies, separate from the system-wide Python installation. This prevents version conflicts between different projects. UV is the most modern and fastest virtual environment manager, using multi-processing to parallelize package downloads.
@@ -4998,6 +5537,8 @@ graph TD
     A[Global Python System] --> B[Project A: venv (TensorFlow 1.0)]
     A --> C[Project B: venv (TensorFlow 2.0)]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Y21OR1OPC9A)
 
 ## Vocabulary Probability Output
 **[Category: Natural Language Processing]** | **[Hebrew: פלט הסתברות מילון]**
@@ -5017,6 +5558,8 @@ graph LR
     B --> E['Car': 5%]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
+
 ## What vs Where Transition
 **[Category: Computer Vision]** | **[Hebrew: מעבר בין מה ל-איפה]**
 * The philosophical shift inside a UNET. The initial descending layers (Max Pooling) aggressively hunt for the 'What' (identifying that a dog is present, but losing track of its exact coordinates). The ascending layers (Upsampling) focus entirely on the 'Where' (reconstructing the exact pixel boundaries of that dog on the canvas).
@@ -5032,6 +5575,8 @@ graph TD
     A[Early Layers] -->|High Res| B[WHERE: Edges & Locations]
     C[Late Layers] -->|Low Res| D[WHAT: Eyes, Wheels, Concepts]
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=q6kJ71tEYqM)
 
 ## Word Embedding
 **[Category: Natural Language Processing]** | **[Hebrew: הטמעת מילים / Embedding]**
@@ -5052,6 +5597,8 @@ graph LR
     F[Vector(Woman)] --> D
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wgfSDrqYMJ4)
+
 ## WSL (Windows Subsystem for Linux)
 **[Category: Tools & Environments]** | **[Hebrew: סביבת לינוקס בווינדוס / WSL]**
 * A compatibility layer in Windows that enables running a full Linux environment directly within Windows without a traditional virtual machine. It allows developers to use Linux command-line tools, Bash scripts, and Linux-native AI development tools (like Claude CLI and Gemini CLI) seamlessly alongside Windows applications.
@@ -5070,6 +5617,8 @@ graph LR
     C --> D[Linux AI Tools (Docker/FFMPEG)]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_fntjriRe48)
+
 ## Xavier / He Initialization
 **[Category: Deep Learning]** | **[Hebrew: אתחול Xavier / He]**
 * Weight initialization strategies that set the starting values of neural network weights to carefully calibrated random values, preventing the vanishing or exploding gradient problem during early training. Xavier initialization (for sigmoid/tanh) scales weights by 1/√(n_inputs), while He initialization (for ReLU) scales by √(2/n_inputs).
@@ -5084,6 +5633,8 @@ graph LR
 ```math
 \text{Var}(W) = \frac{2}{n_{in}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=tYFO434Lpm0)
 
 ## XOR Problem
 **[Category: Deep Learning]** | **[Hebrew: בעיית XOR / בעיית שער לוגי]**
@@ -5104,6 +5655,8 @@ graph LR
     E[Multi-Layer Perceptron needed] --> B
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=kNPGXgzxoHw)
+
 ## YOLO (You Only Look Once)
 **[Category: Computer Vision]** | **[Hebrew: זיהוי אובייקטים מתקדם / YOLO]**
 * A revolutionary real-time object detection algorithm that frames visual tracking as an instantaneous regression problem. In the course, YOLO is described as a 'tracking algorithm' (אלגוריתם עקיבה) that outputs 5 data points per detected object: location (X, Y), size (Width, Height), and object type. IoU is used twice in YOLO — once in the loss function calculation and once in Non-Max Suppression. It mathematically grids the entire image and instantly predicts bounding boxes and class probabilities for every single object in one massive, single neural network pass.
@@ -5121,6 +5674,8 @@ graph LR
     B --> C[Simultaneous Bounding Boxes + Classes]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=svn9-xV7wjk)
+
 ## YOLO 5-Parameter Tracking
 **[Category: Computer Vision Architectures]** | **[Hebrew: מעקב יולו עם 5 פרמטרים]**
 * The fundamental output structure for every single object detected by the YOLO algorithm. Unlike simple classifiers that just output a label, YOLO outputs a 5-parameter vector: [X_center, Y_center, Width, Height, Object_Confidence]. 
@@ -5136,6 +5691,8 @@ Each detected object is represented as a 5-element vector:
 [P_c, b_x, b_y, b_w, b_h]
 ```
 Where $P_c$ is confidence, and $b$ represents box coordinates.
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=ag3DLKsl2vk)
 
 ## YUV (Color Space)
 **[Category: Image Processing]** | **[Hebrew: מרחב צבע YUV]**
@@ -5155,6 +5712,8 @@ graph TD
     A --> D[V: Red Projection (Half Res)]
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RVQJb1pQtw8)
+
 ## Z-Score Normalization
 **[Category: Data Preprocessing]** | **[Hebrew: סילום Z / Standardization]**
 * A statistical scaling strategy that restructures data so that its total distribution has a perfect mean of 0 and a standard deviation of exactly 1. It operates by subtracting the group's mean from the targeted data point and dividing by the standard deviation.
@@ -5170,6 +5729,8 @@ graph TD
 z = \frac{x - \mu}{\sigma}
 ```
 
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sxEqtjLC0aM)
+
 ## Z-Test
 **[Category: Statistics]** | **[Hebrew: מבחן Z / Z-Test]**
 * A statistical hypothesis test used to determine whether the mean of a sample significantly differs from a known population mean, when the population standard deviation (σ) is known and the sample size is large (typically ≥30). It is preferred over the T-Test when population variance is available, as it provides more precise results.
@@ -5184,6 +5745,8 @@ z = \frac{x - \mu}{\sigma}
 ```math
 Z = \frac{\bar{x} - \mu_0}{\frac{\sigma}{\sqrt{n}}}
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=u0EdFFp_U0c)
 
 ## Zero-Shot Prompting
 **[Category: Prompt Engineering]** | **[Hebrew: פרומפטינג ללא דוגמאות / Zero Shot]**
@@ -5202,3 +5765,5 @@ graph LR
     B --> C['Bonjour']
     D[No examples provided] -.-> A
 ```
+
+* **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=sW5xoicq5TY)
