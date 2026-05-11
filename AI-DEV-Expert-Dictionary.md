@@ -447,7 +447,7 @@ graph LR
 * **Visual Enhancement (Agent Memory Lifecycle):**
 ```mermaid
 graph LR
-    A["New Prompt"] --> B["("Short-term Cache")"]
+    A["New Prompt"] --> B["&#40;Short-term Cache&#41;"]
     B --> C{"Context Window Limit Hit?"}
     C -->|"Yes"| D["Evict Oldest Logs"]
     C -->|"No"| E["Process Output"]
@@ -571,7 +571,7 @@ graph LR
     A["Raw Image"] --> B["Human Labeler"]
     B --> C["Draw Bounding Box"]
     C --> D["Add Class 'Dog'"]
-    D --> E["("Ground Truth Dataset")"]
+    D --> E["&#40;Ground Truth Dataset&#41;"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=YJnnxitraac)
@@ -628,8 +628,8 @@ graph LR
 * **Visual Enhancement (Association Rules):**
 ```mermaid
 graph LR
-    A["Item A ("Bread")"] -->|"Confidence 80%"| B["Item B ("Butter")"]
-    A -->|"Confidence 40%"| C["Item C ("Milk")"]
+    A["Item A &#40;Bread&#41;"] -->|"Confidence 80%"| B["Item B &#40;Butter&#41;"]
+    A -->|"Confidence 40%"| C["Item C &#40;Milk&#41;"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=guVvtZ7ZClw)
@@ -690,7 +690,7 @@ graph LR
     A["Original Image"] --> B["Rotate 90"]
     A --> C["Flip Horizontal"]
     A --> D["Color Jitter"]
-    B --> E["("Expanded Dataset")"]
+    B --> E["&#40;Expanded Dataset&#41;"]
     C --> E
     D --> E
 ```
@@ -1184,7 +1184,7 @@ graph TD
 * **Visual Enhancement (Token Limit):**
 ```mermaid
 graph LR
-    A["Prompt + Conversation History"] --> B["("Context Window 128k")"]
+    A["Prompt + Conversation History"] --> B["&#40;Context Window 128k&#41;"]
     B --> C{"Exceeds Limit?"}
     C -->|"Yes"| D["Error / Truncate"]
     C -->|"No"| E["Process Output"]
@@ -1600,9 +1600,9 @@ P(\text{neuron active}) = p \quad (e.g., p=0.8)
 ```mermaid
 graph LR
     A["State Input"] --> B["Feature Extraction"]
-    B --> C["Value Stream V("s")"]
-    B --> D["Advantage Stream A("s,a")"]
-    C --> E["Aggregate Q("s,a")"]
+    B --> C["Value Stream V&#40;s&#41;"]
+    B --> D["Advantage Stream A&#40;s,a&#41;"]
+    C --> E["Aggregate Q&#40;s,a&#41;"]
     D --> E
 ```
 
@@ -1732,7 +1732,7 @@ Where $A$ is a square matrix, $v$ is the eigenvector, and $\lambda$ is the eigen
 * **Visual Enhancement (VAE Loss):**
 ```mermaid
 graph LR
-    A["ELBO Loss"] --> B["Reconstruction Loss ("MSE/BCE")"]
+    A["ELBO Loss"] --> B["Reconstruction Loss &#40;MSE/BCE&#41;"]
     A --> C["KL Divergence Penalty"]
 ```
 
@@ -1769,7 +1769,7 @@ graph LR
 * **Visual Enhancement (Compression Flow):**
 ```mermaid
 graph LR
-    A["Input"] -->|"Compress"| B["("Bottleneck / Latent Vector")"]
+    A["Input"] -->|"Compress"| B["&#40;Bottleneck / Latent Vector&#41;"]
     B -->|"Decompress"| C["Output"]
 ```
 
@@ -2128,7 +2128,7 @@ graph TD
 ```mermaid
 graph LR
     A["Discriminative"] -->|"Given X, predict Y"| B("Is it a dog?")
-    C["Generative"] -->|"Learn P("X")"| D("Draw a new dog")
+    C["Generative"] -->|"Learn P&#40;X&#41;"| D("Draw a new dog")
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=qYNweeDHiyU)
@@ -2167,7 +2167,7 @@ graph LR
 ```mermaid
 graph LR
     A["Local Working Directory"] -->|"git commit"| B["Local Repo"]
-    B -->|"git push"| C["("Remote GitHub Repo")"]
+    B -->|"git push"| C["&#40;Remote GitHub Repo&#41;"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=e9lnsKot_SQ)
@@ -4532,7 +4532,8 @@ graph TD
 graph LR
     A["User Query"] --> B("Search Vector Database")
     B --> C["Retrieve Top 3 Documents"]
-    A & C --> D["LLM Context Window"]
+    A --> D["LLM Context Window"]
+    C --> D["LLM Context Window"]
     D --> E["Informed Answer"]
 ```
 
@@ -5494,7 +5495,7 @@ graph LR
 * **Visual Enhancement (Nearest Neighbor Search):**
 ```mermaid
 graph TD
-    A["Query Vector"] --> B["("Pinecone / Milvus")"]
+    A["Query Vector"] --> B["&#40;Pinecone / Milvus&#41;"]
     B -->|"Cosine Similarity"| C["Top 3 Closest Vectors"]
 ```
 
@@ -5534,8 +5535,8 @@ graph TD
 * **Visual Enhancement (Dependency Isolation):**
 ```mermaid
 graph TD
-    A["Global Python System"] --> B["Project A: venv ("TensorFlow 1.0")"]
-    A --> C["Project B: venv ("TensorFlow 2.0")"]
+    A["Global Python System"] --> B["Project A: venv &#40;TensorFlow 1.0&#41;"]
+    A --> C["Project B: venv &#40;TensorFlow 2.0&#41;"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=Y21OR1OPC9A)
@@ -5590,11 +5591,11 @@ graph TD
 * **Visual Enhancement (Vector Math):**
 ```mermaid
 graph LR
-    A["Vector("King")"] --> B["-"]
-    C["Vector("Man")"] --> B
-    D["+"] --> E["Vector("Queen")"]
+    A["Vector&#40;King&#41;"] --> B["-"]
+    C["Vector&#40;Man&#41;"] --> B
+    D["+"] --> E["Vector&#40;Queen&#41;"]
     B --> D
-    F["Vector("Woman")"] --> D
+    F["Vector&#40;Woman&#41;"] --> D
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=wgfSDrqYMJ4)
@@ -5613,8 +5614,8 @@ graph LR
 ```mermaid
 graph LR
     A["Windows 11 Host"] --> B{"Hyper-V"}
-    B --> C["Native Linux Kernel ("Ubuntu")"]
-    C --> D["Linux AI Tools ("Docker/FFMPEG")"]
+    B --> C["Native Linux Kernel &#40;Ubuntu&#41;"]
+    C --> D["Linux AI Tools &#40;Docker/FFMPEG&#41;"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=_fntjriRe48)
@@ -5707,9 +5708,9 @@ Where $P_c$ is confidence, and $b$ represents box coordinates.
 * **Visual Enhancement (Luma vs Chroma):**
 ```mermaid
 graph TD
-    A["YUV Image"] --> B["Y: Luma/Brightness ("Full Res")"]
-    A --> C["U: Blue Projection ("Half Res")"]
-    A --> D["V: Red Projection ("Half Res")"]
+    A["YUV Image"] --> B["Y: Luma/Brightness &#40;Full Res&#41;"]
+    A --> C["U: Blue Projection &#40;Half Res&#41;"]
+    A --> D["V: Red Projection &#40;Half Res&#41;"]
 ```
 
 * **Recommended Video:** [Watch on YouTube](https://www.youtube.com/watch?v=RVQJb1pQtw8)
