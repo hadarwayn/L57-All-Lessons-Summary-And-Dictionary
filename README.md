@@ -58,15 +58,15 @@ Every single entry in this dictionary is built to professional engineering stand
 
 Want to see what this dictionary is capable of? Check out these 5 fascinating concepts:
 
-1. **[Agent Cache Memory](#agent-cache-memory)**  
+1. **[Agent Cache Memory](AI-DEV-Expert-Dictionary.md#agent-cache-memory)**  
    *Discover why AI agents crash when they read too many files, and how "Context Windows" are managed in live autonomous swarms.*
-2. **[Positional Encoding (Sinusoidal)](#positional-encoding-sinusoidal)**  
+2. **[Positional Encoding (Sinusoidal)](AI-DEV-Expert-Dictionary.md#positional-encoding-sinusoidal)**  
    *See the exact mathematical formulas that allow Large Language Models (like ChatGPT) to understand the concept of time and sequence in a sentence.*
-3. **[Physical Consistency in AI Video](#physical-consistency-in-ai-video)**  
+3. **[Physical Consistency in AI Video](AI-DEV-Expert-Dictionary.md#physical-consistency-in-ai-video)**  
    *Explore the hardest problem in modern Generative AI—why AI video generators still struggle to stop solid objects from melting into each other.*
-4. **[Dueling DQN](#dueling-dqn)**  
+4. **[Dueling DQN](AI-DEV-Expert-Dictionary.md#dueling-dqn)**  
    *Learn how advanced Reinforcement Learning bots split their brains into two streams (Value and Advantage) to dominate stock market trading simulations.*
-5. **[1D Convolution](#1d-convolution)**  
+5. **[1D Convolution](AI-DEV-Expert-Dictionary.md#1d-convolution)**  
    *We all know CNNs analyze 2D images, but did you know 1D Convolutions are the secret weapon used by algorithms to detect irregular heartbeats in medical EKGs?*
 
 ---
