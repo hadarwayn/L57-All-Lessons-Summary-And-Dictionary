@@ -1,6 +1,6 @@
 <div align="center">
   <img src="https://img.shields.io/badge/Status-Complete-success?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/Entries-282_Masterclass_Items-blue?style=for-the-badge" alt="Entries" />
+  <img src="https://img.shields.io/badge/Entries-308_Masterclass_Items-blue?style=for-the-badge" alt="Entries" />
   <img src="https://img.shields.io/badge/Focus-AI_%7C_ML_%7C_Deep_Learning-orange?style=for-the-badge" alt="Focus" />
 
   <h1>🚀 The Ultimate AI Development Expert Dictionary</h1>
@@ -34,13 +34,13 @@ This program represents the absolute cutting-edge of AI engineering, covering ev
   *The one and only!* Dr. Segal is the mastermind who taught all of this incredibly complex information, distilling advanced mathematics and deep learning architectures into digestible, practical knowledge.
   
 * **The Author:** **Hadar Wayn**  
-  The creator of this dictionary. Hadar compiled, structured, and expanded every single concept learned throughout the course into this massive 282-item, 5,700+ line reference architecture.
+  The creator of this dictionary. Hadar compiled, structured, and expanded every single concept learned throughout the course into this massive 308-item, 5,800+ line reference architecture.
 
 ---
 
 ## 📖 The Dictionary: What's Inside?
 
-The dictionary is located in `AI-DEV-Expert-Dictionary.md`. It features a fully clickable **Table of Contents** at the top, allowing you to instantly jump to any of the 282 concepts.
+The dictionary is located in `AI-DEV-Expert-Dictionary.md`. It features a fully clickable **Table of Contents** at the top, allowing you to instantly jump to any of the 308 concepts.
 
 ### 🧬 Anatomy of an Item
 Every single entry in this dictionary is built to professional engineering standards and includes:
